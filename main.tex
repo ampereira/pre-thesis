@@ -1,0 +1,74 @@
+\documentclass[a4paper,abstract=on,twoside,parskip=full]{scrreprt}
+\setlength\parindent{1.5em}
+
+\usepackage[todo]{../general}
+
+\hypersetup{pdfauthor={André Martins Pereira}}
+\hypersetup{pdftitle={Pre-Thesis: Efficient processing of ATLAS events analysis in platforms with accelerator devices}}
+
+\bibliography{../bib/refs}
+\graphicspath{{../imgs/}{../charts/}}
+
+% reduce chapter margins
+%\renewcommand{\chapterheadstartvskip}{\vspace*{-1.6\baselineskip}}
+
+\begin{document}
+\pdfbookmark{Cover}{cover}
+\pagenumbering{roman}
+
+\begin{titlepage}
+	\begin{center}
+	\vspace{100pt}
+		\textbf{\Large{Knowledge Discovery from Databases:\\Task 1}}
+		
+		\vspace{24pt}
+
+		André Pereira \\
+		Bernardo Portela
+		
+		\vspace{12pt}
+
+		University of Minho, Gualtar, Braga 4710-070, Portugal,\\
+		\texttt{\{AMPereira90,BLFPortela\}@gmail.com}
+	\end{center}
+\end{titlepage}
+
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyhead[LO,RE]{}
+\fancyhead[LE]{\slshape \leftmark}
+\fancyhead[RO]{\slshape \rightmark}
+\fancyfoot[RO,LE]{\thepage}%
+\fancyfoot[C]{}
+
+\fancypagestyle{plain}{%
+  \renewcommand{\headrulewidth}{0.0pt}
+  \fancyhead{}
+  \fancyfoot[C]{}
+  \fancyfoot[RO,LE]{\thepage}
+}
+
+\pagenumbering{arabic}
+
+\tableofcontents
+
+
+%
+% include all tex/ chapter files
+%
+
+\input{tex/100_introduction}
+\input{tex/200_state_of_the_art}
+\input{tex/300_new_lipmini}
+\input{tex/400_thesis_planning}
+
+
+%\bibliographystyle{../../common/IEEE}
+%\nocite{*}
+\newpage % force the bookmark to go to the new page
+\pdfbookmark{References}{references}
+\printbibliography[title=References]
+
+%\input{tex/910_signatures}
+
+\end{document}

@@ -1,0 +1,20 @@
+[0] Config.pm:387> INFO - This is Biber 1.6
+[1] Config.pm:390> INFO - Logfile is 'main.blg'
+[142] biber-darwin:218> INFO - === Tue Jun  3, 2014, 19:19:32
+[142] Biber.pm:325> INFO - Reading 'main.bcf'
+[271] Biber.pm:623> INFO - Found 28 citekeys in bib section 0
+[290] Biber.pm:2995> INFO - Processing section 0
+[315] Biber.pm:3129> INFO - Looking for bibtex format file '../bib/refs.bib' for section 0
+[318] bibtex.pm:898> INFO - Decoding LaTeX character macros into UTF-8
+[320] bibtex.pm:775> INFO - Found BibTeX data source '../bib/refs.bib'
+[379] Utils.pm:169> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
+[379] Utils.pm:169> WARN - BibTeX subsystem: author, warning: comma(s) at end of name (removing)
+[380] Utils.pm:169> WARN - I didn't find a database entry for 'SC:Nature' (section 0)
+[380] Utils.pm:169> WARN - I didn't find a database entry for 'SC:Develop' (section 0)
+[381] Utils.pm:169> WARN - I didn't find a database entry for 'SC:SC11' (section 0)
+[670] Biber.pm:2881> INFO - Overriding locale 'en_US.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
+[670] Biber.pm:2887> INFO - Sorting 'entry' list 'none' keys
+[670] Biber.pm:2891> INFO - No sort tailoring available for locale 'en_US.UTF-8'
+[1015] bbl.pm:472> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1021] bbl.pm:545> INFO - Output to main.bbl
+[1021] Biber.pm:105> INFO - WARNINGS: 5

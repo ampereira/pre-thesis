@@ -1,0 +1,505 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{entry}{none}
+    \entry{CERN}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=f86d1d9d5908a7bd98c603a33b535f1f}{{N}uclear\bibnamedelima {R}esearch}{N\bibinitperiod\bibinitdelim R\bibinitperiod}{European\bibnamedelima {O}rganization}{E\bibinitperiod\bibinitdelim O\bibinitperiod}{for}{f\bibinitperiod}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=f86d1d9d5908a7bd98c603a33b535f1f}{{N}uclear\bibnamedelima {R}esearch}{N\bibinitperiod\bibinitdelim R\bibinitperiod}{European\bibnamedelima {O}rganization}{E\bibinitperiod\bibinitdelim O\bibinitperiod}{for}{f\bibinitperiod}{}{}}%
+      }
+      \strng{namehash}{f86d1d9d5908a7bd98c603a33b535f1f}
+      \strng{fullhash}{f86d1d9d5908a7bd98c603a33b535f1f}
+      \field{sortinit}{0}
+      \field{labeltitle}{C{ERN} {E}uropean {O}rganization for {N}uclear {R}esearch}
+      \field{month}{11}
+      \field{title}{C{ERN} {E}uropean {O}rganization for {N}uclear {R}esearch}
+      \field{year}{2012}
+      \verb{url}
+      \verb http://public.web.cern.ch/public/
+      \endverb
+    \endentry
+    \entry{CERN:PS}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=f86d1d9d5908a7bd98c603a33b535f1f}{{N}uclear\bibnamedelima {R}esearch}{N\bibinitperiod\bibinitdelim R\bibinitperiod}{European\bibnamedelima {O}rganization}{E\bibinitperiod\bibinitdelim O\bibinitperiod}{for}{f\bibinitperiod}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=f86d1d9d5908a7bd98c603a33b535f1f}{{N}uclear\bibnamedelima {R}esearch}{N\bibinitperiod\bibinitdelim R\bibinitperiod}{European\bibnamedelima {O}rganization}{E\bibinitperiod\bibinitdelim O\bibinitperiod}{for}{f\bibinitperiod}{}{}}%
+      }
+      \strng{namehash}{f86d1d9d5908a7bd98c603a33b535f1f}
+      \strng{fullhash}{f86d1d9d5908a7bd98c603a33b535f1f}
+      \field{sortinit}{0}
+      \field{labeltitle}{The Proton Synchrotron}
+      \field{month}{07}
+      \field{title}{The Proton Synchrotron}
+      \field{year}{2013}
+      \verb{url}
+      \verb http://home.web.cern.ch/about/accelerators/proton-synchrotron
+      \endverb
+    \endentry
+    \entry{CERN:LHC}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=f86d1d9d5908a7bd98c603a33b535f1f}{{N}uclear\bibnamedelima {R}esearch}{N\bibinitperiod\bibinitdelim R\bibinitperiod}{European\bibnamedelima {O}rganization}{E\bibinitperiod\bibinitdelim O\bibinitperiod}{for}{f\bibinitperiod}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=f86d1d9d5908a7bd98c603a33b535f1f}{{N}uclear\bibnamedelima {R}esearch}{N\bibinitperiod\bibinitdelim R\bibinitperiod}{European\bibnamedelima {O}rganization}{E\bibinitperiod\bibinitdelim O\bibinitperiod}{for}{f\bibinitperiod}{}{}}%
+      }
+      \strng{namehash}{f86d1d9d5908a7bd98c603a33b535f1f}
+      \strng{fullhash}{f86d1d9d5908a7bd98c603a33b535f1f}
+      \field{sortinit}{0}
+      \field{labeltitle}{The {L}arge {H}adron {C}ollider}
+      \field{month}{11}
+      \field{title}{The {L}arge {H}adron {C}ollider}
+      \field{year}{2012}
+      \verb{url}
+      \verb http://public.web.cern.ch/public/en/lhc/lhc-en.html
+      \endverb
+    \endentry
+    \entry{CERN:CMS}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=f86d1d9d5908a7bd98c603a33b535f1f}{{N}uclear\bibnamedelima {R}esearch}{N\bibinitperiod\bibinitdelim R\bibinitperiod}{European\bibnamedelima {O}rganization}{E\bibinitperiod\bibinitdelim O\bibinitperiod}{for}{f\bibinitperiod}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=f86d1d9d5908a7bd98c603a33b535f1f}{{N}uclear\bibnamedelima {R}esearch}{N\bibinitperiod\bibinitdelim R\bibinitperiod}{European\bibnamedelima {O}rganization}{E\bibinitperiod\bibinitdelim O\bibinitperiod}{for}{f\bibinitperiod}{}{}}%
+      }
+      \strng{namehash}{f86d1d9d5908a7bd98c603a33b535f1f}
+      \strng{fullhash}{f86d1d9d5908a7bd98c603a33b535f1f}
+      \field{sortinit}{0}
+      \field{labeltitle}{Compact Muon Solenoid experiment}
+      \field{month}{11}
+      \field{title}{Compact Muon Solenoid experiment}
+      \field{year}{2012}
+      \verb{url}
+      \verb http://cms.web.cern.ch/
+      \endverb
+    \endentry
+    \entry{CERN:ATLAS}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=f86d1d9d5908a7bd98c603a33b535f1f}{{N}uclear\bibnamedelima {R}esearch}{N\bibinitperiod\bibinitdelim R\bibinitperiod}{European\bibnamedelima {O}rganization}{E\bibinitperiod\bibinitdelim O\bibinitperiod}{for}{f\bibinitperiod}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=f86d1d9d5908a7bd98c603a33b535f1f}{{N}uclear\bibnamedelima {R}esearch}{N\bibinitperiod\bibinitdelim R\bibinitperiod}{European\bibnamedelima {O}rganization}{E\bibinitperiod\bibinitdelim O\bibinitperiod}{for}{f\bibinitperiod}{}{}}%
+      }
+      \strng{namehash}{f86d1d9d5908a7bd98c603a33b535f1f}
+      \strng{fullhash}{f86d1d9d5908a7bd98c603a33b535f1f}
+      \field{sortinit}{0}
+      \field{labeltitle}{A{TLAS} experiment}
+      \field{month}{11}
+      \field{title}{A{TLAS} experiment}
+      \field{year}{2012}
+      \verb{url}
+      \verb http://atlas.ch/
+      \endverb
+    \endentry
+    \entry{CERN:LHCb}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=f86d1d9d5908a7bd98c603a33b535f1f}{{N}uclear\bibnamedelima {R}esearch}{N\bibinitperiod\bibinitdelim R\bibinitperiod}{European\bibnamedelima {O}rganization}{E\bibinitperiod\bibinitdelim O\bibinitperiod}{for}{f\bibinitperiod}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=f86d1d9d5908a7bd98c603a33b535f1f}{{N}uclear\bibnamedelima {R}esearch}{N\bibinitperiod\bibinitdelim R\bibinitperiod}{European\bibnamedelima {O}rganization}{E\bibinitperiod\bibinitdelim O\bibinitperiod}{for}{f\bibinitperiod}{}{}}%
+      }
+      \strng{namehash}{f86d1d9d5908a7bd98c603a33b535f1f}
+      \strng{fullhash}{f86d1d9d5908a7bd98c603a33b535f1f}
+      \field{sortinit}{0}
+      \field{labeltitle}{The Large Hadron Collider beauty experiment}
+      \field{month}{11}
+      \field{title}{The Large Hadron Collider beauty experiment}
+      \field{year}{2012}
+      \verb{url}
+      \verb http://lhcb-public.web.cern.ch/lhcb-public/
+      \endverb
+    \endentry
+    \entry{CERN:MoEDAL}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=f86d1d9d5908a7bd98c603a33b535f1f}{{N}uclear\bibnamedelima {R}esearch}{N\bibinitperiod\bibinitdelim R\bibinitperiod}{European\bibnamedelima {O}rganization}{E\bibinitperiod\bibinitdelim O\bibinitperiod}{for}{f\bibinitperiod}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=f86d1d9d5908a7bd98c603a33b535f1f}{{N}uclear\bibnamedelima {R}esearch}{N\bibinitperiod\bibinitdelim R\bibinitperiod}{European\bibnamedelima {O}rganization}{E\bibinitperiod\bibinitdelim O\bibinitperiod}{for}{f\bibinitperiod}{}{}}%
+      }
+      \strng{namehash}{f86d1d9d5908a7bd98c603a33b535f1f}
+      \strng{fullhash}{f86d1d9d5908a7bd98c603a33b535f1f}
+      \field{sortinit}{0}
+      \field{labeltitle}{The Monopole and Exotics Detector at the LHC}
+      \field{month}{11}
+      \field{title}{The Monopole and Exotics Detector at the LHC}
+      \field{year}{2012}
+      \verb{url}
+      \verb http://moedal.web.cern.ch/
+      \endverb
+    \endentry
+    \entry{CERN:TOTEM}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=f86d1d9d5908a7bd98c603a33b535f1f}{{N}uclear\bibnamedelima {R}esearch}{N\bibinitperiod\bibinitdelim R\bibinitperiod}{European\bibnamedelima {O}rganization}{E\bibinitperiod\bibinitdelim O\bibinitperiod}{for}{f\bibinitperiod}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=f86d1d9d5908a7bd98c603a33b535f1f}{{N}uclear\bibnamedelima {R}esearch}{N\bibinitperiod\bibinitdelim R\bibinitperiod}{European\bibnamedelima {O}rganization}{E\bibinitperiod\bibinitdelim O\bibinitperiod}{for}{f\bibinitperiod}{}{}}%
+      }
+      \strng{namehash}{f86d1d9d5908a7bd98c603a33b535f1f}
+      \strng{fullhash}{f86d1d9d5908a7bd98c603a33b535f1f}
+      \field{sortinit}{0}
+      \field{labeltitle}{Total Cross Section, Elastic Scattering and Diffraction Dissociation at the LHC}
+      \field{month}{11}
+      \field{title}{Total Cross Section, Elastic Scattering and Diffraction Dissociation at the LHC}
+      \field{year}{2012}
+      \verb{url}
+      \verb http://totem.web.cern.ch/Totem/
+      \endverb
+    \endentry
+    \entry{CERN:LHCf}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=f86d1d9d5908a7bd98c603a33b535f1f}{{N}uclear\bibnamedelima {R}esearch}{N\bibinitperiod\bibinitdelim R\bibinitperiod}{European\bibnamedelima {O}rganization}{E\bibinitperiod\bibinitdelim O\bibinitperiod}{for}{f\bibinitperiod}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=f86d1d9d5908a7bd98c603a33b535f1f}{{N}uclear\bibnamedelima {R}esearch}{N\bibinitperiod\bibinitdelim R\bibinitperiod}{European\bibnamedelima {O}rganization}{E\bibinitperiod\bibinitdelim O\bibinitperiod}{for}{f\bibinitperiod}{}{}}%
+      }
+      \strng{namehash}{f86d1d9d5908a7bd98c603a33b535f1f}
+      \strng{fullhash}{f86d1d9d5908a7bd98c603a33b535f1f}
+      \field{sortinit}{0}
+      \field{labeltitle}{The Large Hadron Collider forward experiment}
+      \field{month}{11}
+      \field{title}{The Large Hadron Collider forward experiment}
+      \field{year}{2012}
+      \verb{url}
+      \verb http://home.web.cern.ch/about/experiments/lhcf
+      \endverb
+    \endentry
+    \entry{CERN:ALICE}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=f86d1d9d5908a7bd98c603a33b535f1f}{{N}uclear\bibnamedelima {R}esearch}{N\bibinitperiod\bibinitdelim R\bibinitperiod}{European\bibnamedelima {O}rganization}{E\bibinitperiod\bibinitdelim O\bibinitperiod}{for}{f\bibinitperiod}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=f86d1d9d5908a7bd98c603a33b535f1f}{{N}uclear\bibnamedelima {R}esearch}{N\bibinitperiod\bibinitdelim R\bibinitperiod}{European\bibnamedelima {O}rganization}{E\bibinitperiod\bibinitdelim O\bibinitperiod}{for}{f\bibinitperiod}{}{}}%
+      }
+      \strng{namehash}{f86d1d9d5908a7bd98c603a33b535f1f}
+      \strng{fullhash}{f86d1d9d5908a7bd98c603a33b535f1f}
+      \field{sortinit}{0}
+      \field{labeltitle}{A Large Ion Collider Experiment}
+      \field{month}{11}
+      \field{title}{A Large Ion Collider Experiment}
+      \field{year}{2012}
+      \verb{url}
+      \verb http://aliceinfo.cern.ch/
+      \endverb
+    \endentry
+    \entry{Higgs}{article}{}
+      \true{morelabelname}
+      \name{labelname}{1}{}{%
+        {{hash=ec1463e7fbfc553eca7d18cd31454ab6}{Aad}{A\bibinitperiod}{Georges}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \true{moreauthor}
+      \name{author}{1}{}{%
+        {{hash=ec1463e7fbfc553eca7d18cd31454ab6}{Aad}{A\bibinitperiod}{Georges}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{f0806a61a21762c45bb17c53a0517ffd}
+      \strng{fullhash}{f0806a61a21762c45bb17c53a0517ffd}
+      \field{sortinit}{0}
+      \field{labeltitle}{{Observation of a new particle in the search for the Standard Model Higgs boson with the ATLAS detector at the LHC}}
+      \field{journaltitle}{Phys.Lett.}
+      \field{title}{{Observation of a new particle in the search for the Standard Model Higgs boson with the ATLAS detector at the LHC}}
+      \field{volume}{B716}
+      \field{year}{2012}
+      \field{pages}{1\bibrangedash 29}
+    \endentry
+    \entry{CERN:DATA1}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=f86d1d9d5908a7bd98c603a33b535f1f}{{N}uclear\bibnamedelima {R}esearch}{N\bibinitperiod\bibinitdelim R\bibinitperiod}{European\bibnamedelima {O}rganization}{E\bibinitperiod\bibinitdelim O\bibinitperiod}{for}{f\bibinitperiod}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=f86d1d9d5908a7bd98c603a33b535f1f}{{N}uclear\bibnamedelima {R}esearch}{N\bibinitperiod\bibinitdelim R\bibinitperiod}{European\bibnamedelima {O}rganization}{E\bibinitperiod\bibinitdelim O\bibinitperiod}{for}{f\bibinitperiod}{}{}}%
+      }
+      \strng{namehash}{f86d1d9d5908a7bd98c603a33b535f1f}
+      \strng{fullhash}{f86d1d9d5908a7bd98c603a33b535f1f}
+      \field{sortinit}{0}
+      \field{labeltitle}{Computing}
+      \field{month}{07}
+      \field{title}{Computing}
+      \field{year}{2013}
+      \verb{url}
+      \verb http://home.web.cern.ch/about/computing
+      \endverb
+    \endentry
+    \entry{CERN:DATA2}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=f86d1d9d5908a7bd98c603a33b535f1f}{{N}uclear\bibnamedelima {R}esearch}{N\bibinitperiod\bibinitdelim R\bibinitperiod}{European\bibnamedelima {O}rganization}{E\bibinitperiod\bibinitdelim O\bibinitperiod}{for}{f\bibinitperiod}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=f86d1d9d5908a7bd98c603a33b535f1f}{{N}uclear\bibnamedelima {R}esearch}{N\bibinitperiod\bibinitdelim R\bibinitperiod}{European\bibnamedelima {O}rganization}{E\bibinitperiod\bibinitdelim O\bibinitperiod}{for}{f\bibinitperiod}{}{}}%
+      }
+      \strng{namehash}{f86d1d9d5908a7bd98c603a33b535f1f}
+      \strng{fullhash}{f86d1d9d5908a7bd98c603a33b535f1f}
+      \field{sortinit}{0}
+      \field{labeltitle}{Animation shows LHC data processing}
+      \field{month}{07}
+      \field{title}{Animation shows LHC data processing}
+      \field{year}{2013}
+      \verb{url}
+      \verb http://home.web.cern.ch/about/updates/2013/04/animation-shows-lhc-data-processing
+      \endverb
+    \endentry
+    \entry{CERN:WLHCCG}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=f86d1d9d5908a7bd98c603a33b535f1f}{{N}uclear\bibnamedelima {R}esearch}{N\bibinitperiod\bibinitdelim R\bibinitperiod}{European\bibnamedelima {O}rganization}{E\bibinitperiod\bibinitdelim O\bibinitperiod}{for}{f\bibinitperiod}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=f86d1d9d5908a7bd98c603a33b535f1f}{{N}uclear\bibnamedelima {R}esearch}{N\bibinitperiod\bibinitdelim R\bibinitperiod}{European\bibnamedelima {O}rganization}{E\bibinitperiod\bibinitdelim O\bibinitperiod}{for}{f\bibinitperiod}{}{}}%
+      }
+      \strng{namehash}{f86d1d9d5908a7bd98c603a33b535f1f}
+      \strng{fullhash}{f86d1d9d5908a7bd98c603a33b535f1f}
+      \field{sortinit}{0}
+      \field{labeltitle}{The Worldwide LHC Computing Grid}
+      \field{month}{07}
+      \field{title}{The Worldwide LHC Computing Grid}
+      \field{year}{2013}
+      \verb{url}
+      \verb http://wlcg.web.cern.ch/
+      \endverb
+    \endentry
+    \entry{Msc:AMP}{thesis}{}
+      \name{labelname}{1}{}{%
+        {{hash=0334bbc52cb2af79c91c4a53946ce07e}{Pereira}{P\bibinitperiod}{André}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=0334bbc52cb2af79c91c4a53946ce07e}{Pereira}{P\bibinitperiod}{André}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {University of Minho}%
+      }
+      \strng{namehash}{0334bbc52cb2af79c91c4a53946ce07e}
+      \strng{fullhash}{0334bbc52cb2af79c91c4a53946ce07e}
+      \field{sortinit}{0}
+      \field{labeltitle}{{Efficient Processing of ATLAS Events Analysis in Homogeneous and Heterogeneous Platforms}}
+      \field{month}{09}
+      \field{title}{{Efficient Processing of ATLAS Events Analysis in Homogeneous and Heterogeneous Platforms}}
+      \field{type}{mathesis}
+      \field{year}{2013}
+    \endentry
+    \entry{LIP}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=b8e06e0ae007371baeb51117213d7942}{{E}xperimentação\bibnamedelimb e\bibnamedelimb {F}ísica\bibnamedelimb {E}xperimental\bibnamedelimb de\bibnamedelima {P}artículas}{E\bibinitperiod\bibinitdelim e\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim P\bibinitperiod}{Laboratório}{L\bibinitperiod}{de}{d\bibinitperiod}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=b8e06e0ae007371baeb51117213d7942}{{E}xperimentação\bibnamedelimb e\bibnamedelimb {F}ísica\bibnamedelimb {E}xperimental\bibnamedelimb de\bibnamedelima {P}artículas}{E\bibinitperiod\bibinitdelim e\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim P\bibinitperiod}{Laboratório}{L\bibinitperiod}{de}{d\bibinitperiod}{}{}}%
+      }
+      \strng{namehash}{b8e06e0ae007371baeb51117213d7942}
+      \strng{fullhash}{b8e06e0ae007371baeb51117213d7942}
+      \field{sortinit}{0}
+      \field{labeltitle}{Laboratório de {E}xperimentação e {F}ísica {E}xperimental de {P}artículas}
+      \field{month}{11}
+      \field{title}{Laboratório de {E}xperimentação e {F}ísica {E}xperimental de {P}artículas}
+      \field{year}{2012}
+      \verb{url}
+      \verb http://www.lip.pt/
+      \endverb
+    \endentry
+    \entry{paperAMP}{article}{}
+      \name{labelname}{2}{}{%
+        {{hash=335b9673a641f76eee8d1dee5be677e1}{A.\bibnamedelimi Pereira}{A\bibinitperiod\bibinitdelim P\bibinitperiod}{A.\bibnamedelimi Onofre}{A\bibinitperiod\bibinitdelim O\bibinitperiod}{}{}{}{}}%
+        {{hash=1a5fd85c002ddfe355b1a8b7f97f11fe}{Proença}{P\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=335b9673a641f76eee8d1dee5be677e1}{A.\bibnamedelimi Pereira}{A\bibinitperiod\bibinitdelim P\bibinitperiod}{A.\bibnamedelimi Onofre}{A\bibinitperiod\bibinitdelim O\bibinitperiod}{}{}{}{}}%
+        {{hash=1a5fd85c002ddfe355b1a8b7f97f11fe}{Proença}{P\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{8555a70ecf95808b6ea4c39342637ef1}
+      \strng{fullhash}{8555a70ecf95808b6ea4c39342637ef1}
+      \field{sortinit}{0}
+      \field{labeltitle}{{Removing Inefficiencies from Scientific Code: the Study of the Higgs Boson Couplings to Top Quarks}}
+      \field{journaltitle}{The International Conference on Computational Science and its Applications}
+      \field{month}{07}
+      \field{title}{{Removing Inefficiencies from Scientific Code: the Study of the Higgs Boson Couplings to Top Quarks}}
+      \field{year}{2014}
+    \endentry
+    \entry{MooreLaw}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=9c50084c68d91fab87727bc63f4551bf}{Moore}{M\bibinitperiod}{Gordon\bibnamedelima E.}{G\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=9c50084c68d91fab87727bc63f4551bf}{Moore}{M\bibinitperiod}{Gordon\bibnamedelima E.}{G\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9c50084c68d91fab87727bc63f4551bf}
+      \strng{fullhash}{9c50084c68d91fab87727bc63f4551bf}
+      \field{sortinit}{0}
+      \field{labeltitle}{Cramming more components onto integrated circuits.}
+      \field{journaltitle}{Electronics, 38(8)}
+      \field{month}{04}
+      \field{title}{Cramming more components onto integrated circuits.}
+      \field{year}{1965}
+    \endentry
+    \entry{Intel:MIC}{report}{}
+      \name{labelname}{1}{}{%
+        {{hash=ff97a9fdede09eaf6e1c8ec9f6a61dd5}{Intel}{I\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=ff97a9fdede09eaf6e1c8ec9f6a61dd5}{Intel}{I\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \list{organization}{1}{%
+        {Intel}%
+      }
+      \strng{namehash}{ff97a9fdede09eaf6e1c8ec9f6a61dd5}
+      \strng{fullhash}{ff97a9fdede09eaf6e1c8ec9f6a61dd5}
+      \field{sortinit}{0}
+      \field{labeltitle}{The Intel® Xeon Phi Datasheet}
+      \field{month}{04}
+      \field{title}{The Intel® Xeon Phi Datasheet}
+      \field{type}{techreport}
+      \field{year}{2014}
+    \endentry
+    \entry{TOP500}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=59bf2a1479db121e4f2f60b37c64252e}{500}{5\bibinitperiod}{TOP}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=59bf2a1479db121e4f2f60b37c64252e}{500}{5\bibinitperiod}{TOP}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{59bf2a1479db121e4f2f60b37c64252e}
+      \strng{fullhash}{59bf2a1479db121e4f2f60b37c64252e}
+      \field{sortinit}{0}
+      \field{labeltitle}{November 2013}
+      \field{month}{05}
+      \field{title}{November 2013}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://www.top500.org/lists/2013/11/
+      \endverb
+    \endentry
+    \entry{NVIDIA:Kepler}{report}{}
+      \name{labelname}{1}{}{%
+        {{hash=a2fe9051fe051f819bd739ef3e340377}{NVIDIA}{N\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=a2fe9051fe051f819bd739ef3e340377}{NVIDIA}{N\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \list{organization}{1}{%
+        {NVIDIA}%
+      }
+      \strng{namehash}{a2fe9051fe051f819bd739ef3e340377}
+      \strng{fullhash}{a2fe9051fe051f819bd739ef3e340377}
+      \field{sortinit}{0}
+      \field{labeltitle}{NVIDIA's Next Generation CUDA Compute Architecture: Kepler GK110}
+      \field{title}{NVIDIA's Next Generation CUDA Compute Architecture: Kepler GK110}
+      \field{type}{techreport}
+      \field{year}{2012}
+    \endentry
+    \entry{MPI}{article}{}
+      \name{labelname}{14}{}{%
+        {{hash=987f8a12b82d6699f2ef91671ee693e9}{Gabriel}{G\bibinitperiod}{Edgar}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=a0cbe7c5e612efd8028620cdec02d56b}{Fagg}{F\bibinitperiod}{Graham\bibnamedelima E.}{G\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{hash=19dc9d515baafa2cc282bcc9d84cb352}{Bosilca}{B\bibinitperiod}{George}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=dd49510973ce550829071851d40edc6d}{Angskun}{A\bibinitperiod}{Thara}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=fe1173b3e2dc759ad57f31d7dd83d59c}{Dongarra}{D\bibinitperiod}{Jack\bibnamedelima J.}{J\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=071ae69518560695c2d9414cf8565c15}{Squyres}{S\bibinitperiod}{Jeffrey\bibnamedelima M.}{J\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{hash=f189b43f6175b695f30f34fec8457315}{Sahay}{S\bibinitperiod}{Vishal}{V\bibinitperiod}{}{}{}{}}%
+        {{hash=f6546a085305b6de9433f0d2b08f6a2e}{Kambadur}{K\bibinitperiod}{Prabhanjan}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=b41f172836e34f699c8b1d4d0e612ad3}{Barrett}{B\bibinitperiod}{Brian}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=76782c3af2abd54f0f96f4565cbc818a}{Lumsdaine}{L\bibinitperiod}{Andrew}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=596349e6d253e1aa7ddf2f8623a33eff}{Castain}{C\bibinitperiod}{Ralph\bibnamedelima H.}{R\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+        {{hash=b9d38ba478a9f637970e7e2fdab5dc13}{Daniel}{D\bibinitperiod}{David\bibnamedelima J.}{D\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=58acfc9051828cd3d029499372f736bd}{Graham}{G\bibinitperiod}{Richard\bibnamedelima L.}{R\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{hash=1b6a389169afcbfe9c3aa5f0a5980256}{Woodall}{W\bibinitperiod}{Timothy\bibnamedelima S.}{T\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{14}{}{%
+        {{hash=987f8a12b82d6699f2ef91671ee693e9}{Gabriel}{G\bibinitperiod}{Edgar}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=a0cbe7c5e612efd8028620cdec02d56b}{Fagg}{F\bibinitperiod}{Graham\bibnamedelima E.}{G\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{hash=19dc9d515baafa2cc282bcc9d84cb352}{Bosilca}{B\bibinitperiod}{George}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=dd49510973ce550829071851d40edc6d}{Angskun}{A\bibinitperiod}{Thara}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=fe1173b3e2dc759ad57f31d7dd83d59c}{Dongarra}{D\bibinitperiod}{Jack\bibnamedelima J.}{J\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=071ae69518560695c2d9414cf8565c15}{Squyres}{S\bibinitperiod}{Jeffrey\bibnamedelima M.}{J\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{hash=f189b43f6175b695f30f34fec8457315}{Sahay}{S\bibinitperiod}{Vishal}{V\bibinitperiod}{}{}{}{}}%
+        {{hash=f6546a085305b6de9433f0d2b08f6a2e}{Kambadur}{K\bibinitperiod}{Prabhanjan}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=b41f172836e34f699c8b1d4d0e612ad3}{Barrett}{B\bibinitperiod}{Brian}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=76782c3af2abd54f0f96f4565cbc818a}{Lumsdaine}{L\bibinitperiod}{Andrew}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=596349e6d253e1aa7ddf2f8623a33eff}{Castain}{C\bibinitperiod}{Ralph\bibnamedelima H.}{R\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+        {{hash=b9d38ba478a9f637970e7e2fdab5dc13}{Daniel}{D\bibinitperiod}{David\bibnamedelima J.}{D\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=58acfc9051828cd3d029499372f736bd}{Graham}{G\bibinitperiod}{Richard\bibnamedelima L.}{R\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{hash=1b6a389169afcbfe9c3aa5f0a5980256}{Woodall}{W\bibinitperiod}{Timothy\bibnamedelima S.}{T\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Budapest, Hungary}%
+      }
+      \strng{namehash}{d92130dc5e56ddae2b285de078158405}
+      \strng{fullhash}{73f647bf321d8f33dd33023e649a06a7}
+      \field{sortinit}{0}
+      \field{labeltitle}{Open {MPI}: Goals, Concept, and Design of a Next Generation {MPI} Implementation}
+      \field{booktitle}{Proceedings, 11th European PVM/MPI Users' Group Meeting}
+      \field{month}{09}
+      \field{title}{Open {MPI}: Goals, Concept, and Design of a Next Generation {MPI} Implementation}
+      \field{year}{2004}
+      \field{pages}{97\bibrangedash 104}
+    \endentry
+    \entry{Texas:DSP}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=98891ef37ae74f3a00ae9a7c9c316e78}{Instruments}{I\bibinitperiod}{Texas}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=98891ef37ae74f3a00ae9a7c9c316e78}{Instruments}{I\bibinitperiod}{Texas}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \strng{fullhash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \field{sortinit}{0}
+      \field{labeltitle}{Digital {S}ignal {P}rocessors}
+      \field{month}{05}
+      \field{title}{Digital {S}ignal {P}rocessors}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://www.ti.com/lsds/ti/dsp/overview.page
+      \endverb
+    \endentry
+    \entry{NVIDIA:Tegra}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=61a23953300b78e83f381e02ca45c5e4}{Corporation}{C\bibinitperiod}{NVIDIA}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=61a23953300b78e83f381e02ca45c5e4}{Corporation}{C\bibinitperiod}{NVIDIA}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{61a23953300b78e83f381e02ca45c5e4}
+      \strng{fullhash}{61a23953300b78e83f381e02ca45c5e4}
+      \field{sortinit}{0}
+      \field{labeltitle}{Tegra}
+      \field{month}{05}
+      \field{title}{Tegra}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://www.nvidia.com/object/tegra.html
+      \endverb
+    \endentry
+    \entry{ARM}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=627be458ef18adb494d4ac0cd61d6572}{Jr.}{J\bibinitperiod}{Sixto\bibnamedelima Ortiz}{S\bibinitperiod\bibinitdelim O\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=627be458ef18adb494d4ac0cd61d6572}{Jr.}{J\bibinitperiod}{Sixto\bibnamedelima Ortiz}{S\bibinitperiod\bibinitdelim O\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{627be458ef18adb494d4ac0cd61d6572}
+      \strng{fullhash}{627be458ef18adb494d4ac0cd61d6572}
+      \field{sortinit}{0}
+      \field{labeltitle}{Chipmakers ARM for Battle in Traditional Computing Market.}
+      \field{journaltitle}{Computer, 44(4):14-17}
+      \field{month}{04}
+      \field{title}{Chipmakers ARM for Battle in Traditional Computing Market.}
+      \field{year}{2011}
+    \endentry
+  \endsortlist
+  \missing{SC:SC11}
+  \missing{SC:Develop}
+  \missing{SC:Nature}
+\endrefsection
+\endinput
+
