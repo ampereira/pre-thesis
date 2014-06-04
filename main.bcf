@@ -1961,6 +1961,14 @@
     <bcf:citekey order="24">Texas:DSP</bcf:citekey>
     <bcf:citekey order="25">NVIDIA:Tegra</bcf:citekey>
     <bcf:citekey order="26">ARM</bcf:citekey>
+    <bcf:citekey order="27">OpenMP</bcf:citekey>
+    <bcf:citekey order="28">Intel:TBB</bcf:citekey>
+    <bcf:citekey order="29">CILK</bcf:citekey>
+    <bcf:citekey order="30">MPI</bcf:citekey>
+    <bcf:citekey order="31">HEFT</bcf:citekey>
+    <bcf:citekey order="32">Msc:Mariano</bcf:citekey>
+    <bcf:citekey order="33">STARPU</bcf:citekey>
+    <bcf:citekey order="34">OpenACC</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" type="entry" label="none">
   <bcf:sorting>

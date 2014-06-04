@@ -1,0 +1,597 @@
+23 pags
+
+# --------------
+# Please enter the commit message for your changes. Everything below
+# this paragraph is ignored, and an empty message aborts the commit.
+# Just close the window to accept your message.
+diff --git a/main.aux b/main.aux
+index be249b0..6491418 100644
+--- a/main.aux
++++ b/main.aux
+@@ -154,31 +154,54 @@
+ \@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Shared Memory Environments}{14}{subsection.2.2.1}}
+ \newlabel{shared_mem}{{2.2.1}{14}{Shared Memory Environments}{subsection.2.2.1}{}}
+ \newlabel{shared_mem@cref}{{[subsection][1][2,2]2.2.1}{14}}
++\abx@aux@cite{OpenMP}
++\abx@aux@cite{Intel:TBB}
++\abx@aux@cite{CILK}
++\abx@aux@backref{28}{OpenMP}{0}{15}{15}
++\abx@aux@backref{29}{Intel:TBB}{0}{15}{15}
+ \@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Distributed Memory Environments}{15}{subsection.2.2.2}}
+ \newlabel{distributed_mem}{{2.2.2}{15}{Distributed Memory Environments}{subsection.2.2.2}{}}
+ \newlabel{distributed_mem@cref}{{[subsection][2][2,2]2.2.2}{15}}
+-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Particle Physics Frameworks}{15}{subsection.2.2.3}}
+-\newlabel{particle_frameworks}{{2.2.3}{15}{Particle Physics Frameworks}{subsection.2.2.3}{}}
+-\newlabel{particle_frameworks@cref}{{[subsection][3][2,2]2.2.3}{15}}
+-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {chapter}{\numberline {3}New lipmini}{16}{chapter.3}}
++\abx@aux@backref{30}{MPI}{0}{15}{15}
++\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces Schematic representation of CUDA thread hierarchy.\relax }}{16}{figure.caption.20}}
++\newlabel{fig:cuda}{{2.5}{16}{Schematic representation of CUDA thread hierarchy.\relax }{figure.caption.20}{}}
++\newlabel{fig:cuda@cref}{{[figure][5][2]2.5}{16}}
++\abx@aux@cite{HEFT}
++\abx@aux@cite{Msc:Mariano}
++\abx@aux@cite{STARPU}
++\abx@aux@backref{31}{HEFT}{0}{17}{17}
++\abx@aux@backref{32}{Msc:Mariano}{0}{17}{17}
++\@writefile{tdo}{\defcounter {refsection}{0}\relax }\@writefile{tdo}{\contentsline {todo}{\IeC {\'E} necess\IeC {\'a}rio entrar em mais detalhes?}{17}{section*.22}}
++\pgfsyspdfmark {pgfid4}{20028924}{18881666}
++\abx@aux@backref{33}{STARPU}{0}{17}{17}
++\abx@aux@cite{OpenACC}
++\@writefile{tdo}{\defcounter {refsection}{0}\relax }\@writefile{tdo}{\contentsline {todo}{\IeC {\'E} necess\IeC {\'a}rio entrar em mais detalhes?}{18}{section*.24}}
++\pgfsyspdfmark {pgfid5}{19096584}{34111267}
++\abx@aux@backref{34}{OpenACC}{0}{18}{18}
++\@writefile{tdo}{\defcounter {refsection}{0}\relax }\@writefile{tdo}{\contentsline {todo}{Tools de optimiza\IeC {\c c}\IeC {\~a}o???}{18}{section*.26}}
++\pgfsyspdfmark {pgfid6}{19096584}{18809321}
++\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Particle Physics Frameworks}{18}{subsection.2.2.3}}
++\newlabel{particle_frameworks}{{2.2.3}{18}{Particle Physics Frameworks}{subsection.2.2.3}{}}
++\newlabel{particle_frameworks@cref}{{[subsection][3][2,2]2.2.3}{18}}
++\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {chapter}{\numberline {3}New lipmini}{19}{chapter.3}}
+ \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\addvspace {10\p@ }}
+ \@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\addvspace {10\p@ }}
+ \@writefile{lol}{\defcounter {refsection}{0}\relax }\@writefile{lol}{\addvspace {10\p@ }}
+ \@writefile{loa}{\defcounter {refsection}{0}\relax }\@writefile{loa}{\addvspace {10\p@ }}
+-\newlabel{new_lipmini}{{3}{16}{New lipmini}{chapter.3}{}}
+-\newlabel{new_lipmini@cref}{{[chapter][3][]3}{16}}
+-\@writefile{tdo}{\defcounter {refsection}{0}\relax }\@writefile{tdo}{\contentsline {todo}{frameworks general purpose nao agradam cientistas e problemas com elas}{16}{section*.16}}
+-\pgfsyspdfmark {pgfid4}{19096584}{43014905}
+-\@writefile{tdo}{\defcounter {refsection}{0}\relax }\@writefile{tdo}{\contentsline {todo}{cientistas preferem frameworks com coisas deles e rotinas paralelizadas}{16}{section*.17}}
+-\pgfsyspdfmark {pgfid5}{19096584}{40897333}
+-\@writefile{tdo}{\defcounter {refsection}{0}\relax }\@writefile{tdo}{\contentsline {todo}{especifica\IeC {\c c}ao do que a nova framework tem de ter}{16}{section*.18}}
+-\pgfsyspdfmark {pgfid6}{19096584}{38779761}
+-\@writefile{tdo}{\defcounter {refsection}{0}\relax }\@writefile{tdo}{\contentsline {todo}{o que ja foi feito at\IeC {\'e} agora}{16}{section*.19}}
+-\pgfsyspdfmark {pgfid7}{19096584}{36662189}
+-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {chapter}{\numberline {4}Thesis Planning}{17}{chapter.4}}
++\newlabel{new_lipmini}{{3}{19}{New lipmini}{chapter.3}{}}
++\newlabel{new_lipmini@cref}{{[chapter][3][]3}{19}}
++\@writefile{tdo}{\defcounter {refsection}{0}\relax }\@writefile{tdo}{\contentsline {todo}{frameworks general purpose nao agradam cientistas e problemas com elas}{19}{section*.29}}
++\pgfsyspdfmark {pgfid7}{20028924}{43014905}
++\@writefile{tdo}{\defcounter {refsection}{0}\relax }\@writefile{tdo}{\contentsline {todo}{cientistas preferem frameworks com coisas deles e rotinas paralelizadas}{19}{section*.30}}
++\pgfsyspdfmark {pgfid8}{20028924}{40897333}
++\@writefile{tdo}{\defcounter {refsection}{0}\relax }\@writefile{tdo}{\contentsline {todo}{especifica\IeC {\c c}ao do que a nova framework tem de ter}{19}{section*.31}}
++\pgfsyspdfmark {pgfid9}{20028924}{38779761}
++\@writefile{tdo}{\defcounter {refsection}{0}\relax }\@writefile{tdo}{\contentsline {todo}{o que ja foi feito at\IeC {\'e} agora}{19}{section*.32}}
++\pgfsyspdfmark {pgfid10}{20028924}{36662189}
++\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {chapter}{\numberline {4}Thesis Planning}{20}{chapter.4}}
+ \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\addvspace {10\p@ }}
+ \@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\addvspace {10\p@ }}
+ \@writefile{lol}{\defcounter {refsection}{0}\relax }\@writefile{lol}{\addvspace {10\p@ }}
+ \@writefile{loa}{\defcounter {refsection}{0}\relax }\@writefile{loa}{\addvspace {10\p@ }}
+-\newlabel{thesis_planning}{{4}{17}{Thesis Planning}{chapter.4}{}}
+-\newlabel{thesis_planning@cref}{{[chapter][4][]4}{17}}
++\newlabel{thesis_planning}{{4}{20}{Thesis Planning}{chapter.4}{}}
++\newlabel{thesis_planning@cref}{{[chapter][4][]4}{20}}
+diff --git a/main.bbl b/main.bbl
+index a4c0f71..e72e7d1 100644
+--- a/main.bbl
++++ b/main.bbl
+@@ -496,6 +496,129 @@
+       \field{title}{Chipmakers ARM for Battle in Traditional Computing Market.}
+       \field{year}{2011}
+     \endentry
++    \entry{OpenMP}{online}{}
++      \name{labelname}{1}{}{%
++        {{hash=4b4091f5be44b31ede98b9369ddc27e2}{Corporation}{C\bibinitperiod}{OpenACC}{O\bibinitperiod}{}{}{}{}}%
++      }
++      \name{author}{1}{}{%
++        {{hash=4b4091f5be44b31ede98b9369ddc27e2}{Corporation}{C\bibinitperiod}{OpenACC}{O\bibinitperiod}{}{}{}{}}%
++      }
++      \strng{namehash}{4b4091f5be44b31ede98b9369ddc27e2}
++      \strng{fullhash}{4b4091f5be44b31ede98b9369ddc27e2}
++      \field{sortinit}{0}
++      \field{labeltitle}{{OpenACC: Directives for Accelerators}}
++      \field{month}{01}
++      \field{title}{{OpenACC: Directives for Accelerators}}
++      \field{year}{2013}
++      \verb{url}
++      \verb http://openmp.org/wp/
++      \endverb
++    \endentry
++    \entry{Intel:TBB}{report}{}
++      \name{labelname}{1}{}{%
++        {{hash=d7e38f2fae1f0d57c7d21db14442f89e}{Reinders}{R\bibinitperiod}{James}{J\bibinitperiod}{}{}{}{}}%
++      }
++      \name{author}{1}{}{%
++        {{hash=d7e38f2fae1f0d57c7d21db14442f89e}{Reinders}{R\bibinitperiod}{James}{J\bibinitperiod}{}{}{}{}}%
++      }
++      \list{organization}{1}{%
++        {Intel}%
++      }
++      \strng{namehash}{d7e38f2fae1f0d57c7d21db14442f89e}
++      \strng{fullhash}{d7e38f2fae1f0d57c7d21db14442f89e}
++      \field{sortinit}{0}
++      \field{labeltitle}{Intel Threading Building Blocks}
++      \field{title}{Intel Threading Building Blocks}
++      \field{type}{techreport}
++      \field{year}{2007}
++    \endentry
++    \entry{HEFT}{article}{}
++      \name{labelname}{3}{}{%
++        {{hash=704bc2f618c1c7046cb5c64833fce084}{Topcuouglu}{T\bibinitperiod}{Haluk}{H\bibinitperiod}{}{}{}{}}%
++        {{hash=abeb6cd48bc2b468f54b1c8eb2aedb47}{Hariri}{H\bibinitperiod}{Salim}{S\bibinitperiod}{}{}{}{}}%
++        {{hash=52bf6696c2be9982554449f1401fadb1}{Wu}{W\bibinitperiod}{Min-you}{M\bibinithyphendelim y\bibinitperiod}{}{}{}{}}%
++      }
++      \name{author}{3}{}{%
++        {{hash=704bc2f618c1c7046cb5c64833fce084}{Topcuouglu}{T\bibinitperiod}{Haluk}{H\bibinitperiod}{}{}{}{}}%
++        {{hash=abeb6cd48bc2b468f54b1c8eb2aedb47}{Hariri}{H\bibinitperiod}{Salim}{S\bibinitperiod}{}{}{}{}}%
++        {{hash=52bf6696c2be9982554449f1401fadb1}{Wu}{W\bibinitperiod}{Min-you}{M\bibinithyphendelim y\bibinitperiod}{}{}{}{}}%
++      }
++      \strng{namehash}{b2fc58bbbdc921c364cc673843ddec32}
++      \strng{fullhash}{b2fc58bbbdc921c364cc673843ddec32}
++      \field{sortinit}{0}
++      \field{labeltitle}{Performance-Effective and Low-Complexity Task Scheduling for Heterogeneous Computing}
++      \field{issn}{1045-9219}
++      \field{journaltitle}{IEEE Trans. Parallel Distrib. Syst.}
++      \field{month}{03}
++      \field{number}{3}
++      \field{title}{Performance-Effective and Low-Complexity Task Scheduling for Heterogeneous Computing}
++      \field{volume}{13}
++      \field{year}{2002}
++      \field{pages}{260\bibrangedash 274}
++    \endentry
++    \entry{Msc:Mariano}{thesis}{}
++      \name{labelname}{1}{}{%
++        {{hash=73604edd2f778bf2092074c59d6cae3c}{Mariano}{M\bibinitperiod}{Artur}{A\bibinitperiod}{}{}{}{}}%
++      }
++      \name{author}{1}{}{%
++        {{hash=73604edd2f778bf2092074c59d6cae3c}{Mariano}{M\bibinitperiod}{Artur}{A\bibinitperiod}{}{}{}{}}%
++      }
++      \list{institution}{1}{%
++        {University of Minho}%
++      }
++      \strng{namehash}{73604edd2f778bf2092074c59d6cae3c}
++      \strng{fullhash}{73604edd2f778bf2092074c59d6cae3c}
++      \field{sortinit}{0}
++      \field{labeltitle}{{Scheduling (ir)regular applications on heterogeneous platforms}}
++      \field{month}{09}
++      \field{title}{{Scheduling (ir)regular applications on heterogeneous platforms}}
++      \field{type}{mathesis}
++      \field{year}{2012}
++    \endentry
++    \entry{STARPU}{article}{}
++      \name{labelname}{4}{}{%
++        {{hash=736f79b70cf6488db7dfa8e71456f718}{Augonnet}{A\bibinitperiod}{Cédric}{C\bibinitperiod}{}{}{}{}}%
++        {{hash=2a6cddc12d90996f2d082705aab80d36}{Thibault}{T\bibinitperiod}{Samuel}{S\bibinitperiod}{}{}{}{}}%
++        {{hash=4acb86ced09c0de0a698930a3ac8ed1a}{Namyst}{N\bibinitperiod}{Raymond}{R\bibinitperiod}{}{}{}{}}%
++        {{hash=7ca7f0007d1a43652e8ccf26f7048c24}{Wacrenier}{W\bibinitperiod}{Pierre-André;}{P\bibinithyphendelim A\bibinitperiod}{}{}{}{}}%
++      }
++      \name{author}{4}{}{%
++        {{hash=736f79b70cf6488db7dfa8e71456f718}{Augonnet}{A\bibinitperiod}{Cédric}{C\bibinitperiod}{}{}{}{}}%
++        {{hash=2a6cddc12d90996f2d082705aab80d36}{Thibault}{T\bibinitperiod}{Samuel}{S\bibinitperiod}{}{}{}{}}%
++        {{hash=4acb86ced09c0de0a698930a3ac8ed1a}{Namyst}{N\bibinitperiod}{Raymond}{R\bibinitperiod}{}{}{}{}}%
++        {{hash=7ca7f0007d1a43652e8ccf26f7048c24}{Wacrenier}{W\bibinitperiod}{Pierre-André;}{P\bibinithyphendelim A\bibinitperiod}{}{}{}{}}%
++      }
++      \strng{namehash}{b8f74ceca10299b898b8f8bc125acf89}
++      \strng{fullhash}{0a974d7fb88ca72577f0bcf626a330c4}
++      \field{sortinit}{0}
++      \field{labeltitle}{StarPU: A Unified Platform for Task Scheduling on Heterogeneous Multicore Architectures}
++      \field{issn}{1532-0626}
++      \field{journaltitle}{Concurr. Comput. : Pract. Exper.}
++      \field{month}{02}
++      \field{number}{2}
++      \field{title}{StarPU: A Unified Platform for Task Scheduling on Heterogeneous Multicore Architectures}
++      \field{volume}{23}
++      \field{year}{2011}
++      \field{pages}{187\bibrangedash 198}
++    \endentry
++    \entry{OpenACC}{online}{}
++      \name{labelname}{1}{}{%
++        {{hash=8273d1e86e916c855cd38968e0af5e9d}{{OpenACC\bibnamedelimb Corporation}}{O\bibinitperiod}{}{}{}{}{}{}}%
++      }
++      \name{author}{1}{}{%
++        {{hash=8273d1e86e916c855cd38968e0af5e9d}{{OpenACC\bibnamedelimb Corporation}}{O\bibinitperiod}{}{}{}{}{}{}}%
++      }
++      \strng{namehash}{8273d1e86e916c855cd38968e0af5e9d}
++      \strng{fullhash}{8273d1e86e916c855cd38968e0af5e9d}
++      \field{sortinit}{0}
++      \field{labeltitle}{{OpenACC}}
++      \field{month}{11}
++      \field{title}{{OpenACC}}
++      \field{year}{2012}
++      \verb{url}
++      \verb http://www.openacc-standard.org/
++      \endverb
++    \endentry
+   \endsortlist
+   \missing{SC:SC11}
+   \missing{SC:Develop}
+diff --git a/main.bcf b/main.bcf
+index 642532b..73a5c91 100644
+--- a/main.bcf
++++ b/main.bcf
+@@ -1961,6 +1961,14 @@
+     <bcf:citekey order="24">Texas:DSP</bcf:citekey>
+     <bcf:citekey order="25">NVIDIA:Tegra</bcf:citekey>
+     <bcf:citekey order="26">ARM</bcf:citekey>
++    <bcf:citekey order="27">OpenMP</bcf:citekey>
++    <bcf:citekey order="28">Intel:TBB</bcf:citekey>
++    <bcf:citekey order="29">CILK</bcf:citekey>
++    <bcf:citekey order="30">MPI</bcf:citekey>
++    <bcf:citekey order="31">HEFT</bcf:citekey>
++    <bcf:citekey order="32">Msc:Mariano</bcf:citekey>
++    <bcf:citekey order="33">STARPU</bcf:citekey>
++    <bcf:citekey order="34">OpenACC</bcf:citekey>
+   </bcf:section>
+   <bcf:sortlist section="0" type="entry" label="none">
+   <bcf:sorting>
+diff --git a/main.blg b/main.blg
+index 281b2f7..8f3efbc 100644
+--- a/main.blg
++++ b/main.blg
+@@ -1,20 +1,24 @@
+ [0] Config.pm:387> INFO - This is Biber 1.6
+ [1] Config.pm:390> INFO - Logfile is 'main.blg'
+-[142] biber-darwin:218> INFO - === Tue Jun  3, 2014, 19:19:32
+-[142] Biber.pm:325> INFO - Reading 'main.bcf'
+-[271] Biber.pm:623> INFO - Found 28 citekeys in bib section 0
+-[290] Biber.pm:2995> INFO - Processing section 0
+-[315] Biber.pm:3129> INFO - Looking for bibtex format file '../bib/refs.bib' for section 0
+-[318] bibtex.pm:898> INFO - Decoding LaTeX character macros into UTF-8
+-[320] bibtex.pm:775> INFO - Found BibTeX data source '../bib/refs.bib'
+-[379] Utils.pm:169> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
+-[379] Utils.pm:169> WARN - BibTeX subsystem: author, warning: comma(s) at end of name (removing)
+-[380] Utils.pm:169> WARN - I didn't find a database entry for 'SC:Nature' (section 0)
+-[380] Utils.pm:169> WARN - I didn't find a database entry for 'SC:Develop' (section 0)
+-[381] Utils.pm:169> WARN - I didn't find a database entry for 'SC:SC11' (section 0)
+-[670] Biber.pm:2881> INFO - Overriding locale 'en_US.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
+-[670] Biber.pm:2887> INFO - Sorting 'entry' list 'none' keys
+-[670] Biber.pm:2891> INFO - No sort tailoring available for locale 'en_US.UTF-8'
+-[1015] bbl.pm:472> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+-[1021] bbl.pm:545> INFO - Output to main.bbl
+-[1021] Biber.pm:105> INFO - WARNINGS: 5
++[143] biber-darwin:218> INFO - === Wed Jun  4, 2014, 17:39:51
++[144] Biber.pm:325> INFO - Reading 'main.bcf'
++[275] Biber.pm:623> INFO - Found 35 citekeys in bib section 0
++[294] Biber.pm:2995> INFO - Processing section 0
++[318] Biber.pm:3129> INFO - Looking for bibtex format file '../bib/refs.bib' for section 0
++[321] bibtex.pm:898> INFO - Decoding LaTeX character macros into UTF-8
++[324] bibtex.pm:775> INFO - Found BibTeX data source '../bib/refs.bib'
++[326] Utils.pm:169> WARN - Duplicate entry key: 'MPI' in file '../bib/refs.bib', skipping ...
++[329] Utils.pm:169> WARN - Possible typo (case mismatch) between datasource keys: 'StarPU' and 'STARPU' in file '../bib/refs.bib'
++[331] Utils.pm:169> WARN - Duplicate entry key: 'OpenMP' in file '../bib/refs.bib', skipping ...
++[385] Utils.pm:169> WARN - Name "Robert D. Blumofe, Christopher F. Joerg, Charles E. Leiserson, Keith H. Randall," has too many commas: skipping name
++[398] Utils.pm:169> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
++[398] Utils.pm:169> WARN - BibTeX subsystem: author, warning: comma(s) at end of name (removing)
++[403] Utils.pm:169> WARN - I didn't find a database entry for 'SC:Nature' (section 0)
++[404] Utils.pm:169> WARN - I didn't find a database entry for 'SC:Develop' (section 0)
++[404] Utils.pm:169> WARN - I didn't find a database entry for 'SC:SC11' (section 0)
++[663] Biber.pm:2881> INFO - Overriding locale 'en_US.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
++[663] Biber.pm:2887> INFO - Sorting 'entry' list 'none' keys
++[664] Biber.pm:2891> INFO - No sort tailoring available for locale 'en_US.UTF-8'
++[1074] bbl.pm:472> INFO - Writing 'main.bbl' with encoding 'UTF-8'
++[1080] bbl.pm:545> INFO - Output to main.bbl
++[1081] Biber.pm:105> INFO - WARNINGS: 9
+diff --git a/main.fdb_latexmk b/main.fdb_latexmk
+index 5673a44..0156fcb 100644
+--- a/main.fdb_latexmk
++++ b/main.fdb_latexmk
+@@ -1,11 +1,11 @@
+ # Fdb version 3
+-["biber main"] 1401819570 "main.bcf" "main.bbl" "main" 1401821414
+-  "../bib/refs.bib" 1401819448 10791 f072a80c2b58024ce0f09f3a220a4c09 ""
+-  "main.bcf" 1401821413 90470 6dbe196587c9eac460345e8cd7601ca0 ""
++["biber main"] 1401899989 "main.bcf" "main.bbl" "main" 1401900006
++  "../bib/refs.bib" 1401899956 13436 0555fd9193ffba87c92b40651a6bf499 ""
++  "main.bcf" 1401900005 90864 6ec9f04833533f022e162a42da0d4da9 ""
+   (generated)
+   "main.bbl"
+   "main.blg"
+-["pdflatex"] 1401821403 "main.tex" "main.pdf" "main" 1401821414
++["pdflatex"] 1401899999 "main.tex" "main.pdf" "main" 1401900006
+   "../general.sty" 1401703084 4515 b07d1b4ae3d6378e44d67c4be6d35311 ""
+   "/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii" 1337017135 71627 94eb9990bed73c364d7f53f960cc8c5b ""
+   "/usr/local/texlive/2013/texmf-dist/tex/generic/babel-english/english.ldf" 1367878877 6963 2e0cb3d93aa64508bdb0db58ae900d97 ""
+@@ -217,6 +217,7 @@
+   "/usr/local/texlive/2013/texmf-dist/tex/latex/url/url.sty" 1264379145 21932 e3a9cf32ee9b853b42be14c2f25b873c ""
+   "/usr/local/texlive/2013/texmf-dist/tex/latex/xcolor/xcolor.sty" 1169481954 55224 a43bab84e0ac5e6efcaf9a98bde73a94 ""
+   "/usr/local/texlive/2013/texmf-dist/tex/latex/xkeyval/xkeyval.sty" 1350473462 4934 09bb8eb3760faa4ffb6107a36e5b3d76 ""
++  "imgs/cuda_threads.png" 1401888834 13284 4b18b723dd634ac66a3c0639027a0dd5 ""
+   "imgs/graf_abstract_flow_with_kinfit.png" 1391619718 113787 26877185adec9da668e90bb4d8290e76 ""
+   "imgs/heteroplats.png" 1391619718 75025 676fc34104568283a323a4725b704a9d ""
+   "imgs/homoplats.png" 1391619718 28974 3f6491284a5f025ea5ce743c779bc9ba ""
+@@ -224,18 +225,18 @@
+   "imgs/mic.png" 1401817480 93030 3082840cfbf15502337a2997c9556044 ""
+   "imgs/ttH_feynman.png" 1401716542 42771 b2c5ee6e8b67c0425cba8c18d7e87e6e ""
+   "imgs/ttbar_higgs.png" 1391619719 133478 2ade4514a4dee0881f73c8934a109caf ""
+-  "main.aux" 1401821413 13492 05f1c3a94f483ccd867e0d5474c06d53 ""
+-  "main.bbl" 1401819573 27603 ff01200ae1a609d4f536f03e16b1e7b4 "biber main"
+-  "main.out" 1401821413 1050 15c0f8ec90842f73add6ec4a3496574f ""
++  "main.aux" 1401900005 14919 7a087214711da5f81ff7582c0bf8941e ""
++  "main.bbl" 1401899992 33577 45c9fd95cec9fb143013e307f0727942 "biber main"
++  "main.out" 1401900005 1050 15c0f8ec90842f73add6ec4a3496574f ""
+   "main.tex" 1401721038 1603 65c8d6ca494dee5362fa0fbce90ba902 ""
+-  "main.toc" 1401821413 1850 b31fa3119d87f4faed52b91f4c975bee ""
++  "main.toc" 1401900005 1850 d69d1ee0826e50575d58cb783896bec2 ""
+   "tex/100_introduction.tex" 1401721055 19555 2ac5d833786e8a0935365badb4548449 ""
+-  "tex/200_state_of_the_art.tex" 1401821367 22202 db5994e6aa3044aefe8ac833b24f2a13 ""
++  "tex/200_state_of_the_art.tex" 1401899970 33295 5ca42782927c77e66d9b7606a3af5d76 ""
+   "tex/300_new_lipmini.tex" 1401821390 326 2ff65e3612c26028b9221a92fb889e25 ""
+   "tex/400_thesis_planning.tex" 1401458317 75 8e1a770d39bf2d6b31fa3fddbb29ba28 ""
+   (generated)
+   "main.out"
+   "main.log"
+   "main.pdf"
+-  "main.aux"
+   "main.toc"
++  "main.aux"
+diff --git a/main.log b/main.log
+index b5250fe..d8a06d9 100644
+--- a/main.log
++++ b/main.log
+@@ -1,4 +1,4 @@
+-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.9)  3 JUN 2014 19:50
++This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.9)  4 JUN 2014 17:40
+ entering extended mode
+  restricted \write18 enabled.
+  %&-line parsing enabled.
+@@ -1338,9 +1338,9 @@ Package: moreverb 2008/06/03 v2.3a `more' verbatim facilities
+ \listing@line=\count281
+ )
+ \verbatim@out=\write7
+-runsystem(touch /tmp/w18-test-2014631190.tex)...disabled (restricted).
++runsystem(touch /tmp/w18-test-2014641060.tex)...disabled (restricted).
+ 
+-runsystem(rm -f /tmp/w18-test-2014631190.tex)...disabled (restricted).
++runsystem(rm -f /tmp/w18-test-2014641060.tex)...disabled (restricted).
+ 
+ 
+ 
+@@ -2014,7 +2014,35 @@ File: imgs/mic.png Graphic file (type png)
+  <use imgs/mic.png>
+ Package pdftex.def Info: imgs/mic.png used on input line 109.
+ (pdftex.def)             Requested size: 326.21487pt x 152.01611pt.
+- [13 <./imgs/mic.png>] [14]) (./tex/300_new_lipmini.tex [15]
++ [13 <./imgs/mic.png>] [14]
++
++LaTeX Warning: Citation 'CILK' on page 15 undefined on input line 150.
++
++[15] <imgs/cuda_threads.png, id=273, 324.46219pt x 281.55188pt>
++File: imgs/cuda_threads.png Graphic file (type png)
++
++<use imgs/cuda_threads.png>
++Package pdftex.def Info: imgs/cuda_threads.png used on input line 179.
++(pdftex.def)             Requested size: 292.01326pt x 253.39433pt.
++
++Underfull \vbox (badness 6284) has occurred while \output is active []
++
++ [16 <./imgs/cuda_threads.png>]
++Overfull \hbox (10.38788pt too wide) in paragraph at lines 197--197
++[] 
++ []
++
++[17]
++Overfull \hbox (10.38788pt too wide) in paragraph at lines 211--211
++[] 
++ []
++
++
++Overfull \hbox (10.38788pt too wide) in paragraph at lines 219--219
++[] 
++ []
++
++) (./tex/300_new_lipmini.tex [18]
+ Chapter 3.
+ 
+ Overfull \hbox (10.38788pt too wide) in paragraph at lines 5--5
+@@ -2036,32 +2064,41 @@ Overfull \hbox (10.38788pt too wide) in paragraph at lines 11--11
+ [] 
+  []
+ 
+-) (./tex/400_thesis_planning.tex [16
++) (./tex/400_thesis_planning.tex [19
+ 
+ ]
+ Chapter 4.
+-) [17
++) [20
+ 
+-] [18
++] [21
+ 
+ ]
+ Package atveryend Info: Empty hook `BeforeClearDocument' on input line 74.
+- [19]
++ [22]
+ Package atveryend Info: Empty hook `AfterLastShipout' on input line 74.
+  (./main.aux)
+ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 74.
+ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 74.
+ Package rerunfilecheck Info: File `main.out' has not changed.
+ (rerunfilecheck)             Checksum: 15C0F8EC90842F73ADD6EC4A3496574F;1050.
++
++
++LaTeX Warning: There were undefined references.
++
++
++Package biblatex Warning: Please (re)run Biber on the file:
++(biblatex)                main
++(biblatex)                and rerun LaTeX afterwards.
++
+ Package logreq Info: Writing requests to 'main.run.xml'.
+ \openout1 = `main.run.xml'.
+ 
+  ) 
+ Here is how much of TeX's memory you used:
+- 36172 strings out of 493315
+- 641146 string characters out of 6137904
+- 1081276 words of memory out of 5000000
+- 38859 multiletter control sequences out of 15000+600000
++ 36218 strings out of 493315
++ 641870 string characters out of 6137904
++ 1080573 words of memory out of 5000000
++ 38882 multiletter control sequences out of 15000+600000
+  23567 words of font info for 61 fonts, out of 8000000 for 9000
+  957 hyphenation exceptions out of 8191
+  75i,12n,106p,1668b,1684s stack positions out of 5000i,500n,10000p,200000b,80000s
+@@ -2089,10 +2126,10 @@ ublic/cm-super/sfsx1440.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/pub
+ lic/cm-super/sfsx2074.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/publi
+ c/cm-super/sfti1095.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/cou
+ rier/ucrr8a.pfb>
+-Output written on main.pdf (20 pages, 1782968 bytes).
++Output written on main.pdf (23 pages, 1808819 bytes).
+ PDF statistics:
+- 430 PDF objects out of 1000 (max. 8388607)
+- 373 compressed objects within 4 object streams
+- 83 named destinations out of 1000 (max. 500000)
+- 176 words of extra memory for PDF output out of 10000 (max. 10000000)
++ 485 PDF objects out of 1000 (max. 8388607)
++ 423 compressed objects within 5 object streams
++ 105 named destinations out of 1000 (max. 500000)
++ 181 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 
+diff --git a/main.pdf b/main.pdf
+index bbea86e..8945392 100644
+Binary files a/main.pdf and b/main.pdf differ
+diff --git a/main.run.xml b/main.run.xml
+index 1e7a6f5..f08c625 100644
+--- a/main.run.xml
++++ b/main.run.xml
+@@ -41,7 +41,7 @@
+   >
+ ]>
+ <requests version="1.0">
+-  <internal package="biblatex" priority="9" active="0">
++  <internal package="biblatex" priority="9" active="1">
+     <generic>latex</generic>
+     <provides type="dynamic">
+       <file>main.bcf</file>
+@@ -60,7 +60,7 @@
+       <file>english.lbx</file>
+     </requires>
+   </internal>
+-  <external package="biblatex" priority="5" active="0">
++  <external package="biblatex" priority="5" active="1">
+     <generic>biber</generic>
+     <cmdline>
+       <binary>biber</binary>
+diff --git a/main.synctex.gz b/main.synctex.gz
+index b2e111d..7879ff0 100644
+Binary files a/main.synctex.gz and b/main.synctex.gz differ
+diff --git a/main.toc b/main.toc
+index b395fe0..81f4a3c 100644
+--- a/main.toc
++++ b/main.toc
+@@ -24,8 +24,8 @@
+ \defcounter {refsection}{0}\relax 
+ \contentsline {subsection}{\numberline {2.2.2}Distributed Memory Environments}{15}{subsection.2.2.2}
+ \defcounter {refsection}{0}\relax 
+-\contentsline {subsection}{\numberline {2.2.3}Particle Physics Frameworks}{15}{subsection.2.2.3}
++\contentsline {subsection}{\numberline {2.2.3}Particle Physics Frameworks}{18}{subsection.2.2.3}
+ \defcounter {refsection}{0}\relax 
+-\contentsline {chapter}{\numberline {3}New lipmini}{16}{chapter.3}
++\contentsline {chapter}{\numberline {3}New lipmini}{19}{chapter.3}
+ \defcounter {refsection}{0}\relax 
+-\contentsline {chapter}{\numberline {4}Thesis Planning}{17}{chapter.4}
++\contentsline {chapter}{\numberline {4}Thesis Planning}{20}{chapter.4}
+diff --git a/tex/200_state_of_the_art.tex b/tex/200_state_of_the_art.tex
+index 89f09e9..896d2bb 100644
+--- a/tex/200_state_of_the_art.tex
++++ b/tex/200_state_of_the_art.tex
+@@ -143,13 +143,87 @@ Homogeneous systems often operate in a shared memory environment. Using multiple
+ 
+ \subsubsection*{pThreads}
+ 
++Threads are the most simple parallel task that can be scheduled by the operating system. POSIX Threads (pThreads) are the standard implementation for UNIX based operating systems with POSIX conformity, such as most Linux distributions and Mac OS. The pThreads API provides the user with primitive for thread management and synchronisation. Since this API forces the user to deal with several low level implementation details, such as data races and deadlocks, the industry demanded the development of high abstraction level libraries, which are usually based on pThreads.
+ 
+-\subsubsection*{OpenMP, TBB, and CILK}
++\subsubsection*{OpenMP, TBB, and Cilk}
++
++OpenMP \cite{OpenMP}, Intel Threading Building Blocks (TBB) \cite{Intel:TBB}, and Cilk \cite{CILK} are the most popular high level libraries for parallel programming in homogeneous systems.
++
++The OpenMP API is designed for multi-platform shared memory parallel programming in C, C++, and Fortran, for all available CPU architectures. It is portable and scalable, and aims to provide a simple and flexible interface for developing parallel applications, even for the most inexperienced programmers. It is based in a work sharing strategy, where a master thread spawns a set of slave threads and compute a task in a shared data structure.
++
++Intel TBB employs a work stealing heuristic, where, after the initial load distribution, if the task queue is empty a thread attempts to steal a task from other busy threads. It provides a scalable parallel programming task based library for C++, independent from architectural details, and only requires a C++ compiler. It automatically manages the load balancing and some cache optimizations, while offering parallel constructors and synchronisation primitives for the programmer. However, it requires knowledge of the object oriented programming paradigm.
++
++Cilk is a runtime system for multithreaded programming in C++. It maintains a stack with the remaining work, employing a work stealing heuristic very similar to Intel TBB.
+ 
+ \subsection{Distributed Memory Environments}
+ \label{distributed_mem}
+ 
+ Heterogeneous systems use distributed memory address space for handling the data between CPU and accelerator devices. Even though the CPU devices work on a shared memory space, data must be explicitly passed to the accelerators. General purpose frameworks for parallelising on the devices and on the heterogeneous platforms as a whole are presented next.
+ 
++\subsubsection*{Message Passing Interface}
++
++The Message Passing Interface (MPI) \cite{MPI}, designed by a consortium of both academic and industry researchers, has the objective of providing a simple API for process based parallel programming in distributed memory environments. It relies on point-to-point and group messaging communication, and is available in Fortran and C. It is often used in conjunction with a shared memory parallel programming API, such as OpenMP, for work sharing between computing nodes, with the latter ensuring a more efficient parallelisation inside each node.
++
++Intel adapted an MPI version to work on both their CPUs and Xeon Phi, considering the device as a set of CPUs. Communications between the CPU and the device are explicitly handled by the programmer by calling specific functions. The other alternative to program for this device with MPI is to use compiler \textit{pragma} directives for data communication and code parallelisation.
++
++\subsubsection*{CUDA}
++
++The Compute Unified Device Architecture (CUDA) is a computing model for hardware accelerators launched in 2007 by \nvidia and aims to provide a framework for programming devices similar architecture to the \nvidia GPUs. It has a specific instruction set architecture (ISA) and allows programmers to use GPUs for scientific computing.
++
++\nvidia considers that a parallel task is constituted by a set of CUDA threads, which execute the same instructions coded in the kernel (conditional jumps are a special case that will be later explained) but on different data. Considering the sum of two vectors, each CUDA thread will be responsible for adding a single element of the vectors.
++
++The CUDA thread is the most basic data independent parallel task, which can run simultaneously with other CUDA threads, and it is organised in a hierarchy presented in figure \ref{fig:cuda}. A block is a set of CUDA threads that is matched by the global scheduler to run on a specific SMX. A grid is a set of blocks, representing the whole parallel kernel. Note that both the blocks and the grid sizes must be defined by the programmer, according to the algorithm, before calling the kernel, within the maximum values allowed by the GPU architecture.
++
++\begin{figure}[!htp]
++	\begin{center}
++		\includegraphics[scale=0.9]{imgs/cuda_threads.png}
++		\caption{Schematic representation of CUDA thread hierarchy.}
++		\label{fig:cuda}
++	\end{center}
++\end{figure}
++
++Conditional jumps must be avoided as they may cause different CUDA threads within the same warp execute different instructions. Since inside an SMX it is not possible to have 2 threads simultaneously executing different instructions, the divergent branches will be executed sequentially, doubling the warp execution time.
++
++\subsubsection*{DICE}
++
++The DICE framework aims to provide the tools to help building efficient and scalable applications for heterogeneous platforms, with accelerator devices that support CUDA. It creates an abstraction layer between the architectural details of heterogeneous platforms and the programmer, aiding the development of portable and scalable parallel applications. Its main focus is to obtain the best performance possible on irregular applications, rather than abstracting all the architecture details from the programmer. The programmer still needs to have some knowledge of each different architecture and programming paradigms, and he needs to instruct the framework about how tasks should be divided in order to fit the requirements of the different devices. 
++
++Instead of relying in pre-partitioned work, the programmer defines a function for dicing the dataset and the framework creates different sized chunks of data to distribute among the CPU and GPUs. Apart from this, the framework frees the programmer from managing the workload distribution, memory usage and data transfers between the available devices, but requires that the application is built according to the strict specifications of the framework. The programmer is able to tune specific details related to the memory transfers and load balance, if he is comfortable enough with the framework.
++
++The scheduler uses the statistics provided by each job (a kernel set to run on a device) to adjust the scheduling policy and the granularity of the tasks. This dynamic granularity management allows to better suit the uneven execution times of irregular jobs. DICE uses a variant of the Heterogeneous Earliest Finish Time (HEFT) scheduling algorithm \cite{HEFT}, which uses the computation and communication costs of each task, in order to assign every task to a device in such a way that minimizes the estimated finish time of the overall task pool. This variant of HEFT attempts to make a decision every time it is applied to the task pool, so that tasks on the multiple devices take the shortest possible time to execute \cite{Msc:Mariano}.
++
++DICE assumes a hierarchy composed of multiple devices (both CPUs and GPUs, in its terminology), where each device has access to a private address space (shared within that device), and a distributed memory system between devices. To abstract this distributed memory model, the framework offers a global address space. However, since the communication between different devices is expensive, DICE uses a relaxed memory consistency model, where the programmer can use a synchronisation primitive to enforce memory consistency. DICE implements a shared software cache so that every device has the data as close as possible, using the local memory of each device. It also ensures that each device has a copy of a given data partition, which otherwise would only be stored in the CPU memory.
++
++\itodo{É necessário entrar em mais detalhes?}
++
++\subsubsection*{StarPU}
++
++StarPU \cite{STARPU} is a unified runtime system consisting on both compiler directives and a runtime API that aims to allow programmers to efficiently extract parallelism from heterogeneous platforms by abstracting the architecture details of these systems. This framework frees the programmer of the workload scheduling and data consistency inherent from the distributed memory environment of heterogeneous platforms. Task submissions are handled by the StarPU task scheduler, and data consistency is ensured via a data management library.
++
++However, one of the main differences to DICE is that StarPU attempts to increase performance by carefully considering and attempting to reduce memory transfer costs. This is done using history information for each task and, accordingly to the scheduler decision of where a task shall be executed, asynchronously prepare data dependencies, while the system is busy computing other tasks. The task scheduler itself can take this into account, and determine where a task should be executed by taking into account not only the execution history, but also the estimation of data transfers latency.
++
++StarPU employs a task based approach to the programming model, where a kernel is considered a parallel task. Based on the scheduler and available implementations for the kernel (i.e., can only run on CPU, GPU, or both), the framework handles where and how much load each task will compute. It provides a set of different schedulers for the programmer to chose.
++
++The performance model differs from the schedulers implemented in StarPU, but most resort to a history of the tasks execution on the devices. All the schedulers use a user defined calibration to start the execution, and after 10 executions of each task it starts to perform a real-time calibration with the available statistics. This may translate in a not efficient usage of the system resources at the start of the application, but ensures that it tends to improve as the application runs.
++
++The memory consistency is automatically ensured by the framework, as it transfers the data asynchronously without the programmer interaction. The data dependencies are determined by the scheduler, with some interaction of the programmer, as he must declare if a data structure is read/write or both. The granularity of the tasks must be defined by the user, as opposed to the DICE dynamic adjustment.
++
++\itodo{É necessário entrar em mais detalhes?}
++
++\subsubsection*{OpenACC}
++
++OpenACC \cite{OpenACC} is a framework for heterogeneous platforms with accelerator devices. It is designed to simplify the programming paradigm for CPU/GPU systems by abstracting the memory management, kernel creation, and GPU management. Like OpenMP, it is designed for C, C++ and Fortran, it provides both an API and compiler directives, and allows the parallel task to run on both CPU and GPU at the same time. However, it does not schedule the load between the CPU and GPU. The current specification addresses both \nvidia and AMD GPUs, as well as the \intel Xeon Phi.
++
++However, this framework offers more of an abstraction of the hardware accelerator used, focusing on portability across heterogeneous platforms, rather than abstracting the intrinsic complexities of these systems.
++
++\itodo{Tools de optimização???}
++
+ \subsection{Particle Physics Frameworks}
+ \label{particle_frameworks}
++
++
++\subsubsection*{ROOT}
++
++
++
++\subsubsection*{TopRootCore}

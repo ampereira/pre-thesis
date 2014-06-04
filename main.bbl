@@ -496,6 +496,129 @@
       \field{title}{Chipmakers ARM for Battle in Traditional Computing Market.}
       \field{year}{2011}
     \endentry
+    \entry{OpenMP}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=4b4091f5be44b31ede98b9369ddc27e2}{Corporation}{C\bibinitperiod}{OpenACC}{O\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=4b4091f5be44b31ede98b9369ddc27e2}{Corporation}{C\bibinitperiod}{OpenACC}{O\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{4b4091f5be44b31ede98b9369ddc27e2}
+      \strng{fullhash}{4b4091f5be44b31ede98b9369ddc27e2}
+      \field{sortinit}{0}
+      \field{labeltitle}{{OpenACC: Directives for Accelerators}}
+      \field{month}{01}
+      \field{title}{{OpenACC: Directives for Accelerators}}
+      \field{year}{2013}
+      \verb{url}
+      \verb http://openmp.org/wp/
+      \endverb
+    \endentry
+    \entry{Intel:TBB}{report}{}
+      \name{labelname}{1}{}{%
+        {{hash=d7e38f2fae1f0d57c7d21db14442f89e}{Reinders}{R\bibinitperiod}{James}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=d7e38f2fae1f0d57c7d21db14442f89e}{Reinders}{R\bibinitperiod}{James}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{organization}{1}{%
+        {Intel}%
+      }
+      \strng{namehash}{d7e38f2fae1f0d57c7d21db14442f89e}
+      \strng{fullhash}{d7e38f2fae1f0d57c7d21db14442f89e}
+      \field{sortinit}{0}
+      \field{labeltitle}{Intel Threading Building Blocks}
+      \field{title}{Intel Threading Building Blocks}
+      \field{type}{techreport}
+      \field{year}{2007}
+    \endentry
+    \entry{HEFT}{article}{}
+      \name{labelname}{3}{}{%
+        {{hash=704bc2f618c1c7046cb5c64833fce084}{Topcuouglu}{T\bibinitperiod}{Haluk}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=abeb6cd48bc2b468f54b1c8eb2aedb47}{Hariri}{H\bibinitperiod}{Salim}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=52bf6696c2be9982554449f1401fadb1}{Wu}{W\bibinitperiod}{Min-you}{M\bibinithyphendelim y\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=704bc2f618c1c7046cb5c64833fce084}{Topcuouglu}{T\bibinitperiod}{Haluk}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=abeb6cd48bc2b468f54b1c8eb2aedb47}{Hariri}{H\bibinitperiod}{Salim}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=52bf6696c2be9982554449f1401fadb1}{Wu}{W\bibinitperiod}{Min-you}{M\bibinithyphendelim y\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b2fc58bbbdc921c364cc673843ddec32}
+      \strng{fullhash}{b2fc58bbbdc921c364cc673843ddec32}
+      \field{sortinit}{0}
+      \field{labeltitle}{Performance-Effective and Low-Complexity Task Scheduling for Heterogeneous Computing}
+      \field{issn}{1045-9219}
+      \field{journaltitle}{IEEE Trans. Parallel Distrib. Syst.}
+      \field{month}{03}
+      \field{number}{3}
+      \field{title}{Performance-Effective and Low-Complexity Task Scheduling for Heterogeneous Computing}
+      \field{volume}{13}
+      \field{year}{2002}
+      \field{pages}{260\bibrangedash 274}
+    \endentry
+    \entry{Msc:Mariano}{thesis}{}
+      \name{labelname}{1}{}{%
+        {{hash=73604edd2f778bf2092074c59d6cae3c}{Mariano}{M\bibinitperiod}{Artur}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=73604edd2f778bf2092074c59d6cae3c}{Mariano}{M\bibinitperiod}{Artur}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {University of Minho}%
+      }
+      \strng{namehash}{73604edd2f778bf2092074c59d6cae3c}
+      \strng{fullhash}{73604edd2f778bf2092074c59d6cae3c}
+      \field{sortinit}{0}
+      \field{labeltitle}{{Scheduling (ir)regular applications on heterogeneous platforms}}
+      \field{month}{09}
+      \field{title}{{Scheduling (ir)regular applications on heterogeneous platforms}}
+      \field{type}{mathesis}
+      \field{year}{2012}
+    \endentry
+    \entry{STARPU}{article}{}
+      \name{labelname}{4}{}{%
+        {{hash=736f79b70cf6488db7dfa8e71456f718}{Augonnet}{A\bibinitperiod}{Cédric}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=2a6cddc12d90996f2d082705aab80d36}{Thibault}{T\bibinitperiod}{Samuel}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=4acb86ced09c0de0a698930a3ac8ed1a}{Namyst}{N\bibinitperiod}{Raymond}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=7ca7f0007d1a43652e8ccf26f7048c24}{Wacrenier}{W\bibinitperiod}{Pierre-André;}{P\bibinithyphendelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{hash=736f79b70cf6488db7dfa8e71456f718}{Augonnet}{A\bibinitperiod}{Cédric}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=2a6cddc12d90996f2d082705aab80d36}{Thibault}{T\bibinitperiod}{Samuel}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=4acb86ced09c0de0a698930a3ac8ed1a}{Namyst}{N\bibinitperiod}{Raymond}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=7ca7f0007d1a43652e8ccf26f7048c24}{Wacrenier}{W\bibinitperiod}{Pierre-André;}{P\bibinithyphendelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b8f74ceca10299b898b8f8bc125acf89}
+      \strng{fullhash}{0a974d7fb88ca72577f0bcf626a330c4}
+      \field{sortinit}{0}
+      \field{labeltitle}{StarPU: A Unified Platform for Task Scheduling on Heterogeneous Multicore Architectures}
+      \field{issn}{1532-0626}
+      \field{journaltitle}{Concurr. Comput. : Pract. Exper.}
+      \field{month}{02}
+      \field{number}{2}
+      \field{title}{StarPU: A Unified Platform for Task Scheduling on Heterogeneous Multicore Architectures}
+      \field{volume}{23}
+      \field{year}{2011}
+      \field{pages}{187\bibrangedash 198}
+    \endentry
+    \entry{OpenACC}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=8273d1e86e916c855cd38968e0af5e9d}{{OpenACC\bibnamedelimb Corporation}}{O\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=8273d1e86e916c855cd38968e0af5e9d}{{OpenACC\bibnamedelimb Corporation}}{O\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{8273d1e86e916c855cd38968e0af5e9d}
+      \strng{fullhash}{8273d1e86e916c855cd38968e0af5e9d}
+      \field{sortinit}{0}
+      \field{labeltitle}{{OpenACC}}
+      \field{month}{11}
+      \field{title}{{OpenACC}}
+      \field{year}{2012}
+      \verb{url}
+      \verb http://www.openacc-standard.org/
+      \endverb
+    \endentry
   \endsortlist
   \missing{SC:SC11}
   \missing{SC:Develop}
