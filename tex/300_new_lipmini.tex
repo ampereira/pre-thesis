@@ -1,11 +1,38 @@
 %!TEX root = ../main.tex
-\chapter{New lipmini}
+\chapter{An Unified Efficient Particle Physics Framework}
 \label{new_lipmini}
+
+Programming for homogeneous platforms poses a series of challenges not faced when coding parallel applications due to the shared memory paradigm. In this context, the data is always easily accessible when coding, as the different memory bank accesses are managed by the compiler and hardware. Data dependencies and races still need to be managed by the programmer, which may required a significant level of expertise. To efficiently use the computational resources, dealing with problems such as false sharing or efficient cache usage, the programmer must have an advanced expertise on both the coding and architectural details of homogeneous platforms.
+
+Since an heterogeneous platform is a distributed memory environment, where the CPUs shared the memory with each other but not with the hardware accelerators, a series of new challenges arise. All communications of data between CPU and accelerator must be explicitly coded by the programmer, and has an added latency associated. The balance of the work for each computing device to process becomes harder as it must take into account the data transfers and different characteristics of the devices.
+
+Each different hardware accelerator has its own architectural design principles, as show in section \ref{hardware}, which constrain the way they are programmed and the characteristics that both the algorithm and the code must have to efficiently use the computational resources. This implies that the programmer must be able to learn the hardware intrinsic characteristics and adapt to a new programming paradigm. Even for experienced programmers, adapting current applications to run on heterogeneous platforms may be infeasible without redesigning all major algorithms, as opposed to code a new application specifically for these platforms. This issue has an higher impact on legacy code.
+
+Scientists are usually self-taught programmers that only consider coding as a necessary tool to perform their research. Several studies, referred in section \ref{motivation}, identified a set of problems with scientists coding practices and scientific computing. Most of their code is in constant development, up to decades long, only adding or changing functionalities in each iteration, not considering any software engineering principles and not adapting the code to the changes in hardware. The few that worry about performance attempt to address the code regions that they think are the bottleneck, not knowing of the existence of profiling tools and even compiler optimisations.
+
+Since most scientists develop applications with the help of specialised frameworks of their research field, they expect them to be efficient, by resorting to parallelisation or other techniques. However, the bottleneck is often on the scientists code rather than in the framework, and these tools are not designed to automatically extract parallelism from their code.
+
+Scientists usually do not have any training for programming efficient applications for homogeneous systems or cluster environments, as programming is just a necessity for their field of research. They are even more reluctant to learn the new programming paradigms required to work with hardware accelerators on heterogeneous platforms. With this in mind, several automatically parallelisation frameworks for these systems were developed by computer scientists, as presented in subsection \ref{distributed_mem}.
+
+These general purpose frameworks usually have a steep learning curve, even for computer scientists. One significant setback of these frameworks is that, even if it is not explicitly required, the application must be designed to the framework characteristics, rather than the framework adapt to the application. As scientists are usually reluctant to redesign the very complex legacy code, which is difficult for computer scientists to understand without the expertise of the science field, an integration with these frameworks is infeasible.
+
+Even though, scientists are not willing to endure the steep learning curve of these frameworks to integrate with future applications. Their complexity and the lack of guarantees to that they will increase the code performance, due to poor implementation or algorithm characteristics, puts the scientists further away from these frameworks. Also, they attempt to have few dependencies of an application with external libraries, as the external tools are not guaranteed to be supported through the application lifetime.
+
+Even though the existence of general purpose automatically parallelisation frameworks are useful, specifically for computer scientists, the scientific community lacks frameworks that both address the intrinsics of their scientific field, in which scientists can trust and rely, and the efficient usage of the computational resources, on both homogeneous and heterogeneous platforms. Frameworks such as these sacrifice the abstraction to interact with any scientific field, but are more adapted to the scientific problem that is addressed. A lower abstraction level leads to an easy interaction of the scientist with the tool (and even abstract them of any parallelisation complexities) and increases the computational efficiency of the code when compared with general purpose frameworks, as the main bottlenecks are usually known \textit{a priori} and the framework is designed around their characteristics. The development of such frameworks may lead to a better interface of computer scientists and researchers, causing and improvement of their codes with the implementation of software engineering concept, having a positive impact on the research.
 
 \itodo{frameworks general purpose nao agradam cientistas e problemas com elas}
 
 \itodo{cientistas preferem frameworks com coisas deles e rotinas paralelizadas}
 
+\section{The LipMiniAnalysis Skeleton Library}
+\label{lipminianalysis}
+
+
+\section{The Proposed Framework}
+\label{new_framework}
+
 \itodo{especificaçao do que a nova framework tem de ter}
 
-\itodo{o que ja foi feito até agora}
+\subsection{Preliminary Tests and Prototypes}
+\label{work_so_far}
+

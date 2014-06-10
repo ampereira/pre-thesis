@@ -1952,6 +1952,7 @@
     <bcf:citekey order="17">SC:Nature</bcf:citekey>
     <bcf:citekey order="17">SC:Develop</bcf:citekey>
     <bcf:citekey order="17">SC:SC11</bcf:citekey>
+    <bcf:citekey order="17">SC:28280</bcf:citekey>
     <bcf:citekey order="18">MooreLaw</bcf:citekey>
     <bcf:citekey order="19">Intel:MIC</bcf:citekey>
     <bcf:citekey order="20">TOP500</bcf:citekey>
@@ -1974,7 +1975,12 @@
     <bcf:citekey order="37">ENZO</bcf:citekey>
     <bcf:citekey order="38">CERN:ROOT</bcf:citekey>
     <bcf:citekey order="39">PAPI</bcf:citekey>
-    <bcf:citekey order="40">Intel:VTune</bcf:citekey>
+    <bcf:citekey order="40">NVIDIA:CUPTI</bcf:citekey>
+    <bcf:citekey order="41">TAU</bcf:citekey>
+    <bcf:citekey order="42">HPCToolkit</bcf:citekey>
+    <bcf:citekey order="43">Intel:VTune</bcf:citekey>
+    <bcf:citekey order="44">VampirTrace</bcf:citekey>
+    <bcf:citekey order="45">NVIDIA:Nsight</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" type="entry" label="none">
   <bcf:sorting>

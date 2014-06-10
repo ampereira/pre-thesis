@@ -237,21 +237,35 @@ Currently, ROOT does not provide parallel functionalities, specially for shared 
 
 TopROOTCore is an extension of ROOT for top quark physics, developed by CERN associate research groups,that adds more functionalities and physics algorithms to the existing framework. It is responsible for producing the last input data format at the last CERN computational tiers, before the final analysis and event reconstruction. In the data analysis applications, it is often used due to some physics algorithms it implements.
 
-\subsection{Profiling and Debugging}
+\subsection{Profiling Tools and Libraries}
 \label{tools}
 
 \subsubsection*{Performance API}
 
 The Performance API (PAPI) \cite{PAPI} specifies an API to access hardware performance counters in most modern processors. It allows programmers to measure the performance counters for specific regions of an application, evaluating metrics such as cache misses, operational intensity or even power consumption. This analysis helps classifying the algorithms and identify possible bottlenecks at a very low abstraction level.
 
-PAPI recently supports hardware counters for both \nvidia GPUs, trough the \nvidia CUPTI, and \intel Xeon Phi. It also supports counters to measure the energy efficiency of the hardware. 
+PAPI recently supports hardware counters for both \nvidia GPUs, trough the \nvidia CUPTI interface, and \intel Xeon Phi. It also supports counters to measure the energy efficiency of the hardware.
+
+\subsubsection*{\nvidia CUPTI}
+
+The \nvidia CUDA Profiling Tools Interface (CUPTI) \cite{NVIDIA:CUPTI} is a performance analysis interface available through the \nvidia drivers for CUDA capable GPUs. It provides a callback API to integrate with the code, at the entry and exit of a kernel call, which monitors the interaction of the code with the CUDA runtime and drivers. CUPTI has a second API to monitor the performance of a kernel on the GPU by analysing the hardware counters on the device, which allows for a in-depth assessment of the code behaviour in memory transactions, cache accesses and misses, and much more.
 
 \subsubsection*{TAU and HPCToolkit}
 
-TAU \cite{TAU} and HPCToolkit \cite{HPCToolkit} are performance analysis tools 
+TAU \cite{TAU} and HPCToolkit \cite{HPCToolkit} are performance analysis tools, with static and dynamic functionalities, to evaluate the performance of HPC applications. The static APIs are low level and, while providing higher control of the areas to profile and specific metrics, require the programmer a deeper knowledge of these tools and how to integrate them with the existing code. The dynamic functionalities provide more general metrics and do not require any changes to the application code.
+
+Both tools provide statistical visualisation GUIs, to build graphs and comparisons of the different metrics profiled during the application execution time. Note that both tools support the analysis of parallel code in both shared and distributed memory environments, but the HPCToolkit still does not support any hardware accelerator. Unlike VTune, these tools only present the statistics but do not attempt to identify the bottlenecks, leaving that task to the programmer.
 
 \subsubsection*{VTune}
 
-Intel VTune profiler \cite{Intel:VTune} is a proprietary tool for performance analysis of applications. It provides an easy to use interface to analyse applications, identifying its bottlenecks, without any change to the source code. It intercepts the system calls to assess the execution time and behaviour, such as efficient cache usage, of the routines of an application. VTune also provides visualisation functionalities to make the profiling of parallel applications a simple task for developers with small experience. It works with both \intel and GNU compilers.
+Intel VTune profiler \cite{Intel:VTune} is a proprietary tool for performance analysis of applications. It provides an easy to use interface to analyse applications, automatically identifying its bottlenecks, without any change to the source code. It intercepts the system calls to assess the execution time and behaviour, such as efficient cache usage, of the routines of an application. VTune also provides visualisation functionalities to make the profiling of parallel applications a simple task for developers with small experience. It works with both \intel and GNU compilers.
 
-\subsubsection*{NSight}
+\subsubsection*{VampirTrace}
+
+VmpirTrace \cite{VampirTrace} is a open source library to analyse an application execution on both shared memory and distributed memory environments, with support for CUDA capable GPUs through the CUPTI interface. It is capable of analysing the CPU hardware counters per thread/process by resorting to the Performance API. It has a low level API to integrate with the code to measure specific metrics and regions of the code, and a more abstract interface that allows tracing the application execution without the need to change the code.
+
+Additionally to other similar tools, VampirTrace allows to analyse the I/O interactions of an application, such as access times, types, and patterns to the hard drives.
+
+\subsubsection*{\nvidia Nsight}
+
+The \nvidia Nsight \cite{NVIDIA:Nsight} is a developer more of a platform rather than a framework for heterogeneous computing. It is available for both Visual Studio and Eclipse and aids the development of code for CUDA capable GPUs, with easy integration with current official production libraries. It has real time debugging functionalities to test code running on both CPU and GPU simultaneously. The built-in profiler allows to perform analysis to the kernels execution time on GPU, load and store efficiency (related to the coalesced accesses of CUDA threads to memory), SMX occupancy rate, and memory usage. The profiling metrics are the same as the ones provided by the Performance API, as they both use the \nvidia CUPTI interface.

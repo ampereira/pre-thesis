@@ -11,7 +11,10 @@
 \BOOKMARK [2][-]{subsection.2.2.1}{Shared Memory Environments}{section.2.2}% 11
 \BOOKMARK [2][-]{subsection.2.2.2}{Distributed Memory Environments}{section.2.2}% 12
 \BOOKMARK [2][-]{subsection.2.2.3}{Particle Physics Frameworks}{section.2.2}% 13
-\BOOKMARK [2][-]{subsection.2.2.4}{Profiling and Debugging}{section.2.2}% 14
-\BOOKMARK [0][-]{chapter.3}{New lipmini}{}% 15
-\BOOKMARK [0][-]{chapter.4}{Thesis Planning}{}% 16
-\BOOKMARK [0][-]{references.0}{References}{}% 17
+\BOOKMARK [2][-]{subsection.2.2.4}{Profiling Tools and Libraries}{section.2.2}% 14
+\BOOKMARK [0][-]{chapter.3}{An Unified Efficient Particle Physics Framework}{}% 15
+\BOOKMARK [1][-]{section.3.1}{The LipMiniAnalysis Skeleton}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.2}{Proposed Framework}{chapter.3}% 17
+\BOOKMARK [2][-]{subsection.3.2.1}{Preliminary Tests and Prototypes}{section.3.2}% 18
+\BOOKMARK [0][-]{chapter.4}{Thesis Planning}{}% 19
+\BOOKMARK [0][-]{references.0}{References}{}% 20
