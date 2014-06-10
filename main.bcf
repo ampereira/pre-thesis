@@ -1969,6 +1969,12 @@
     <bcf:citekey order="32">Msc:Mariano</bcf:citekey>
     <bcf:citekey order="33">STARPU</bcf:citekey>
     <bcf:citekey order="34">OpenACC</bcf:citekey>
+    <bcf:citekey order="35">OpenHMPP</bcf:citekey>
+    <bcf:citekey order="36">CAPS</bcf:citekey>
+    <bcf:citekey order="37">ENZO</bcf:citekey>
+    <bcf:citekey order="38">CERN:ROOT</bcf:citekey>
+    <bcf:citekey order="39">PAPI</bcf:citekey>
+    <bcf:citekey order="40">Intel:VTune</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" type="entry" label="none">
   <bcf:sorting>

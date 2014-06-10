@@ -36,7 +36,7 @@ CPU devices are designed as general purpose computing units, and may contain mul
 	\begin{description}
 		\item[ILP] instruction level parallelism (ILP) is the overlapping of instructions, performed at both the hardware and software level, which otherwise would run sequentially. At the software level it is denominated as static parallelism, where compilers try to identify which instructions are independent, meaning that the outcome of one does not affect the execution of the other, and schedules them to be executed at the same time, if the hardware has resources to do so. At the hardware level, ILP can be referred as dynamic parallelism as the hardware dynamically identifies which instructions execution can be overlapped while the application is running.
 
-		\item[Vector instructions] are a special set of instructions based on the SIMD model, where a single instruction is simultaneously applied to a set of data. CPU instruction sets offer special registers and instructions that allow to execute a operation on a chunk of data in a special arithmetic unit. One of the most common examples is addition of two vectors. The hardware is capable of adding a given number of elements of the vectors . This optimization is often done at compile time.
+		\item[Vector instructions] are a special set of instructions based on the SIMD model, where a single instruction is simultaneously applied to a set of data. CPU instruction sets offer special registers and instructions that allow to execute a operation on a chunk of data in a special arithmetic unit. One of the most common examples is addition of two vectors. The hardware is capable of adding a given number of elements of the vectors . This optimisation is often done at compile time.
 
 		\item[Multithreading] is the hardware support for the execution of multiple threads in a CPU core. This is possible by replicating part of the CPU resources, such as registers, and can lead to a more efficient utilisation of the CPU core hardware. If one thread is waiting for data, other thread can resume execution while the former is stalled. It also allows a better usage of resources that would otherwise be idle during the execution of a single thread. If multiple threads are working on the same data, multithreading can reduce the synchronisation between them and lead to a better cache usage.
 	\end{description}
@@ -151,7 +151,7 @@ OpenMP \cite{OpenMP}, Intel Threading Building Blocks (TBB) \cite{Intel:TBB}, an
 
 The OpenMP API is designed for multi-platform shared memory parallel programming in C, C++, and Fortran, for all available CPU architectures. It is portable and scalable, and aims to provide a simple and flexible interface for developing parallel applications, even for the most inexperienced programmers. It is based in a work sharing strategy, where a master thread spawns a set of slave threads and compute a task in a shared data structure.
 
-Intel TBB employs a work stealing heuristic, where, after the initial load distribution, if the task queue is empty a thread attempts to steal a task from other busy threads. It provides a scalable parallel programming task based library for C++, independent from architectural details, and only requires a C++ compiler. It automatically manages the load balancing and some cache optimizations, while offering parallel constructors and synchronisation primitives for the programmer. However, it requires knowledge of the object oriented programming paradigm.
+Intel TBB employs a work stealing heuristic, where, after the initial load distribution, if the task queue is empty a thread attempts to steal a task from other busy threads. It provides a scalable parallel programming task based library for C++, independent from architectural details, and only requires a C++ compiler. It automatically manages the load balancing and some cache optimisations, while offering parallel constructors and synchronisation primitives for the programmer. However, it requires knowledge of the object oriented programming paradigm.
 
 Cilk is a runtime system for multithreaded programming in C++. It maintains a stack with the remaining work, employing a work stealing heuristic very similar to Intel TBB.
 
@@ -216,14 +216,42 @@ OpenACC \cite{OpenACC} is a framework for heterogeneous platforms with accelerat
 
 However, this framework offers more of an abstraction of the hardware accelerator used, focusing on portability across heterogeneous platforms, rather than abstracting the intrinsic complexities of these systems.
 
-\itodo{Tools de optimização???}
+\subsubsection*{OpenHMPP}
+
+OpenHMPP \cite{OpenHMPP} is a standard similar to OpenACC, developed by CAPS \cite{CAPS} to develop parallel applications for heterogeneous platforms. It attempts to abstract the complexities of GPU accelerators by providing a set of compiler directives for efficient parallelisation. In the current specification, OpenHMPP uses a superset of the OpenACC directives for offloading code to the GPU and managing the data transfers, in both C and Fortran.
+
+Although it provides asynchronous execution of the offloaded kernel, it is not possible to use these framework to manage simultaneous execution and load balance of the same kernel in both CPUs and GPUs. Moreover, it is only possible to use this specification with the CAPS compilers and PathScale ENZO Compiler Suite \cite{ENZO}.
 
 \subsection{Particle Physics Frameworks}
 \label{particle_frameworks}
 
-
 \subsubsection*{ROOT}
 
+ROOT \cite{CERN:ROOT} is a very complex framework coded by physicists to aid all data analysis application development of the physics experiments conducted at CERN. It has all functionality required to process large amounts of data, by providing specific data storage formats, C++ classes for elemental particles, various physics algorithms, and histogram creation functions. The framework also provides a built-in C++ interpreter, Cling, to allow testing simple instructions and macros, without the need to compile and link the code.
 
+PROOF is a subset of the framework to support the development of data analysis applications in distributed memory environments. However, it is only designed to work with a set of computing nodes, with a master/slave process hierarchy, without support for hardware accelerators. Also, it does not focus on the efficient usage of the available computational resources, only distributes the load on demand among the processes.
 
-\subsubsection*{TopRootCore}
+Currently, ROOT does not provide parallel functionalities, specially for shared memory environments, but the developers already shown interest to improve the performance of some core routines of the framework. However, it may not translate in massive performance gains of the data analysis applications, as the critical region is usually on the reconstruction of the events, which does not heavily rely on a small set of ROOT functionalities, but rather on a large set of non-complex routines and classes.
+
+\subsubsection*{TopROOTCore}
+
+TopROOTCore is an extension of ROOT for top quark physics, developed by CERN associate research groups,that adds more functionalities and physics algorithms to the existing framework. It is responsible for producing the last input data format at the last CERN computational tiers, before the final analysis and event reconstruction. In the data analysis applications, it is often used due to some physics algorithms it implements.
+
+\subsection{Profiling and Debugging}
+\label{tools}
+
+\subsubsection*{Performance API}
+
+The Performance API (PAPI) \cite{PAPI} specifies an API to access hardware performance counters in most modern processors. It allows programmers to measure the performance counters for specific regions of an application, evaluating metrics such as cache misses, operational intensity or even power consumption. This analysis helps classifying the algorithms and identify possible bottlenecks at a very low abstraction level.
+
+PAPI recently supports hardware counters for both \nvidia GPUs, trough the \nvidia CUPTI, and \intel Xeon Phi. It also supports counters to measure the energy efficiency of the hardware. 
+
+\subsubsection*{TAU and HPCToolkit}
+
+TAU \cite{TAU} and HPCToolkit \cite{HPCToolkit} are performance analysis tools 
+
+\subsubsection*{VTune}
+
+Intel VTune profiler \cite{Intel:VTune} is a proprietary tool for performance analysis of applications. It provides an easy to use interface to analyse applications, identifying its bottlenecks, without any change to the source code. It intercepts the system calls to assess the execution time and behaviour, such as efficient cache usage, of the routines of an application. VTune also provides visualisation functionalities to make the profiling of parallel applications a simple task for developers with small experience. It works with both \intel and GNU compilers.
+
+\subsubsection*{NSight}
