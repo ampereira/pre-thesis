@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.9)  10 JUN 2014 18:35
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.9)  12 JUN 2014 11:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1338,9 +1338,9 @@ Package: moreverb 2008/06/03 v2.3a `more' verbatim facilities
 \listing@line=\count281
 )
 \verbatim@out=\write7
-runsystem(touch /tmp/w18-test-20146101115.tex)...disabled (restricted).
+runsystem(touch /tmp/w18-test-2014612712.tex)...disabled (restricted).
 
-runsystem(rm -f /tmp/w18-test-20146101115.tex)...disabled (restricted).
+runsystem(rm -f /tmp/w18-test-2014612712.tex)...disabled (restricted).
 
 
 
@@ -2082,36 +2082,37 @@ Underfull \vbox (badness 1521) has occurred while \output is active []
 Chapter 3.
 [22
 
-]
-Overfull \hbox (10.38788pt too wide) in paragraph at lines 23--23
+] [23] <imgs/lipminianalysis.png, id=355, 435.6275pt x 735.74875pt>
+File: imgs/lipminianalysis.png Graphic file (type png)
+
+<use imgs/lipminianalysis.png>
+Package pdftex.def Info: imgs/lipminianalysis.png used on input line 36.
+(pdftex.def)             Requested size: 217.81322pt x 367.87347pt.
+ [24 <./imgs/lipminianalysis.png>]
+Overfull \hbox (10.38788pt too wide) in paragraph at lines 51--51
 [] 
  []
 
 
-Overfull \hbox (10.38788pt too wide) in paragraph at lines 25--25
+Overfull \hbox (10.38788pt too wide) in paragraph at lines 56--56
 [] 
  []
 
-
-Overfull \hbox (10.38788pt too wide) in paragraph at lines 34--34
-[] 
- []
-
-) (./tex/400_thesis_planning.tex [23]
+) (./tex/400_thesis_planning.tex [25]
 Chapter 4.
-) [24
+) [26
 
-] [25
+] [27
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 74.
- [26]
+ [28]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 74.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 74.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 74.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 24A960A4E77741FA04F68FE32B4544EE;1395.
+(rerunfilecheck)             Checksum: E46B00BD57F2E37D2D17600B99422F59;1407.
 
 
 LaTeX Warning: There were undefined references.
@@ -2126,10 +2127,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36245 strings out of 493315
- 642187 string characters out of 6137904
- 1081967 words of memory out of 5000000
- 38898 multiletter control sequences out of 15000+600000
+ 36255 strings out of 493315
+ 642375 string characters out of 6137904
+ 1082165 words of memory out of 5000000
+ 38905 multiletter control sequences out of 15000+600000
  23567 words of font info for 61 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  75i,12n,106p,1668b,1684s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2157,10 +2158,10 @@ ublic/cm-super/sfsx1440.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/pub
 lic/cm-super/sfsx2074.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/publi
 c/cm-super/sfti1095.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/cou
 rier/ucrr8a.pfb>
-Output written on main.pdf (27 pages, 1833061 bytes).
+Output written on main.pdf (29 pages, 1901708 bytes).
 PDF statistics:
- 531 PDF objects out of 1000 (max. 8388607)
- 465 compressed objects within 5 object streams
- 116 named destinations out of 1000 (max. 500000)
- 213 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 546 PDF objects out of 1000 (max. 8388607)
+ 476 compressed objects within 5 object streams
+ 118 named destinations out of 1000 (max. 500000)
+ 218 words of extra memory for PDF output out of 10000 (max. 10000000)
 
