@@ -34,7 +34,7 @@ Figure \ref{fig:lipmini} presents the structure of LipMiniAnalysis, where all se
 \begin{figure}[!htp]
 	\begin{center}
 		\includegraphics[scale=0.5]{imgs/lipminianalysis.png}
-		\caption{Schematic representation LipMiniAnalysis skeleton structure. The \textbf{*} mark represents the sections of the skeleton that the programmer must code.}
+		\caption{Schematic representation of the LipMiniAnalysis skeleton structure. The \textbf{*} mark represents the sections of the skeleton that the programmer must code.}
 		\label{fig:lipmini}
 	\end{center}
 \end{figure}
@@ -47,10 +47,60 @@ The LipMiniAnalysis was designed to store only one event in the application glob
 
 \section{The Proposed Framework}
 \label{new_framework}
-
+\itodo{abstrai user de que nao programa para os eventos todos mas apenas para um}
 \itodo{especificaçao do que a nova framework tem de ter, design from scratch}
+\itodo{paralelizaçao em processos e threads e heterogeneous}
 
 \subsection{Preliminary Tests and Prototypes}
 \label{work_so_far}
 
-\itodo{trabalho feito até agora, no aspecto que são protótipos a serem integrados na nova framework}
+Some of the work towards the creation of the new framework was already developed. These prototypes were integrated and tested with the current version of LipMiniAnalysis using the \ttH data analysis application presented in \ref{ttH}, but have a modular design to be properly merged into the final framework, and they may suffer structure or implementation changes throughout the framework development. Proposed prototypes for several features required by the framework are presented next.
+
+\subsubsection*{A new event data structure}
+
+The information of an event is loaded in the \textit{Main Loop} into a single global memory state. The hundreds of variables of an event are spread among a set of files of LipMiniAnalysis. To create a new event data structure all these variables must be merged into a single C++ class, which represents a single event, named \textit{EventData}, and use a standard collection, such as a STL vector, to store all events on an input file. However, the current LipMiniAnalysis version performs a set of data preparation routines, named \textit{FillAllVectors} and \textit{Calculations}, performed automatically and coded by the user, respectively. As their implementation is only prepared to access the data as it was in the global memory, they will not be compatible with the new data structure. 
+
+The implementation of \textit{Calculations} could be changed in order to access the values stored in the new data structure. However, the user would have to be aware of the data structure interaction and characteristics to properly code the required data preparation. Also, since \textit{Calculations} only access the data of an event, it makes much more sense to code it as a method of the event class. The current implementation of \textit{EventData}, the \textit{FillAllVectors} routine, which performs the initialisation of some of the components of an event, is coded as a method, and the \textit{Calculations} is declared as a virtual function, so it can be easily coed by the user in the analysis source file, without the need of modifying the LipMiniAnalysis code and recompile the skeleton.
+
+\subsubsection*{A new \textit{Main Loop} design}
+
+Having a new data structure that allows multiple events to be on memory simultaneously implies changes to the way that LipMiniAnalysis handles the input data files. Instead of loading an event at a time, the \textit{Main Loop} implementation was changed to load all events in an input data file at once and store them in the new specialised structure (note that an input file has a size of 1 GBytes), as presented in figure \ref{fig:new_loop}. Now, it is possible to parallelise the execution of the \textit{Event Filtering and Reconstruction}, performed in the \textit{DoCuts} function. In physics terminology, a filter is addressed as a cut.
+
+\begin{figure}[!htp]
+	\begin{center}
+		\includegraphics[scale=0.5]{imgs/new_loop.png}
+		\caption{Schematic representation of the \textit{Main Loop} implementation modifications.}
+		\label{fig:new_loop}
+	\end{center}
+\end{figure}
+
+The interaction of the LipMiniAnalysis with the input data file is performed using the ROOT file reader classes. Since the event loading assumes also a set of operations, such as storing MonteCarlo information on \textit{EventData} and the \textit{FillAllVectors} initialisation, this task would benefit if it was executed in parallel, as the I/O itself only amounts to part of the computation. However, up to version ROOT v6, released in early June, it was not possible to have parallel file descriptors reading information of the same input file. With the new ROOT version it may be possible but it was not yet tested.
+
+As previously stated, the \textit{DoCuts} function is responsible for filtering and reconstructing the events. The purpose of these filters is to separate the signal (interesting events) from the background (uninteresting events). The notion of an interesting event depends on the physics that the analysis studies, for example the background of a \ttH system analysis may contain events useful for the search of heavy quarks. As it may vary among different analysis, the \textit{DoCuts} must be coded by the user, but its structure is well defined. Implementation-wise, an analysis has a set of filters. Each filter is logically composed by a set of computations, more or less complex, and a test to the results of those computations. If the test fails, the event is not submitted to the rest of the filters. An example of a simple filter is to check if the mass of the event system (aggregate masses of all or a subset of particles detected) is greater than a given value, discarding events that do not provide interesting physics.
+
+The reconstruction of an event is considered as a filter in \textit{DoCuts}, as only the events capable of being reconstructed pass the filter, which is usually the last. The reconstruction may be the most complex and computational intensive task in the whole data analysis application. One example is the \ttH system reconstruction, which performance depends on a trade-off between reconstruction accuracy and execution time. The event reconstruction is a task that may require a closer look to improve the efficiency of the data analysis, through a more specialised parallelisation on both homogeneous and heterogeneous platforms. Its irregular load and execution time, very complex algorithms, and few vectorised numerical computations creates a bottleneck complex to deal with, but with the potential of bringing exceptional performance gains when addressed with detail \cite{paperAMP}. Figure \ref{fig:new_docuts} presents a implemented prototype for a new \textit{DoCuts} flow that exposes the event reconstruction to more efficient parallelism approaches.
+
+\begin{figure}[!htp]
+	\begin{center}
+		\includegraphics[scale=0.5]{imgs/new_docuts.png}
+		\caption{Schematic representation current (left image) and proposed (right image) \textit{Event Filtering and Reconstruction} flows.}
+		\label{fig:new_docuts}
+	\end{center}
+\end{figure}
+
+
+Besides exposing the parallelism of a complex computational intensity section, this change also increases the workload to be simultaneously processed. When the application reaches the reconstruction, all events that passed the previous cuts can be processed in parallel. Having all the data necessary outside of the \textit{Main Loop}, as the \textit{Event Filtering and Reconstruction} as its own loop over all events on memory, but still hiding that fact from the user that codes \textit{DoCuts} to abstract the user as explained in \ref{new_framework}, allows for a better load balance of the possible parallelisation approaches, for homogeneous and heterogeneous platforms. For the latter, which operate in a distributed memory environment, it also helps to reduce the parallelisation overhead associated with the communications: instead of passing required the data of a single event multiple times, the data of all events is passed once. Then there is a third section of cuts (post-reconstruction) that are also coded by the user. To reduce the amount of loops, this third section shares the loop over all events with all the remaining post-processing of the \textit{Main Loop}. Note that both \textit{Main Loop} options will be available to maintain compatibility with the current data analysis applications.
+
+\subsubsection*{Interfacing with legacy code}
+
+Current data analysis use the data of an event as it is on the global memory, with no structure. The integration of the new event data structure requires that the accesses to the data be made through the STL collection used to store the event and the \textit{EventData} class. An interface is proposed to avoid rewriting the legacy code of these data analysis, a way to abstract the user from programming for a set of events by providing a kernel-like approach (where the code for processing an event is automatically applied to all). The interface must abstract both the access to the \textit{EventData} variables and methods, while being completely transparent to the user.
+
+The input data files occasionally suffer some changes do to the increase in information given by the previous preprocessing on the CERN computational tiers. The file reading and the \textit{EventData} classes have to be adapted to this increase in event parameters. A static interface would need to be rewritten every time such change occurred. To avoid this problem, a parser was developed that receives the \textit{EventData} source files and retrieve the name of the methods and parameters. It then creates an header composed of \textit{define} clauses that translate the accesses to these variables on the STL collection to the previous simple accesses. This header is then included in the main LipMiniAnalysis header so that the user does not need to interact with the interface. This interface is automatically created every time the skeleton is compiled.
+
+The user can code the data analysis assuming a single event is stored in memory. For example, to access an event luminosity the user would write \texttt{int var = LumiBlock}. However, when compiling the application the compiler preprocessor uses the interface to replace that statement with \texttt{int var = events.get(currentEvent).getLumiBlock()} without the user knowing how the event is stored. Note that the counter that assigns the event to process is automatically managed in every loop that iterates through the event data structure, hidden from the user.
+
+\subsubsection*{Other features}
+
+The final framework will have an utilities module where general features will be coded. Some of the already implemented range from automatic execution time measurement of the application and event processing throughput, definition of the number threads to execute, set the accuracy of some reconstructions. It was opted to use environment variables to set these features to reduce the clutter of options currently passed to the data analysis applications (usually more than 10 parameters) and separate general purpose features from physics functionalities.
+
+One complex feature implemented is specific for the \ttH data analysis application. During the event reconstruction, several different variations of the system are reconstructed and only the best is of interest. For that a class was developed that encloses the resultant data of the reconstruction and performs a parallel merge through all the threads. This feature might prove useful for other data analysis once the structure of the class is general enough to hold the result of different types of reconstructions.

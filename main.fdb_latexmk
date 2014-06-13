@@ -1,10 +1,10 @@
 # Fdb version 3
-["biber main"] 1402570324 "main.bcf" "main.bbl" "main" 1402570335
-  "main.bcf" 1402570335 91578 e26644e8cbc6e23ba7748f40428a9a23 ""
+["biber main"] 1402660795 "main.bcf" "main.bbl" "main" 1402672624
+  "main.bcf" 1402672623 91629 b1a180378007125b046f2b87e55582b0 ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1402570327 "main.tex" "main.pdf" "main" 1402570335
+["pdflatex"] 1402672616 "main.tex" "main.pdf" "main" 1402672624
   "../general.sty" 1401703084 4515 b07d1b4ae3d6378e44d67c4be6d35311 ""
   "/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii" 1337017135 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2013/texmf-dist/tex/generic/babel-english/english.ldf" 1367878877 6963 2e0cb3d93aa64508bdb0db58ae900d97 ""
@@ -223,16 +223,18 @@
   "imgs/kepler_arch.png" 1401805015 856681 a49d094d6113e26d2016c2b13fc56a7a ""
   "imgs/lipminianalysis.png" 1402496156 102429 4c295e7a35137cb3cbce6111e340f071 ""
   "imgs/mic.png" 1401817480 93030 3082840cfbf15502337a2997c9556044 ""
+  "imgs/new_docuts.png" 1402667215 38804 b110473c0861c47fca8b43c83d107a64 ""
+  "imgs/new_loop.png" 1402656180 36929 7b27f25a7867ec92e3429d58a3c6c4c4 ""
   "imgs/ttH_feynman.png" 1401716542 42771 b2c5ee6e8b67c0425cba8c18d7e87e6e ""
   "imgs/ttbar_higgs.png" 1391619719 133478 2ade4514a4dee0881f73c8934a109caf ""
-  "main.aux" 1402570334 16232 21b1f6b19fcdd858a1e7310670fd6a30 ""
+  "main.aux" 1402672623 17428 d76f2374c9411797c85c9767b4b633f3 ""
   "main.bbl" 1401899992 33577 45c9fd95cec9fb143013e307f0727942 "biber main"
-  "main.out" 1402570334 1407 e46b00bd57f2e37d2d17600b99422f59 ""
+  "main.out" 1402672623 1407 e46b00bd57f2e37d2d17600b99422f59 ""
   "main.tex" 1401721038 1603 65c8d6ca494dee5362fa0fbce90ba902 ""
-  "main.toc" 1402570335 2405 1d8de997f65b0833e4794d85b31384d8 ""
+  "main.toc" 1402672623 2405 9983da99515521375114ce67c3ca977e ""
   "tex/100_introduction.tex" 1402418947 19509 ceeb33503b60a8634388b789a361cf36 ""
   "tex/200_state_of_the_art.tex" 1402483446 40445 74b5665ff04b380f6071b307ec33cb37 ""
-  "tex/300_new_lipmini.tex" 1402570308 11249 e3194114c09539f222de48c4cc735709 ""
+  "tex/300_new_lipmini.tex" 1402672593 21864 634019001f970bda6eb7b19a1d54c606 ""
   "tex/400_thesis_planning.tex" 1401458317 75 8e1a770d39bf2d6b31fa3fddbb29ba28 ""
   (generated)
   "main.out"
