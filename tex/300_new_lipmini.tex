@@ -47,14 +47,58 @@ The LipMiniAnalysis was designed to store only one event in the application glob
 
 \section{The Proposed Framework}
 \label{new_framework}
-\itodo{abstrai user de que nao programa para os eventos todos mas apenas para um}
-\itodo{especificaçao do que a nova framework tem de ter, design from scratch}
-\itodo{paralelizaçao em processos e threads e heterogeneous}
 
-\subsection{Preliminary Tests and Prototypes}
+A physics framework to replace LipMiniAnalysis in aiding the development of data analysis applications is proposed. Its design and specification will include several software engineering concepts to provide a stable and robust tool that will increase the researchers productivity, spending less time coding and more time analysing data and improving physics algorithms, and ensure the generation of efficient data analysis applications by automatically parallelising the code. It will include both redesigned features of LipMiniAnalysis and new physics functionalities.
+
+Improving both the researcher coding productivity and data analysis computational efficiency has a direct impact on the research quality. To achieve this goal, the proposed framework has to utilise the capabilities of modern computing systems and software. This implies that the LipMiniAnalysis code design, based on the LipCbrAnalysis developed in 2005, does not suit the characteristics of current hardware. The new framework will implement all required features present in LipMiniAnalysis but designed to modern specifications of hardware, software, and modularity to interact with new features.
+
+Figure \ref{fig:new_framework} presents the organisation and dependencies of the different modules of the proposed framework. The \textit{Physics} and \textit{Histograming} modules will be implemented using redesigned features currently available at LipMiniAnalysis, as they have standard features used by most data analysis applications. The framework will have to support both ROOT and TopROOTCore libraries without any specific configuration by the user. TopROOTCore installation with the framework may be an option to the user, since only a part of event data analysis applications use its functionalities, which are more useful for data preparation.
+
+\begin{figure}[!htp]
+	\begin{center}
+		\includegraphics[scale=0.7]{imgs/new_framework.png}
+		\caption{Schematic representation of the proposed framework modules and their dependencies.}
+		\label{fig:new_framework}
+	\end{center}
+\end{figure}
+
+The \textit{I/O} module is responsible for loading the input data files for processing the events in the data analysis applications. The LipMiniAnalysis reads only MiniNtuples, which are preprocessed events at the previous computational tiers, which are used by some applications, but other file formats may also be supported, as requested by researchers. Different file formats have different structures and auxiliary event parameters stored, although the core event information is similar. The file reading must support parallel file descriptors, so that it is possible that each thread/process reads its own event data, reducing the communications cost and initial load distribution overhead.
+
+The \textit{Event Data Structures} module will be dependent on the file type to be read. Its purpose is to have a C++ class, or set of classes, to hold all the information of an event on memory in a structured way, opposed to the current implementation on LipMiniAnalysis. Then, it must hold a STL collection (vector, map, etc) to store the instantiations of the event class, enclosing all events in the input data file. An assessment of the different file formats used at LIP will be required to evaluated the benefits of having a single abstract event class or specific classes for each file format. Both the event class design and storing collection must be suitable for both shared and distributed memory parallelisation, with good performance for data structure splits (to balance the load, specifically in distributed memory paradigms), transverses (to iterate through the events on each split segment), and low overhead (un)marshalling computations for communicating the data. The module may also contain specific data structures for intermediate processing, as explained in detail in subsection \ref{work_so_far}, suitable to run on hardware accelerators, considering the limitations that they incur.
+
+The \textit{Dynamic Interfaces} module will hold the interface generator and respective interfaces for each different event data structure. Its purpose is to make the framework compatible with legacy code, allowing for current data analysis to benefit from the automatic parallelisation and improved efficiency of the proposed framework. Also, it must hide the interaction of the user with the data structures, to provide a simpler programming interface, later explained in more detail. Since there may be several different data structures, and their code may be changed periodically, the interface generator must be capable of parsing the data structure source files and dynamically generate the interfaces.
+
+The \textit{Utilities} module implements several auxiliary features usable in both the framework and data analysis code. It will have simple performance statistics, such as execution time of the application, communications time, event processing throughput, etc. A more robust command line options reader will be available, with all required options for executing all different data analysis, which can be extended by experienced users.
+
+The \textit{Efficiency} module will have all necessary functionality required to create parallel tasks and manage the load distribution for both homogeneous and heterogeneous platforms with hardware accelerators. The performance model must be capable of assessing if an hybrid multithreaded process parallelisation provides better efficiency than a simple implementation, which was proven to happen in some data analysis \cite{paperAMP}. There is no automatic parallelisation tool that attempts hybrid implementations such as this, only opting for a shared or distributed memory paradigm (usually the last is only used when the hardware forces to) and uses an efficient amount of parallel tasks, but it may prove beneficial to have this mix of processes and threads in some specific cases. This module must also be able to assess, with some help of the user, what sections of the data analysis code can be executed in the hardware accelerators, and if it has the required characteristics to efficiently use these devices. While this might seem complex for general purpose parallelisation frameworks, dealing with only a specific problem such as physics data analysis applications helps the design of the performance model around these features. Implementation-wise, these features require heavy modifications to current automatic parallelisation frameworks. However, a new implementation designed to this specific problem, with components adapted from current frameworks, may provide a better and more simple integration and performance efficiency of data analysis applications.
+
+The \textit{Core} module will integrate all previous modules, implementing the major routines responsible for the event analysis, ranging from the filtering to the final output data storage. It will have assembled all the specific bits of each module to process the events, as well as the code sections that is for the user to code. Note that the user will not edit the code in the framework, but rather on the data analysis source code that will later link the missing parts into the framework.
+
+\subsection{Usage and Workflow}
+\label{usage_workflow}
+
+a framework anterior tem a estrutura logica mas nao no codigo
+workflow transparente
+
+\begin{figure}[!htp]
+	\begin{center}
+		\includegraphics[scale=0.5]{imgs/new_framework_flow.png}
+		\caption{Schematic representation of the proposed framework flow.}
+		\label{fig:new_framework_flow}
+	\end{center}
+\end{figure}
+
+\itodo{abstrai user de que nao programa para os eventos todos mas apenas para um}
+\itodo{paralelizaçao em processos e threads e heterogeneous, eficiencia é diferente de performance...}
+\itodo{levantamento de requisitos}
+\itodo{features devem depender pouco de libs para correrem em accelerators}
+
+
+
+\subsection{Preliminary Prototypes}
 \label{work_so_far}
 
-Some of the work towards the creation of the new framework was already developed. These prototypes were integrated and tested with the current version of LipMiniAnalysis using the \ttH data analysis application presented in \ref{ttH}, but have a modular design to be properly merged into the final framework, and they may suffer structure or implementation changes throughout the framework development. Proposed prototypes for several features required by the framework are presented next.
+Some of the work towards the creation of the new framework was already developed. These prototypes were integrated and tested with the current version of LipMiniAnalysis using the \ttH data analysis application presented in \ref{ttH}, but have a modular design to be properly merged into the final framework, and they may suffer structure or implementation changes throughout its development. Proposed prototypes for several features required by the framework are presented next.
 
 \subsubsection*{A new event data structure}
 

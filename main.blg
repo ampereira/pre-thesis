@@ -1,2 +1,33 @@
-[1] de39bb48.pm:387> INFO - This is Biber 1.6
-[1] de39bb48.pm:390> INFO - Logfile is 'main.blg'
+[0] Config.pm:387> INFO - This is Biber 1.6
+[1] Config.pm:390> INFO - Logfile is 'main.blg'
+[239] biber-darwin:218> INFO - === Mon Jun 16, 2014, 17:25:48
+[239] Biber.pm:325> INFO - Reading 'main.bcf'
+[379] Biber.pm:623> INFO - Found 47 citekeys in bib section 0
+[443] Biber.pm:2995> INFO - Processing section 0
+[534] Biber.pm:3129> INFO - Looking for bibtex format file '../bib/refs.bib' for section 0
+[570] bibtex.pm:898> INFO - Decoding LaTeX character macros into UTF-8
+[573] bibtex.pm:775> INFO - Found BibTeX data source '../bib/refs.bib'
+[609] Utils.pm:169> WARN - Duplicate entry key: 'MPI' in file '../bib/refs.bib', skipping ...
+[613] Utils.pm:169> WARN - Possible typo (case mismatch) between datasource keys: 'StarPU' and 'STARPU' in file '../bib/refs.bib'
+[616] Utils.pm:169> WARN - Duplicate entry key: 'PAPI' in file '../bib/refs.bib', skipping ...
+[617] Utils.pm:169> WARN - Duplicate entry key: 'Intel:VTune' in file '../bib/refs.bib', skipping ...
+[618] Utils.pm:169> WARN - Duplicate entry key: 'OpenMP' in file '../bib/refs.bib', skipping ...
+[811] Utils.pm:169> WARN - Name "Robert D. Blumofe, Christopher F. Joerg, Charles E. Leiserson, Keith H. Randall," has too many commas: skipping name
+[843] Utils.pm:169> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
+[844] Utils.pm:169> WARN - BibTeX subsystem: author, warning: comma(s) at end of name (removing)
+[845] Utils.pm:169> WARN - I didn't find a database entry for 'SC:Nature' (section 0)
+[845] Utils.pm:169> WARN - I didn't find a database entry for 'SC:Develop' (section 0)
+[845] Utils.pm:169> WARN - I didn't find a database entry for 'SC:SC11' (section 0)
+[845] Utils.pm:169> WARN - I didn't find a database entry for 'SC:28280' (section 0)
+[846] Utils.pm:169> WARN - I didn't find a database entry for 'OpenHMPP' (section 0)
+[846] Utils.pm:169> WARN - I didn't find a database entry for 'CAPS' (section 0)
+[846] Utils.pm:169> WARN - I didn't find a database entry for 'ENZO' (section 0)
+[846] Utils.pm:169> WARN - I didn't find a database entry for 'NVIDIA:CUPTI' (section 0)
+[848] Utils.pm:169> WARN - I didn't find a database entry for 'VampirTrace' (section 0)
+[848] Utils.pm:169> WARN - I didn't find a database entry for 'NVIDIA:Nsight' (section 0)
+[1234] Biber.pm:2881> INFO - Overriding locale 'en_US.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
+[1234] Biber.pm:2887> INFO - Sorting 'entry' list 'none' keys
+[1234] Biber.pm:2891> INFO - No sort tailoring available for locale 'en_US.UTF-8'
+[1933] bbl.pm:472> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1940] bbl.pm:545> INFO - Output to main.bbl
+[1941] Biber.pm:105> INFO - WARNINGS: 18

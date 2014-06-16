@@ -619,10 +619,126 @@
       \verb http://www.openacc-standard.org/
       \endverb
     \endentry
+    \entry{CERN:ROOT}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=ca0f9000f3dbc38c900fb22db04450b9}{{F.\bibnamedelimi Rademakers\bibnamedelimb and\bibnamedelimb P.\bibnamedelimi Canal\bibnamedelimb and\bibnamedelimb B.\bibnamedelimi Bellenot\bibnamedelimb and\bibnamedelimb O.\bibnamedelimi Couet\bibnamedelimb and\bibnamedelimb A.\bibnamedelimi Naumann\bibnamedelimb and\bibnamedelimb G.\bibnamedelimi Ganis\bibnamedelimb and\bibnamedelimb L.\bibnamedelimi Moneta\bibnamedelimb and\bibnamedelimb V.\bibnamedelimi Vasilev\bibnamedelimb and\bibnamedelimb A.\bibnamedelimi Gheata\bibnamedelimb and\bibnamedelimb P.\bibnamedelimi Russo\bibnamedelimb and\bibnamedelimb R.\bibnamedelimi Brun}}{F\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=ca0f9000f3dbc38c900fb22db04450b9}{{F.\bibnamedelimi Rademakers\bibnamedelimb and\bibnamedelimb P.\bibnamedelimi Canal\bibnamedelimb and\bibnamedelimb B.\bibnamedelimi Bellenot\bibnamedelimb and\bibnamedelimb O.\bibnamedelimi Couet\bibnamedelimb and\bibnamedelimb A.\bibnamedelimi Naumann\bibnamedelimb and\bibnamedelimb G.\bibnamedelimi Ganis\bibnamedelimb and\bibnamedelimb L.\bibnamedelimi Moneta\bibnamedelimb and\bibnamedelimb V.\bibnamedelimi Vasilev\bibnamedelimb and\bibnamedelimb A.\bibnamedelimi Gheata\bibnamedelimb and\bibnamedelimb P.\bibnamedelimi Russo\bibnamedelimb and\bibnamedelimb R.\bibnamedelimi Brun}}{F\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{ca0f9000f3dbc38c900fb22db04450b9}
+      \strng{fullhash}{ca0f9000f3dbc38c900fb22db04450b9}
+      \field{sortinit}{0}
+      \field{labeltitle}{R{OOT}}
+      \field{month}{06}
+      \field{title}{R{OOT}}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://root.cern.ch/drupal/
+      \endverb
+    \endentry
+    \entry{PAPI}{article}{}
+      \name{labelname}{4}{}{%
+        {{hash=e8a72f5190f60f2dba8c2a756b3b2ef3}{Browne}{B\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=9f965e7767e2dab7210d55237c7e6f7a}{Deane}{D\bibinitperiod}{C.}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=52f34c41992385fd47aeeac3c21a9759}{Ho}{H\bibinitperiod}{G.}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=c4480ded79657e8354ac8fc99beefd98}{Muccima}{M\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{hash=e8a72f5190f60f2dba8c2a756b3b2ef3}{Browne}{B\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=9f965e7767e2dab7210d55237c7e6f7a}{Deane}{D\bibinitperiod}{C.}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=52f34c41992385fd47aeeac3c21a9759}{Ho}{H\bibinitperiod}{G.}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=c4480ded79657e8354ac8fc99beefd98}{Muccima}{M\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{f7ad9261a028215fec251b28832e8094}
+      \strng{fullhash}{10bb11268283023b1a58f89d00aff7f5}
+      \field{sortinit}{0}
+      \field{labeltitle}{PAPI: A Portable Interface to Hardware Performance Counters}
+      \field{journaltitle}{Proceedings of Department of Defense HPCMP Users Group Conference}
+      \field{month}{06}
+      \field{title}{PAPI: A Portable Interface to Hardware Performance Counters}
+      \field{year}{1999}
+    \endentry
+    \entry{TAU}{article}{}
+      \name{labelname}{2}{}{%
+        {{hash=6cb8b6a34dbce66e79749ee29a553234}{Shende}{S\bibinitperiod}{Sameer\bibnamedelima S.}{S\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=f29008964ae6bbc8cbcb35539bd63590}{Malony}{M\bibinitperiod}{Allen\bibnamedelima D.}{A\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=6cb8b6a34dbce66e79749ee29a553234}{Shende}{S\bibinitperiod}{Sameer\bibnamedelima S.}{S\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=f29008964ae6bbc8cbcb35539bd63590}{Malony}{M\bibinitperiod}{Allen\bibnamedelima D.}{A\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{bb15e97385c5983be78b8f0e8c1f1d5c}
+      \strng{fullhash}{bb15e97385c5983be78b8f0e8c1f1d5c}
+      \field{sortinit}{0}
+      \field{labeltitle}{The Tau Parallel Performance System}
+      \field{journaltitle}{Int. J. High Perform. Comput. Appl.}
+      \field{month}{05}
+      \field{number}{2}
+      \field{title}{The Tau Parallel Performance System}
+      \field{volume}{20}
+      \field{year}{2006}
+      \field{pages}{287\bibrangedash 311}
+    \endentry
+    \entry{HPCToolkit}{article}{}
+      \name{labelname}{7}{}{%
+        {{hash=e5261e628ec4bce409f4ea491f3d7e3f}{Adhianto}{A\bibinitperiod}{L.}{L\bibinitperiod}{}{}{}{}}%
+        {{hash=643411d0a3d9943cab55de8433834451}{Banerjee}{B\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=b027e2017ce9dc978c01b1c1a7352654}{Fagan}{F\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=e9e697b3d36ce245ad6b94aa01e6e9a4}{Krentel}{K\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=8e966428a797695ed4f2aa8182ea5ed8}{Marin}{M\bibinitperiod}{G.}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=5d707cf5ccb65be9a98883b681f186ec}{Mellor-Crummey}{M\bibinithyphendelim C\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=b2a82606e31ac232af5f6a0bc0ec0229}{Tallent}{T\bibinitperiod}{N.\bibnamedelimi R.}{N\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{7}{}{%
+        {{hash=e5261e628ec4bce409f4ea491f3d7e3f}{Adhianto}{A\bibinitperiod}{L.}{L\bibinitperiod}{}{}{}{}}%
+        {{hash=643411d0a3d9943cab55de8433834451}{Banerjee}{B\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=b027e2017ce9dc978c01b1c1a7352654}{Fagan}{F\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=e9e697b3d36ce245ad6b94aa01e6e9a4}{Krentel}{K\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=8e966428a797695ed4f2aa8182ea5ed8}{Marin}{M\bibinitperiod}{G.}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=5d707cf5ccb65be9a98883b681f186ec}{Mellor-Crummey}{M\bibinithyphendelim C\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=b2a82606e31ac232af5f6a0bc0ec0229}{Tallent}{T\bibinitperiod}{N.\bibnamedelimi R.}{N\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9b989cf2767a8b7a941ac19d55c15dbc}
+      \strng{fullhash}{1813de49b9044a83b641eeefc171bd50}
+      \field{sortinit}{0}
+      \field{labeltitle}{HPCTOOLKIT: tools for performance analysis of optimized parallel programs}
+      \field{journaltitle}{Concurrency and Computation: Practice and Experience}
+      \field{number}{6}
+      \field{title}{HPCTOOLKIT: tools for performance analysis of optimized parallel programs}
+      \field{volume}{22}
+      \field{year}{2010}
+    \endentry
+    \entry{Intel:VTune}{report}{}
+      \name{labelname}{1}{}{%
+        {{hash=ff97a9fdede09eaf6e1c8ec9f6a61dd5}{Intel}{I\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=ff97a9fdede09eaf6e1c8ec9f6a61dd5}{Intel}{I\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \list{organization}{1}{%
+        {Intel Corporation}%
+      }
+      \strng{namehash}{ff97a9fdede09eaf6e1c8ec9f6a61dd5}
+      \strng{fullhash}{ff97a9fdede09eaf6e1c8ec9f6a61dd5}
+      \field{sortinit}{0}
+      \field{labeltitle}{Profiling Runtime Generated and Interpreted Code with Intel VTune Amplifier}
+      \field{month}{01}
+      \field{title}{Profiling Runtime Generated and Interpreted Code with Intel VTune Amplifier}
+      \field{type}{techreport}
+      \field{year}{2013}
+    \endentry
   \endsortlist
+  \missing{NVIDIA:CUPTI}
   \missing{SC:SC11}
+  \missing{SC:28280}
   \missing{SC:Develop}
+  \missing{CAPS}
+  \missing{VampirTrace}
   \missing{SC:Nature}
+  \missing{OpenHMPP}
+  \missing{ENZO}
+  \missing{NVIDIA:Nsight}
 \endrefsection
 \endinput
 

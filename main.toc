@@ -34,6 +34,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.2}The Proposed Framework}{25}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Preliminary Tests and Prototypes}{25}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.1}Usage and Workflow}{27}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Thesis Planning}{29}{chapter.4}
+\contentsline {subsection}{\numberline {3.2.2}Preliminary Prototypes}{28}{subsection.3.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Research Plan}{32}{chapter.4}
