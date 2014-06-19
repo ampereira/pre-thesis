@@ -52,7 +52,7 @@ A physics framework to replace LipMiniAnalysis in aiding the development of data
 
 Improving both the researcher coding productivity and data analysis computational efficiency has a direct impact on the research quality. To achieve this goal, the proposed framework has to utilise the capabilities of modern computing systems and software. This implies that the LipMiniAnalysis code design, based on the LipCbrAnalysis developed in 2005, does not suit the characteristics of current hardware. The new framework will implement all required features present in LipMiniAnalysis but designed to modern specifications of hardware, software, and modularity to interact with new features.
 
-Figure \ref{fig:new_framework} presents the organisation and dependencies of the different modules of the proposed framework. The \textit{Physics} and \textit{Histograming} modules will be implemented using redesigned features currently available at LipMiniAnalysis, as they have standard features used by most data analysis applications. The framework will have to support both ROOT and TopROOTCore libraries without any specific configuration by the user. TopROOTCore installation with the framework may be an option to the user, since only a part of event data analysis applications use its functionalities, which are more useful for data preparation.
+Figure \ref{fig:new_framework} presents the organisation and dependencies of the different modules of the proposed framework. A modular organisation and implementation allows for the framework to be robust and easily extensible in the future. The \textit{Physics} and \textit{Histograming} modules will be implemented using redesigned features currently available at LipMiniAnalysis, as they have standard features used by most data analysis applications. The framework will have to support both ROOT and TopROOTCore libraries without any specific configuration by the user. TopROOTCore installation with the framework may be an option to the user, since only a part of event data analysis applications use its functionalities, which are more useful for data preparation.
 
 \begin{figure}[!htp]
 	\begin{center}
@@ -74,26 +74,35 @@ The \textit{Efficiency} module will have all necessary functionality required to
 
 The \textit{Core} module will integrate all previous modules, implementing the major routines responsible for the event analysis, ranging from the filtering to the final output data storage. It will have assembled all the specific bits of each module to process the events, as well as the code sections that is for the user to code. Note that the user will not edit the code in the framework, but rather on the data analysis source code that will later link the missing parts into the framework.
 
+Features that are very important for the most compute intensive sections of data analysis applications will be implemented to run on CPU and accelerator devices. These features will be provided in the framework API. For example, when selecting an pseudo-random number generator to use in a compute intensive section, such as the event reconstruction, the user must avoid the \texttt{TRandom} available in ROOT and use the one provided by the framework. The framework compiles the code to run on CPU, which uses \texttt{TRandom}, and on GPU, which uses the \texttt{cuRand} (with the same PRNG algorithm). This only applies for features that produce the same result on any computing accelerator. Otherwise, an alternative is suggested for each computing device that the user may chose to accept.
+
 \subsection{Usage and Workflow}
 \label{usage_workflow}
 
-a framework anterior tem a estrutura logica mas nao no codigo
-workflow transparente
+One of the goals of the framework is to provide a kernel-like programming model to the user, with as minimum interaction as possible. This eases the development of new data analysis applications and increases their portability. Once the framework is installed on a system, the user just needs to copy their code and it is expected to compile, as all external dependencies are handled by the framework. Its flow is presented in figure \ref{fig:new_framework_flow}. Note that LipMiniAnalysis, presented in section \ref{lipminianalysis}, has a similar logical structure, but it does not reflect the code organisation and structure. In the new framework, the code will follow this structure to improve its modularity and reliability.
 
 \begin{figure}[!htp]
 	\begin{center}
 		\includegraphics[scale=0.5]{imgs/new_framework_flow.png}
-		\caption{Schematic representation of the proposed framework flow.}
+		\caption{Schematic representation of the proposed framework flow. The \textbf{*} mark represents the sections of the workflow coded by the programmer.}
 		\label{fig:new_framework_flow}
 	\end{center}
 \end{figure}
 
-\itodo{abstrai user de que nao programa para os eventos todos mas apenas para um}
-\itodo{paralelizaçao em processos e threads e heterogeneous, eficiencia é diferente de performance...}
-\itodo{levantamento de requisitos}
-\itodo{features devem depender pouco de libs para correrem em accelerators}
+The user intervention is required at four stages of the event processing (implementation-wise, the \textit{Result Storage} and \textit{Build Histograms} are coded together as \textit{Filter Post-process}). The data analysis is expected to be implemented as a class, which will extend the \texttt{DataAnalysis} class provided by the framework, and must contain at least a set of predefined methods that represent each of the stages that the user must code. The coding is very intuitive, as the user must implement the set of features required to process a single event, in the logical pipeline reasoning. The user does not interact directly with the event data structure, but through the respective interface, which gives the illusion that only a single event is on memory, as physicists were used to program. The framework will be responsible for applying the code in parallel to all events on memory, not necessarily following the pipeline order but respecting the dependencies.
 
+The data analysis stages are characterised as follows:
 
+\begin{description}
+	\item[\textit{User Setup}:] this is only executed at the beginning of the data analysis execution, where the user specifies the initial \textit{User Values}, as in the LipMiniAnalysis flow, output files, and histogram configurations. The user can also easily specify any additional parameters to read by both command line and environment variables, using the respective framework utilities, and a small set of configurations to help the parallelisation setup.
+	\item[\textit{Event Filtering and Reconstruction}:] this holds the code required to filter and reconstruct a single event. As shown in figure \ref{fig:new_framework_flow}, two templates are provided. The first is the traditional pipeline for the event processing, oriented for novice users. The second provides three sections: pre-filtering, reconstruction, and post-filtering. The user codes in the pre-filtering the filters applied before the reconstruction, the reconstruction, and then the final filters (if applicable), in three separate methods. This is useful when the reconstruction takes most of the execution time and this provides more parallelism (as it is applied simultaneously to all events) and better load management, specially when using heterogeneous platforms.
+	\item[\textit{Result Storage} and \textit{Build Histograms}:] this is coded as a single method, since both operations are closely dependent in most implementations. The user store the results of the previous filtering to later be printed in the output file.
+	\item[\textit{Post-processing Calculations}:] this stage is executed once, after processing all events. The user codes all final calculations before the results and histograms output.
+\end{description}
+
+Note that this design of the stages required by the \texttt{DataAnalysis} class will be changed after the requirements elicitation and an usability study with the LIP researchers. All major features are initial design and testing is performed in close cooperation with a subset of LIP physicists, working on top quark and Higgs boson research.
+
+However, the programmer will have some guidelines to avoid producing an inefficient data analysis. Class variables in \texttt{DataAnalysis} must be avoided because of the amount of communications required to maintain the consistency and coherence of that data on a distributed memory environment. To maintain portability, the data analysis must only depend on the libraries provided by the framework (at the moment, there is none data analysis in LIP that depends on other libraries). To run on heterogeneous platforms, the analysis critical region must only depend on features that the framework has implemented for both CPU and accelerator devices. This allow for the user to code the data analysis once and the critical regions are able to execute on any computing device. Otherwise, the code will be restricted to the device that can execute it.
 
 \subsection{Preliminary Prototypes}
 \label{work_so_far}

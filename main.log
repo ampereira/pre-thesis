@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.9)  16 JUN 2014 17:36
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.9)  19 JUN 2014 17:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1338,9 +1338,9 @@ Package: moreverb 2008/06/03 v2.3a `more' verbatim facilities
 \listing@line=\count281
 )
 \verbatim@out=\write7
-runsystem(touch /tmp/w18-test-20146161056.tex)...disabled (restricted).
+runsystem(touch /tmp/w18-test-20146191044.tex)...disabled (restricted).
 
-runsystem(rm -f /tmp/w18-test-20146161056.tex)...disabled (restricted).
+runsystem(rm -f /tmp/w18-test-20146191044.tex)...disabled (restricted).
 
 
 
@@ -2067,87 +2067,46 @@ Package pdftex.def Info: imgs/cuda_threads.png used on input line 179.
 
 Underfull \vbox (badness 6284) has occurred while \output is active []
 
- [16 <./imgs/cuda_threads.png>]
-Overfull \hbox (10.38788pt too wide) in paragraph at lines 197--197
-[] 
- []
+ [16 <./imgs/cuda_threads.png>] [17] [18] [19]) (./tex/300_new_lipmini.tex [20]
 
-[17]
-Overfull \hbox (10.38788pt too wide) in paragraph at lines 211--211
-[] 
- []
-
-
-Underfull \vbox (badness 1163) has occurred while \output is active []
-
- [18]
-Underfull \vbox (badness 2635) has occurred while \output is active []
-
- [19])
-(./tex/300_new_lipmini.tex
-Underfull \vbox (badness 1521) has occurred while \output is active []
-
- [20]
-[21]
 Chapter 3.
-[22
+[21
 
-] [23] <imgs/lipminianalysis.png, id=370, 435.6275pt x 735.74875pt>
+] [22] <imgs/lipminianalysis.png, id=364, 435.6275pt x 735.74875pt>
 File: imgs/lipminianalysis.png Graphic file (type png)
 
 <use imgs/lipminianalysis.png>
 Package pdftex.def Info: imgs/lipminianalysis.png used on input line 36.
 (pdftex.def)             Requested size: 217.81322pt x 367.87347pt.
- [24 <./imgs/lipminianalysis.png>]
-<imgs/new_framework.png, id=380, 486.81876pt x 331.2375pt>
+ [23 <./imgs/lipminianalysis.png>]
+<imgs/new_framework.png, id=373, 486.81876pt x 331.2375pt>
 File: imgs/new_framework.png Graphic file (type png)
 
 <use imgs/new_framework.png>
 Package pdftex.def Info: imgs/new_framework.png used on input line 59.
 (pdftex.def)             Requested size: 340.7708pt x 231.86465pt.
- [25 <./imgs/new_framework.png>] [26]
-<imgs/new_framework_flow.png, id=393, 861.2175pt x 735.74875pt>
+ [24 <./imgs/new_framework.png>] [25]
+<imgs/new_framework_flow.png, id=389, 861.2175pt x 665.48625pt>
 File: imgs/new_framework_flow.png Graphic file (type png)
 
 <use imgs/new_framework_flow.png>
-Package pdftex.def Info: imgs/new_framework_flow.png used on input line 85.
-(pdftex.def)             Requested size: 430.6077pt x 367.87347pt.
-
-Overfull \hbox (10.38788pt too wide) in paragraph at lines 91--91
-[] 
- []
-
-
-Overfull \hbox (10.38788pt too wide) in paragraph at lines 92--92
-[] 
- []
-
-
-Overfull \hbox (10.38788pt too wide) in paragraph at lines 93--93
-[] 
- []
-
-
-Overfull \hbox (10.38788pt too wide) in paragraph at lines 94--94
-[] 
- []
-
-
+Package pdftex.def Info: imgs/new_framework_flow.png used on input line 86.
+(pdftex.def)             Requested size: 430.6077pt x 332.74231pt.
+ [26 <./imgs/new_framework_flow.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [27 <./imgs/new_framework_flow.png>] <imgs/new_loop.png, id=406, 323.2075pt x 
-413.545pt>
+ [27]
+<imgs/new_loop.png, id=404, 323.2075pt x 413.545pt>
 File: imgs/new_loop.png Graphic file (type png)
-
-<use imgs/new_loop.png>
-Package pdftex.def Info: imgs/new_loop.png used on input line 115.
+ <use imgs/new_loop.png>
+Package pdftex.def Info: imgs/new_loop.png used on input line 124.
 (pdftex.def)             Requested size: 161.60335pt x 206.77199pt.
- [28]
-<imgs/new_docuts.png, id=417, 478.78876pt x 390.45876pt>
+
+[28] <imgs/new_docuts.png, id=414, 478.78876pt x 390.45876pt>
 File: imgs/new_docuts.png Graphic file (type png)
 
 <use imgs/new_docuts.png>
-Package pdftex.def Info: imgs/new_docuts.png used on input line 129.
+Package pdftex.def Info: imgs/new_docuts.png used on input line 138.
 (pdftex.def)             Requested size: 239.39378pt x 195.2289pt.
 
 Underfull \vbox (badness 1668) has occurred while \output is active []
@@ -2188,13 +2147,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36336 strings out of 493315
- 643870 string characters out of 6137904
- 1082941 words of memory out of 5000000
- 38957 multiletter control sequences out of 15000+600000
+ 36324 strings out of 493315
+ 643642 string characters out of 6137904
+ 1082861 words of memory out of 5000000
+ 38951 multiletter control sequences out of 15000+600000
  25082 words of font info for 63 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 75i,12n,106p,1668b,1684s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,11n,106p,1668b,1684s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{
 /usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texl
@@ -2221,10 +2180,10 @@ c/cm-super/sfsx2074.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/
 cm-super/sfti1000.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm
 -super/sfti1095.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/courier
 /ucrr8a.pfb>
-Output written on main.pdf (35 pages, 2186045 bytes).
+Output written on main.pdf (35 pages, 2192474 bytes).
 PDF statistics:
- 634 PDF objects out of 1000 (max. 8388607)
- 547 compressed objects within 6 object streams
- 141 named destinations out of 1000 (max. 500000)
+ 630 PDF objects out of 1000 (max. 8388607)
+ 543 compressed objects within 6 object streams
+ 135 named destinations out of 1000 (max. 500000)
  246 words of extra memory for PDF output out of 10000 (max. 10000000)
 

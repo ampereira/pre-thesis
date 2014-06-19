@@ -194,8 +194,6 @@ The scheduler uses the statistics provided by each job (a kernel set to run on a
 
 DICE assumes a hierarchy composed of multiple devices (both CPUs and GPUs, in its terminology), where each device has access to a private address space (shared within that device), and a distributed memory system between devices. To abstract this distributed memory model, the framework offers a global address space. However, since the communication between different devices is expensive, DICE uses a relaxed memory consistency model, where the programmer can use a synchronisation primitive to enforce memory consistency. DICE implements a shared software cache so that every device has the data as close as possible, using the local memory of each device. It also ensures that each device has a copy of a given data partition, which otherwise would only be stored in the CPU memory.
 
-\itodo{É necessário entrar em mais detalhes?}
-
 \subsubsection*{StarPU}
 
 StarPU \cite{STARPU} is a unified runtime system consisting on both compiler directives and a runtime API that aims to allow programmers to efficiently extract parallelism from heterogeneous platforms by abstracting the architecture details of these systems. This framework frees the programmer of the workload scheduling and data consistency inherent from the distributed memory environment of heterogeneous platforms. Task submissions are handled by the StarPU task scheduler, and data consistency is ensured via a data management library.
@@ -207,8 +205,6 @@ StarPU employs a task based approach to the programming model, where a kernel is
 The performance model differs from the schedulers implemented in StarPU, but most resort to a history of the tasks execution on the devices. All the schedulers use a user defined calibration to start the execution, and after 10 executions of each task it starts to perform a real-time calibration with the available statistics. This may translate in a not efficient usage of the system resources at the start of the application, but ensures that it tends to improve as the application runs.
 
 The memory consistency is automatically ensured by the framework, as it transfers the data asynchronously without the programmer interaction. The data dependencies are determined by the scheduler, with some interaction of the programmer, as he must declare if a data structure is read/write or both. The granularity of the tasks must be defined by the user, as opposed to the DICE dynamic adjustment.
-
-\itodo{É necessário entrar em mais detalhes?}
 
 \subsubsection*{OpenACC}
 

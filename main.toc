@@ -24,17 +24,17 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.2}Distributed Memory Environments}{15}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.3}Particle Physics Frameworks}{19}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.3}Particle Physics Frameworks}{18}{subsection.2.2.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.4}Profiling Tools and Libraries}{19}{subsection.2.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}An Unified Efficient Particle Physics Framework}{22}{chapter.3}
+\contentsline {chapter}{\numberline {3}An Unified Efficient Particle Physics Framework}{21}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}The LipMiniAnalysis Skeleton Library}{23}{section.3.1}
+\contentsline {section}{\numberline {3.1}The LipMiniAnalysis Skeleton Library}{22}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}The Proposed Framework}{25}{section.3.2}
+\contentsline {section}{\numberline {3.2}The Proposed Framework}{24}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Usage and Workflow}{27}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.1}Usage and Workflow}{26}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.2}Preliminary Prototypes}{28}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 
