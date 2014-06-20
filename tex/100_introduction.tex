@@ -92,8 +92,8 @@ To reconstruct the \ttH system a data analysis application was developed, the \t
 \subsection{Goals and Scientific Contribution}
 \label{goals}
 
-\itodo{dar uma framework especializada}
+The goal for this PhD dissertation is to provide an efficient unified framework for the development particle physics data analysis applications. It aims to give a kernel-like programming model, where the user only codes the sections relative to each specific data analysis, while the framework guarantees portable efficiency for both homogeneous and heterogeneous platforms. The physics researchers will spend less time developing applications, while the framework ensures that the code is automatic parallelised and uses the computing power of both CPUs and accelerator devices.
 
-\itodo{usa procs e threads}
+With a more agile development of high performance data analysis applications, researchers can spend more time improving the algorithms accuracy, which usually requires the extra computing power provided by the efficient usage of multicore CPUs and manycore devices, and analyse a larger amounts of data. These two factors have a big impact on improving the quality of the physics research.
 
-\itodo{hetplats}
+The specialised design of the framework for the specific field of particle physics data analysis allows to implement better automatic parallelisation mechanisms, for both homogeneous and heterogeneous platforms, than general purpose frameworks. On homogeneous platforms, it has been demonstrated in \cite{paperAMP,Msc:AMP} that a single shared or distributed memory parallel implementation may not provide the best efficiency when compared to an hybrid implementation. This framework will attempt to use hybrid parallel configurations in specific cases on a single computing system, while other frameworks assume that shared memory paradigm best suits all applications needs. On heterogeneous platforms, the framework will initially support automatic parallelisation for both \nvidia GPU and \intel Xeon Phi devices, with dynamic load balance among CPU accelerator devices.
