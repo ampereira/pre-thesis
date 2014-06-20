@@ -327,6 +327,107 @@
       \field{title}{{Removing Inefficiencies from Scientific Code: the Study of the Higgs Boson Couplings to Top Quarks}}
       \field{year}{2014}
     \endentry
+    \entry{SC:Nature}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=8752e74f63939f3700ba0050306ae639}{Merali}{M\bibinitperiod}{Zeeya}{Z\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=8752e74f63939f3700ba0050306ae639}{Merali}{M\bibinitperiod}{Zeeya}{Z\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{8752e74f63939f3700ba0050306ae639}
+      \strng{fullhash}{8752e74f63939f3700ba0050306ae639}
+      \field{sortinit}{0}
+      \field{labeltitle}{ERROR... Why scientific code does not compute}
+      \field{issue}{467}
+      \field{journaltitle}{Nature, pp. 775-777}
+      \field{month}{10}
+      \field{title}{ERROR... Why scientific code does not compute}
+      \field{year}{2010}
+    \endentry
+    \entry{SC:Develop}{inproceedings}{}
+      \name{labelname}{6}{}{%
+        {{hash=08b4f0bce844f887eb701ad6a95ab02f}{Hannay}{H\bibinitperiod}{Jo\bibnamedelima Erskine}{J\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{hash=80e48c2e6c872c3fc5c9913438ad6a1c}{MacLeod}{M\bibinitperiod}{Carolyn}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=c6042b430db1130a557f871eb20b7fb8}{Singer}{S\bibinitperiod}{Janice}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=0967083410282320ed5fab09db692cfc}{Langtangen}{L\bibinitperiod}{Hans\bibnamedelima Petter}{H\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+        {{hash=461b55d62275a35340d9ea5908ba9e01}{Pfahl}{P\bibinitperiod}{Dietmar}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=fda30198609a1ab29a82b93d4e8f347b}{Wilson}{W\bibinitperiod}{Greg}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{6}{}{%
+        {{hash=08b4f0bce844f887eb701ad6a95ab02f}{Hannay}{H\bibinitperiod}{Jo\bibnamedelima Erskine}{J\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{hash=80e48c2e6c872c3fc5c9913438ad6a1c}{MacLeod}{M\bibinitperiod}{Carolyn}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=c6042b430db1130a557f871eb20b7fb8}{Singer}{S\bibinitperiod}{Janice}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=0967083410282320ed5fab09db692cfc}{Langtangen}{L\bibinitperiod}{Hans\bibnamedelima Petter}{H\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+        {{hash=461b55d62275a35340d9ea5908ba9e01}{Pfahl}{P\bibinitperiod}{Dietmar}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=fda30198609a1ab29a82b93d4e8f347b}{Wilson}{W\bibinitperiod}{Greg}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{98c355c7b2091968ce994ce1e505cf6f}
+      \strng{fullhash}{d3b14cf5ab6a385deb8e7a252a78e2cb}
+      \field{sortinit}{0}
+      \field{labeltitle}{How do scientists develop and use scientific software?}
+      \field{booktitle}{Proceedings of the 2009 ICSE workshop on Software Engineering for Computational Science and Engineering}
+      \field{title}{How do scientists develop and use scientific software?}
+      \field{year}{2009}
+      \field{pages}{1\bibrangedash 8}
+    \endentry
+    \entry{SC:SC11}{inproceedings}{}
+      \true{morelabelname}
+      \name{labelname}{10}{}{%
+        {{hash=54e742f652b646a3c9961d6e6b44eacb}{Prabhu}{P\bibinitperiod}{Prakash}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=27fe350633fcb0e131c1f68f8702d628}{Jablin}{J\bibinitperiod}{Thomas\bibnamedelima B}{T\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+        {{hash=aa83e7ed8eef7bdcf152db4ea588f144}{Raman}{R\bibinitperiod}{Arun}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=dcdf69a1733da173c54c1c5716e88b98}{Zhang}{Z\bibinitperiod}{Yun}{Y\bibinitperiod}{}{}{}{}}%
+        {{hash=0d25fbb745587e77d98dbb30e4fd3af3}{Huang}{H\bibinitperiod}{Jialu}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=3cb63fcee6ba084d4c0e3c618ef591c1}{Kim}{K\bibinitperiod}{Hanjun}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=cd756a11e85466becac58dcaf5cd71db}{Johnson}{J\bibinitperiod}{Nick\bibnamedelima P}{N\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+        {{hash=8cfebbe54197d0a6e7c196b6fe8cf3a3}{Liu}{L\bibinitperiod}{Feng}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=b1b3bf3c6e30933106f8b56dd01f1eca}{Ghosh}{G\bibinitperiod}{Soumyadeep}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=cd511dd4e18dbd6dc214e82224bf8400}{Beard}{B\bibinitperiod}{Stephen}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \true{moreauthor}
+      \name{author}{10}{}{%
+        {{hash=54e742f652b646a3c9961d6e6b44eacb}{Prabhu}{P\bibinitperiod}{Prakash}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=27fe350633fcb0e131c1f68f8702d628}{Jablin}{J\bibinitperiod}{Thomas\bibnamedelima B}{T\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+        {{hash=aa83e7ed8eef7bdcf152db4ea588f144}{Raman}{R\bibinitperiod}{Arun}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=dcdf69a1733da173c54c1c5716e88b98}{Zhang}{Z\bibinitperiod}{Yun}{Y\bibinitperiod}{}{}{}{}}%
+        {{hash=0d25fbb745587e77d98dbb30e4fd3af3}{Huang}{H\bibinitperiod}{Jialu}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=3cb63fcee6ba084d4c0e3c618ef591c1}{Kim}{K\bibinitperiod}{Hanjun}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=cd756a11e85466becac58dcaf5cd71db}{Johnson}{J\bibinitperiod}{Nick\bibnamedelima P}{N\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+        {{hash=8cfebbe54197d0a6e7c196b6fe8cf3a3}{Liu}{L\bibinitperiod}{Feng}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=b1b3bf3c6e30933106f8b56dd01f1eca}{Ghosh}{G\bibinitperiod}{Soumyadeep}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=cd511dd4e18dbd6dc214e82224bf8400}{Beard}{B\bibinitperiod}{Stephen}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{0202aad118e97c173fc3635903a85d80}
+      \strng{fullhash}{a3553dd40dd84423f06440952f7076b9}
+      \field{sortinit}{0}
+      \field{labeltitle}{A survey of the practice of computational science}
+      \field{booktitle}{State of the Practice Reports}
+      \field{title}{A survey of the practice of computational science}
+      \field{year}{2011}
+      \field{pages}{19}
+    \endentry
+    \entry{SC:28280}{inproceedings}{}
+      \name{labelname}{4}{}{%
+        {{hash=ba6b94d91877cbdb3362bcdcd06ab58a}{Carver}{C\bibinitperiod}{Jeffrey\bibnamedelima C}{J\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+        {{hash=6d14d0486305dfddd1173d1fb9ac3f62}{Kendall}{K\bibinitperiod}{Richard\bibnamedelima P}{R\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+        {{hash=2a161b0c4b8094bcc5ae30d98c3e14a5}{Squires}{S\bibinitperiod}{Susan\bibnamedelima E}{S\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{hash=32b4e306bcf008e5cc9a1d4731e34d8b}{Post}{P\bibinitperiod}{Douglass\bibnamedelima E}{D\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{hash=ba6b94d91877cbdb3362bcdcd06ab58a}{Carver}{C\bibinitperiod}{Jeffrey\bibnamedelima C}{J\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+        {{hash=6d14d0486305dfddd1173d1fb9ac3f62}{Kendall}{K\bibinitperiod}{Richard\bibnamedelima P}{R\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+        {{hash=2a161b0c4b8094bcc5ae30d98c3e14a5}{Squires}{S\bibinitperiod}{Susan\bibnamedelima E}{S\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{hash=32b4e306bcf008e5cc9a1d4731e34d8b}{Post}{P\bibinitperiod}{Douglass\bibnamedelima E}{D\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9aad3d6aa4f6725220737e12e24df862}
+      \strng{fullhash}{831e9d576a4b95696bff9bcb00772eec}
+      \field{sortinit}{0}
+      \field{labeltitle}{Software development environments for scientific and engineering software: A series of case studies}
+      \field{booktitle}{Software Engineering, 2007. ICSE 2007. 29th International Conference on}
+      \field{title}{Software development environments for scientific and engineering software: A series of case studies}
+      \field{year}{2007}
+      \field{pages}{550\bibrangedash 559}
+    \endentry
     \entry{MooreLaw}{article}{}
       \name{labelname}{1}{}{%
         {{hash=9c50084c68d91fab87727bc63f4551bf}{Moore}{M\bibinitperiod}{Gordon\bibnamedelima E.}{G\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
@@ -496,23 +597,24 @@
       \field{title}{Chipmakers ARM for Battle in Traditional Computing Market.}
       \field{year}{2011}
     \endentry
-    \entry{OpenMP}{online}{}
+    \entry{OpenMP}{report}{}
       \name{labelname}{1}{}{%
-        {{hash=4b4091f5be44b31ede98b9369ddc27e2}{Corporation}{C\bibinitperiod}{OpenACC}{O\bibinitperiod}{}{}{}{}}%
+        {{hash=283cd87f294d72a97296a8654f6de8eb}{Board}{B\bibinitperiod}{OpenMP\bibnamedelimb Architecture\bibnamedelima Review}{O\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
       }
       \name{author}{1}{}{%
-        {{hash=4b4091f5be44b31ede98b9369ddc27e2}{Corporation}{C\bibinitperiod}{OpenACC}{O\bibinitperiod}{}{}{}{}}%
+        {{hash=283cd87f294d72a97296a8654f6de8eb}{Board}{B\bibinitperiod}{OpenMP\bibnamedelimb Architecture\bibnamedelima Review}{O\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
       }
-      \strng{namehash}{4b4091f5be44b31ede98b9369ddc27e2}
-      \strng{fullhash}{4b4091f5be44b31ede98b9369ddc27e2}
+      \list{organization}{1}{%
+        {OpenMP Architecture Review Board}%
+      }
+      \strng{namehash}{283cd87f294d72a97296a8654f6de8eb}
+      \strng{fullhash}{283cd87f294d72a97296a8654f6de8eb}
       \field{sortinit}{0}
-      \field{labeltitle}{{OpenACC: Directives for Accelerators}}
-      \field{month}{01}
-      \field{title}{{OpenACC: Directives for Accelerators}}
+      \field{labeltitle}{{OpenMP Application Program Interface}}
+      \field{month}{07}
+      \field{title}{{OpenMP Application Program Interface}}
+      \field{type}{techreport}
       \field{year}{2013}
-      \verb{url}
-      \verb http://openmp.org/wp/
-      \endverb
     \endentry
     \entry{Intel:TBB}{report}{}
       \name{labelname}{1}{}{%
@@ -531,6 +633,33 @@
       \field{title}{Intel Threading Building Blocks}
       \field{type}{techreport}
       \field{year}{2007}
+    \endentry
+    \entry{Intel:Cilk}{article}{}
+      \name{labelname}{5}{}{%
+        {{hash=e31f0550a5bee560419db61c1568ed97}{Blumofe}{B\bibinitperiod}{Robert}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=ae2073ec70e079fae57d4851d778d5c9}{Joerg}{J\bibinitperiod}{Christopher}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=4170d859c548a9be8431e59182a4d802}{Leiserson}{L\bibinitperiod}{Charles}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=fdb52cef8d9bdd6fbd9aff21100abbc0}{Randall}{R\bibinitperiod}{Keith}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=8aeb0972b134a1f1b85f063ddc83ab0d}{Zhou}{Z\bibinitperiod}{Yuli}{Y\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{5}{}{%
+        {{hash=e31f0550a5bee560419db61c1568ed97}{Blumofe}{B\bibinitperiod}{Robert}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=ae2073ec70e079fae57d4851d778d5c9}{Joerg}{J\bibinitperiod}{Christopher}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=4170d859c548a9be8431e59182a4d802}{Leiserson}{L\bibinitperiod}{Charles}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=fdb52cef8d9bdd6fbd9aff21100abbc0}{Randall}{R\bibinitperiod}{Keith}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=8aeb0972b134a1f1b85f063ddc83ab0d}{Zhou}{Z\bibinitperiod}{Yuli}{Y\bibinitperiod}{}{}{}{}}%
+      }
+      \list{organization}{1}{%
+        {Massachussets Institute of Technology}%
+      }
+      \strng{namehash}{c015bfda19d0d79f75ef964a2226967e}
+      \strng{fullhash}{ab0606d6f43e35dc904cbf117c314316}
+      \field{sortinit}{0}
+      \field{labeltitle}{Cilk: An Efficient Multithreaded Runtime System}
+      \field{journaltitle}{5th ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming, pp. 207-216}
+      \field{month}{07}
+      \field{title}{Cilk: An Efficient Multithreaded Runtime System}
+      \field{year}{1995}
     \endentry
     \entry{HEFT}{article}{}
       \name{labelname}{3}{}{%
@@ -619,6 +748,64 @@
       \verb http://www.openacc-standard.org/
       \endverb
     \endentry
+    \entry{OpenHMPP}{inproceedings}{}
+      \name{labelname}{3}{}{%
+        {{hash=dea615a9e477c24a410c148fe93bd9ec}{Dolbeau}{D\bibinitperiod}{Romain}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=ec72cb0bb2204ff9ce89e7ce546d222c}{Bihan}{B\bibinitperiod}{Stéphane}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=be71e47fdb7810d00eaa40d5111caee5}{Bodin}{B\bibinitperiod}{François}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=dea615a9e477c24a410c148fe93bd9ec}{Dolbeau}{D\bibinitperiod}{Romain}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=ec72cb0bb2204ff9ce89e7ce546d222c}{Bihan}{B\bibinitperiod}{Stéphane}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=be71e47fdb7810d00eaa40d5111caee5}{Bodin}{B\bibinitperiod}{François}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \list{organization}{1}{%
+        {Citeseer}%
+      }
+      \strng{namehash}{cc2216e83b4a923cada1804041a9fd53}
+      \strng{fullhash}{cc2216e83b4a923cada1804041a9fd53}
+      \field{sortinit}{0}
+      \field{labeltitle}{HMPP: A hybrid multi-core parallel programming environment}
+      \field{booktitle}{Workshop on General Purpose Processing on Graphics Processing Units (GPGPU 2007)}
+      \field{title}{HMPP: A hybrid multi-core parallel programming environment}
+      \field{year}{2007}
+    \endentry
+    \entry{CAPS}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=ebfe7d618e0e96764195d52c8c29fb41}{Enterprise}{E\bibinitperiod}{Caps}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=ebfe7d618e0e96764195d52c8c29fb41}{Enterprise}{E\bibinitperiod}{Caps}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{ebfe7d618e0e96764195d52c8c29fb41}
+      \strng{fullhash}{ebfe7d618e0e96764195d52c8c29fb41}
+      \field{sortinit}{0}
+      \field{labeltitle}{{CAPS: The Many-Core Programming Company}}
+      \field{month}{06}
+      \field{title}{{CAPS: The Many-Core Programming Company}}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://www.caps-entreprise.com/
+      \endverb
+    \endentry
+    \entry{ENZO}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=6a650c0333b0d85c86a977616e0475bf}{PathScale}{P\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=6a650c0333b0d85c86a977616e0475bf}{PathScale}{P\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{6a650c0333b0d85c86a977616e0475bf}
+      \strng{fullhash}{6a650c0333b0d85c86a977616e0475bf}
+      \field{sortinit}{0}
+      \field{labeltitle}{{ENZO 2014}}
+      \field{month}{06}
+      \field{title}{{ENZO 2014}}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://www.pathscale.com/ENZO
+      \endverb
+    \endentry
     \entry{CERN:ROOT}{online}{}
       \name{labelname}{1}{}{%
         {{hash=ca0f9000f3dbc38c900fb22db04450b9}{{F.\bibnamedelimi Rademakers\bibnamedelimb and\bibnamedelimb P.\bibnamedelimi Canal\bibnamedelimb and\bibnamedelimb B.\bibnamedelimi Bellenot\bibnamedelimb and\bibnamedelimb O.\bibnamedelimi Couet\bibnamedelimb and\bibnamedelimb A.\bibnamedelimi Naumann\bibnamedelimb and\bibnamedelimb G.\bibnamedelimi Ganis\bibnamedelimb and\bibnamedelimb L.\bibnamedelimi Moneta\bibnamedelimb and\bibnamedelimb V.\bibnamedelimi Vasilev\bibnamedelimb and\bibnamedelimb A.\bibnamedelimi Gheata\bibnamedelimb and\bibnamedelimb P.\bibnamedelimi Russo\bibnamedelimb and\bibnamedelimb R.\bibnamedelimi Brun}}{F\bibinitperiod}{}{}{}{}{}{}}%
@@ -658,6 +845,25 @@
       \field{month}{06}
       \field{title}{PAPI: A Portable Interface to Hardware Performance Counters}
       \field{year}{1999}
+    \endentry
+    \entry{NVIDIA:CUPTI}{report}{}
+      \name{labelname}{1}{}{%
+        {{hash=a2fe9051fe051f819bd739ef3e340377}{NVIDIA}{N\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=a2fe9051fe051f819bd739ef3e340377}{NVIDIA}{N\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \list{organization}{1}{%
+        {NVIDIA}%
+      }
+      \strng{namehash}{a2fe9051fe051f819bd739ef3e340377}
+      \strng{fullhash}{a2fe9051fe051f819bd739ef3e340377}
+      \field{sortinit}{0}
+      \field{labeltitle}{NVIDIA CUPTI User's Guide}
+      \field{month}{02}
+      \field{title}{NVIDIA CUPTI User's Guide}
+      \field{type}{techreport}
+      \field{year}{2014}
     \endentry
     \entry{TAU}{article}{}
       \name{labelname}{2}{}{%
@@ -722,23 +928,70 @@
       \strng{namehash}{ff97a9fdede09eaf6e1c8ec9f6a61dd5}
       \strng{fullhash}{ff97a9fdede09eaf6e1c8ec9f6a61dd5}
       \field{sortinit}{0}
-      \field{labeltitle}{Profiling Runtime Generated and Interpreted Code with Intel VTune Amplifier}
+      \field{labeltitle}{{Profiling Runtime Generated and Interpreted Code with Intel VTune Amplifier}}
       \field{month}{01}
-      \field{title}{Profiling Runtime Generated and Interpreted Code with Intel VTune Amplifier}
+      \field{title}{{Profiling Runtime Generated and Interpreted Code with Intel VTune Amplifier}}
       \field{type}{techreport}
       \field{year}{2013}
     \endentry
+    \entry{VampirTrace}{incollection}{}
+      \name{labelname}{8}{}{%
+        {{hash=d4d03f08b0899ba8ee13e6675f3b4338}{Knüpfer}{K\bibinitperiod}{Andreas}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=a13414326afa8a0630a2c0ac3e6bc0c8}{Brunst}{B\bibinitperiod}{Holger}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=b4340df4f0a7e3706f9d09589c8d09c4}{Doleschal}{D\bibinitperiod}{Jens}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=60101b517792dee239b9b855cffeb0c4}{Jurenz}{J\bibinitperiod}{Matthias}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=7b1af38e1cb27adce7f5ad54e528278d}{Lieber}{L\bibinitperiod}{Matthias}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=96e680fc9748bc95ab6a33ab6c5975a4}{Mickler}{M\bibinitperiod}{Holger}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=6219baa083efa75c4e3fc0eb250ba490}{Müller}{M\bibinitperiod}{MatthiasS.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=aaad9acd8aca0a08709188920adfb972}{Nagel}{N\bibinitperiod}{WolfgangE.}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{8}{}{%
+        {{hash=d4d03f08b0899ba8ee13e6675f3b4338}{Knüpfer}{K\bibinitperiod}{Andreas}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=a13414326afa8a0630a2c0ac3e6bc0c8}{Brunst}{B\bibinitperiod}{Holger}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=b4340df4f0a7e3706f9d09589c8d09c4}{Doleschal}{D\bibinitperiod}{Jens}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=60101b517792dee239b9b855cffeb0c4}{Jurenz}{J\bibinitperiod}{Matthias}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=7b1af38e1cb27adce7f5ad54e528278d}{Lieber}{L\bibinitperiod}{Matthias}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=96e680fc9748bc95ab6a33ab6c5975a4}{Mickler}{M\bibinitperiod}{Holger}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=6219baa083efa75c4e3fc0eb250ba490}{Müller}{M\bibinitperiod}{MatthiasS.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=aaad9acd8aca0a08709188920adfb972}{Nagel}{N\bibinitperiod}{WolfgangE.}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editor}{5}{}{%
+        {{hash=17f15c3537b3ac11580e2b75b540b705}{Resch}{R\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=6d4b48e93bcb432f7bd922b63b11303b}{Keller}{K\bibinitperiod}{Rainer}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=d6b5f348325402688036b6c030519d4d}{Himmler}{H\bibinitperiod}{Valentin}{V\bibinitperiod}{}{}{}{}}%
+        {{hash=18479cc939698d73d024525709cb8465}{Krammer}{K\bibinitperiod}{Bettina}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=35e9bd7c22ca95a708c7668dbddc5eda}{Schulz}{S\bibinitperiod}{Alexander}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{2c954bb449e6f116e4d9486f9c4e9a59}
+      \strng{fullhash}{150354479ad89ad17c61efb1ea1b78bc}
+      \field{sortinit}{0}
+      \field{labeltitle}{The Vampir Performance Analysis Tool-Set}
+      \field{booktitle}{Tools for High Performance Computing}
+      \field{title}{The Vampir Performance Analysis Tool-Set}
+      \field{year}{2008}
+      \field{pages}{139\bibrangedash 155}
+    \endentry
+    \entry{NVIDIA:Nsight}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=23f0b0142f48dddad93dc9e384253187}{Corporation}{C\bibinitperiod}{NVidia}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=23f0b0142f48dddad93dc9e384253187}{Corporation}{C\bibinitperiod}{NVidia}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{23f0b0142f48dddad93dc9e384253187}
+      \strng{fullhash}{23f0b0142f48dddad93dc9e384253187}
+      \field{sortinit}{0}
+      \field{labeltitle}{NVIDIA Nsight Visual Studio Edition 3.2 User Guide}
+      \field{title}{NVIDIA Nsight Visual Studio Edition 3.2 User Guide}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://docs.nvidia.com/nsight-visual-studio-edition/Nsight_Visual_Studio_Edition_User_Guide.htm
+      \endverb
+    \endentry
   \endsortlist
-  \missing{NVIDIA:CUPTI}
-  \missing{SC:SC11}
-  \missing{SC:28280}
-  \missing{SC:Develop}
-  \missing{CAPS}
-  \missing{VampirTrace}
-  \missing{SC:Nature}
-  \missing{OpenHMPP}
-  \missing{ENZO}
-  \missing{NVIDIA:Nsight}
 \endrefsection
 \endinput
 

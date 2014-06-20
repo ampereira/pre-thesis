@@ -1,5 +1,6 @@
-\documentclass[a4paper,abstract=on,twoside,parskip=full]{scrreprt}
+\documentclass[a4paper,12pt,abstract=on,twoside,openright,parskip=full]{book}
 \setlength\parindent{1.5em}
+\setlength{\parskip}{1.3ex plus 0.5ex minus 0.3ex}
 
 \usepackage[todo]{../general}
 
@@ -16,22 +17,29 @@
 \pdfbookmark{Cover}{cover}
 \pagenumbering{roman}
 
-\begin{titlepage}
-	\begin{center}
-	\vspace{100pt}
-		\textbf{\Large{Knowledge Discovery from Databases:\\Task 1}}
-		
-		\vspace{24pt}
-
-		André Pereira \\
-		Bernardo Portela
-		
-		\vspace{12pt}
-
-		University of Minho, Gualtar, Braga 4710-070, Portugal,\\
-		\texttt{\{AMPereira90,BLFPortela\}@gmail.com}
-	\end{center}
-\end{titlepage}
+%titlepage
+\thispagestyle{empty}
+\begin{center}
+\begin{minipage}{0.75\linewidth}
+    \centering
+%University logo
+    \includegraphics[scale=1]{imgs/logo.png}
+    \par
+    \vspace{3cm}
+%Thesis title
+    {\uppercase{\Large An efficient particle physics data analysis framework for homogeneous and heterogeneous platforms\par}}
+    \vspace{3cm}
+%Author's name
+    {\large André Pereira\\\texttt{ampereira@di.uminho.pt}\par}
+    \vspace{3cm}
+%Degree
+    {\Large A pre-thesis submitted for the degree of Doctor of Philosophy\par}
+    \vspace{3cm}
+%Date
+    {\Large July 2014}
+\end{minipage}
+\end{center}
+\clearpage
 
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0.4pt}

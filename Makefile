@@ -1,5 +1,5 @@
 CMD=latexmk
-FLAGS=-pdf -quiet
+FLAGS=-pdf
 
 default:
 	$(CMD) $(FLAGS)
