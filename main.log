@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.9)  20 JUN 2014 16:39
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.9)  4 JUL 2014 16:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**main.tex
+**main.tex -recorder
 (./main.tex
 LaTeX2e <2011/06/27>
 Babel <3.9f> and hyphenation patterns for 78 languages loaded.
@@ -1270,9 +1270,9 @@ Package: moreverb 2008/06/03 v2.3a `more' verbatim facilities
 \listing@line=\count280
 )
 \verbatim@out=\write7
-runsystem(touch /tmp/w18-test-2014620999.tex)...disabled (restricted).
+runsystem(touch /tmp/w18-test-2014741004.tex)...disabled (restricted).
 
-runsystem(rm -f /tmp/w18-test-2014620999.tex)...disabled (restricted).
+runsystem(rm -f /tmp/w18-test-2014741004.tex)...disabled (restricted).
 
 
 
@@ -1824,7 +1824,7 @@ Package biblatex Info: ... file 'main.bbl' found.
 Package biblatex Info: Reference section=0 on input line 16.
 Package biblatex Info: Reference segment=0 on input line 16.
 
-<imgs/logo.png, id=91, 256.96pt x 31.11626pt>
+<imgs/logo.png, id=75, 256.96pt x 31.11626pt>
 File: imgs/logo.png Graphic file (type png)
  <use imgs/logo.png>
 Package pdftex.def Info: imgs/logo.png used on input line 26.
@@ -1874,24 +1874,25 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5] <imgs/ttH_feynman.png, id=190, 625.33624pt x 526.96875pt>
-File: imgs/ttH_feynman.png Graphic file (type png)
-
-<use imgs/ttH_feynman.png>
-Package pdftex.def Info: imgs/ttH_feynman.png used on input line 62.
-(pdftex.def)             Requested size: 187.60231pt x 158.09184pt.
-
+[5]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6] <imgs/ttbar_higgs.png, id=208, 672.5125pt x 441.65pt>
+[6] <imgs/ttH_feynman.png, id=185, 625.33624pt x 526.96875pt>
+File: imgs/ttH_feynman.png Graphic file (type png)
+
+<use imgs/ttH_feynman.png>
+Package pdftex.def Info: imgs/ttH_feynman.png used on input line 64.
+(pdftex.def)             Requested size: 187.60231pt x 158.09184pt.
+
+<imgs/ttbar_higgs.png, id=186, 672.5125pt x 441.65pt>
 File: imgs/ttbar_higgs.png Graphic file (type png)
 
 <use imgs/ttbar_higgs.png>
-Package pdftex.def Info: imgs/ttbar_higgs.png used on input line 72.
+Package pdftex.def Info: imgs/ttbar_higgs.png used on input line 74.
 (pdftex.def)             Requested size: 302.62782pt x 198.74066pt.
 
 
@@ -1901,13 +1902,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [7 <./imgs/ttH_feynman.png> <./imgs/ttbar_higgs.png>]
-<imgs/graf_abstract_flow_with_kinfit.png, id=218, 554.07pt x 501.875pt>
+<imgs/graf_abstract_flow_with_kinfit.png, id=202, 554.07pt x 501.875pt>
 File: imgs/graf_abstract_flow_with_kinfit.png Graphic file (type png)
 
 <use imgs/graf_abstract_flow_with_kinfit.png>
 Package pdftex.def Info: imgs/graf_abstract_flow_with_kinfit.png used on input 
-line 84.
+line 86.
 (pdftex.def)             Requested size: 277.03432pt x 250.93687pt.
+
+Underfull \vbox (badness 3449) has occurred while \output is active []
+
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1934,7 +1938,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 Chapter 2.
-<imgs/homoplats.png, id=238, 285.065pt x 410.53375pt>
+<imgs/homoplats.png, id=222, 285.065pt x 410.53375pt>
 File: imgs/homoplats.png Graphic file (type png)
  <use imgs/homoplats.png>
 Package pdftex.def Info: imgs/homoplats.png used on input line 20.
@@ -1947,7 +1951,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12 <./imgs/homoplats.png>] <imgs/heteroplats.png, id=254, 803.0pt x 602.25pt>
+[12 <./imgs/homoplats.png>] <imgs/heteroplats.png, id=238, 803.0pt x 602.25pt>
 File: imgs/heteroplats.png Graphic file (type png)
 
 <use imgs/heteroplats.png>
@@ -1961,7 +1965,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [13 <./imgs/heteroplats.png>]
-<imgs/kepler_arch.png, id=266, 944.52875pt x 662.475pt>
+<imgs/kepler_arch.png, id=249, 944.52875pt x 662.475pt>
 File: imgs/kepler_arch.png Graphic file (type png)
 
 <use imgs/kepler_arch.png>
@@ -1981,7 +1985,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15 <./imgs/kepler_arch.png>] <imgs/mic.png, id=282, 501.875pt x 233.87375pt>
+[15 <./imgs/kepler_arch.png>] <imgs/mic.png, id=268, 501.875pt x 233.87375pt>
 File: imgs/mic.png Graphic file (type png)
 
 <use imgs/mic.png>
@@ -2008,20 +2012,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18] <imgs/cuda_threads.png, id=322, 324.46219pt x 281.55188pt>
-File: imgs/cuda_threads.png Graphic file (type png)
-
-<use imgs/cuda_threads.png>
-Package pdftex.def Info: imgs/cuda_threads.png used on input line 179.
-(pdftex.def)             Requested size: 292.01326pt x 253.39433pt.
-
+[18]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[19]
+[19] <imgs/cuda_threads.png, id=315, 324.46219pt x 281.55188pt>
+File: imgs/cuda_threads.png Graphic file (type png)
+
+<use imgs/cuda_threads.png>
+Package pdftex.def Info: imgs/cuda_threads.png used on input line 181.
+(pdftex.def)             Requested size: 292.01326pt x 253.39433pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -2049,7 +2053,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[23]) (./tex/300_new_lipmini.tex
+[23])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -2058,7 +2062,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [24]
 Chapter 3.
-[25
+(./tex/400_thesis_planning.tex [25
 
 ]
 
@@ -2067,125 +2071,23 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26] <imgs/lipminianalysis.png, id=406, 435.6275pt x 735.74875pt>
-File: imgs/lipminianalysis.png Graphic file (type png)
+[26
 
-<use imgs/lipminianalysis.png>
-Package pdftex.def Info: imgs/lipminianalysis.png used on input line 36.
-(pdftex.def)             Requested size: 217.81322pt x 367.87347pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[27 <./imgs/lipminianalysis.png>]
-<imgs/new_framework.png, id=416, 486.81876pt x 331.2375pt>
-File: imgs/new_framework.png Graphic file (type png)
-
-<use imgs/new_framework.png>
-Package pdftex.def Info: imgs/new_framework.png used on input line 59.
-(pdftex.def)             Requested size: 340.7708pt x 231.86465pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[28]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[29 <./imgs/new_framework.png>]
-<imgs/new_framework_flow.png, id=431, 861.2175pt x 665.48625pt>
-File: imgs/new_framework_flow.png Graphic file (type png)
-
-<use imgs/new_framework_flow.png>
-Package pdftex.def Info: imgs/new_framework_flow.png used on input line 88.
-(pdftex.def)             Requested size: 430.6077pt x 332.74231pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[30]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[31 <./imgs/new_framework_flow.png>]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[32] <imgs/new_loop.png, id=451, 323.2075pt x 413.545pt>
-File: imgs/new_loop.png Graphic file (type png)
-
-<use imgs/new_loop.png>
-Package pdftex.def Info: imgs/new_loop.png used on input line 126.
-(pdftex.def)             Requested size: 161.60335pt x 206.77199pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[33] <imgs/new_docuts.png, id=461, 478.78876pt x 390.45876pt>
-File: imgs/new_docuts.png Graphic file (type png)
-
-<use imgs/new_docuts.png>
-Package pdftex.def Info: imgs/new_docuts.png used on input line 140.
-(pdftex.def)             Requested size: 239.39378pt x 195.2289pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[34 <./imgs/new_loop.png>]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[35 <./imgs/new_docuts.png>]) (./tex/400_thesis_planning.tex
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[36]
+]
 Chapter 4.
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
 ine 5.
-) [37
-
-]
+) [27]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[38
+[28
 
-] [39]
-Overfull \hbox (14.86694pt too wide) in paragraph at lines 78--78
+] [29]
+Overfull \hbox (14.86694pt too wide) in paragraph at lines 80--80
 []\T1/cmr/m/n/12 Haluk Topcu-ouglu, Salim Hariri, and Min-you Wu. ^^P  Performa
 nce-Effective and Low-Complexity
  []
@@ -2196,8 +2098,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[40]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 82.
+[30]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 84.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2205,25 +2107,25 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[41]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 82.
+[31]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 84.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 82.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 82.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 84.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 8C649F33C8D939F1F5AE4C6F14D29379;1467.
+(rerunfilecheck)             Checksum: 64D50B9C46A3C22083E8CC9BB7669F70;1167.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34608 strings out of 493315
- 611426 string characters out of 6137904
- 1034477 words of memory out of 5000000
- 37237 multiletter control sequences out of 15000+600000
- 25552 words of font info for 65 fonts, out of 8000000 for 9000
+ 34517 strings out of 493315
+ 609783 string characters out of 6137904
+ 1033307 words of memory out of 5000000
+ 37177 multiletter control sequences out of 15000+600000
+ 24164 words of font info for 63 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 62i,12n,94p,1658b,2529s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,12n,94p,1628b,2529s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{
 /usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texl
@@ -2234,28 +2136,26 @@ e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/
 13/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2013/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2013/tex
-mf-dist/fonts/type1/public/cm-super/sfbi1200.pfb></usr/local/texlive/2013/texmf
--dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2013/texmf-d
-ist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2013/texmf-dis
-t/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2013/texmf-dist/
-fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2013/texmf-dist/fo
-nts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2013/texmf-dist/font
-s/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2013/texmf-dist/fonts/
-type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2013/texmf-dist/fonts/ty
-pe1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2013/texmf-dist/fonts/type
-1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/
-public/cm-super/sfrm1095.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/pu
-blic/cm-super/sfrm1200.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/publ
-ic/cm-super/sfrm1440.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public
-/cm-super/sfrm1728.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/c
-m-super/sfsl1200.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-
-super/sfti1095.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-su
-per/sfti1200.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/courier/uc
-rr8a.pfb>
-Output written on main.pdf (42 pages, 2194350 bytes).
+mf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2013/texmf
+-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2013/texmf-d
+ist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2013/texmf-dis
+t/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2013/texmf-dist/
+fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2013/texmf-dist/fo
+nts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2013/texmf-dist/font
+s/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2013/texmf-dist/fonts/
+type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2013/texmf-dist/fonts/ty
+pe1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2013/texmf-dist/fonts/type
+1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/
+public/cm-super/sfrm1200.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/pu
+blic/cm-super/sfrm1440.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/publ
+ic/cm-super/sfrm1728.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public
+/cm-super/sfsl1200.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/c
+m-super/sfti1200.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/courie
+r/ucrr8a.pfb>
+Output written on main.pdf (32 pages, 1811282 bytes).
 PDF statistics:
- 717 PDF objects out of 1000 (max. 8388607)
- 619 compressed objects within 7 object streams
- 152 named destinations out of 1000 (max. 500000)
- 251 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 607 PDF objects out of 1000 (max. 8388607)
+ 532 compressed objects within 6 object streams
+ 131 named destinations out of 1000 (max. 500000)
+ 194 words of extra memory for PDF output out of 10000 (max. 10000000)
 

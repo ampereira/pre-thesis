@@ -473,12 +473,12 @@
       \strng{namehash}{59bf2a1479db121e4f2f60b37c64252e}
       \strng{fullhash}{59bf2a1479db121e4f2f60b37c64252e}
       \field{sortinit}{0}
-      \field{labeltitle}{November 2013}
-      \field{month}{05}
-      \field{title}{November 2013}
+      \field{labeltitle}{June 2014}
+      \field{month}{06}
+      \field{title}{June 2014}
       \field{year}{2014}
       \verb{url}
-      \verb http://www.top500.org/lists/2013/11/
+      \verb http://www.top500.org/lists/2014/06/
       \endverb
     \endentry
     \entry{NVIDIA:Kepler}{report}{}

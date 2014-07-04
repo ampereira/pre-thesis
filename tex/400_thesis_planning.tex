@@ -2,4 +2,32 @@
 \chapter{Research Plan}
 \label{thesis_planning}
 
-\itodo{levantamento de requisitos}
+\itodo{Datas ainda por definir e a ordem ainda não está definida}
+\itodo{As tarefas a curto prazo estão definidas enquanto que as restantes ainda são bastante abstractas}
+\itodo{Faltam tarefas para além do protótipo (além das relacionadas com aceleradores, que serão deixadas para depois de Março de 2015)}
+
+The research plan for the PhD thesis work is as follows:
+
+\begin{itemize}
+	\item Requirements elicitation of all physics features to implement on the framework together with the LIP researchers.
+	\item Validate the proposed framework design and new data analysis programming model.
+	\item Redesign of the features already implemented in LipMiniAnalysis to fit the new framework requirements.
+	\item Assess and compare the performance of various C++ collections to store various events on memory.
+	\item Extend the current event data structure to fit the requirements of all data analysis:
+	\begin{itemize}
+		\item By adding the all variables in the ROOT input data files, or;
+		\item By the user defining which variables are needed for a given analysis, and the data structure being automatically created using that information;
+	\end{itemize}
+	\item Extend the I/O features available in LipMiniAnalysis:
+	\begin{itemize}
+		\item By reading multiple input data files in parallel;
+		\item By build the event data structure in parallel;
+	\end{itemize}
+	\item Assess and compare different performance models for irregular workload balance in:
+	\begin{itemize}
+		\item Homogeneous systems;
+		\item Heterogeneous systems initially using the \intel Xeon Phi;
+	\end{itemize}
+	\item Support for hybrid process/thread automatic parallelization.
+	\item Present the first framework prototype in March 2015.
+\end{itemize}
