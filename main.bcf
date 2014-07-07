@@ -1983,6 +1983,10 @@
     <bcf:citekey order="44">Intel:VTune</bcf:citekey>
     <bcf:citekey order="45">VampirTrace</bcf:citekey>
     <bcf:citekey order="46">NVIDIA:Nsight</bcf:citekey>
+    <bcf:citekey order="47">Msc:AMP</bcf:citekey>
+    <bcf:citekey order="47">paperAMP</bcf:citekey>
+    <bcf:citekey order="48">paperAMP</bcf:citekey>
+    <bcf:citekey order="49">paperAMP</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" type="entry" label="none">
   <bcf:sorting>

@@ -13,5 +13,9 @@
 \BOOKMARK [2][-]{subsection.2.2.3}{Particle Physics Frameworks}{section.2.2}% 13
 \BOOKMARK [2][-]{subsection.2.2.4}{Profiling Tools and Libraries}{section.2.2}% 14
 \BOOKMARK [0][-]{chapter.3}{An Unified Efficient Particle Physics Framework}{}% 15
-\BOOKMARK [0][-]{chapter.4}{Research Plan}{}% 16
-\BOOKMARK [0][-]{references.0}{References}{}% 17
+\BOOKMARK [1][-]{section.3.1}{The LipMiniAnalysis Skeleton Library}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.2}{The Proposed Framework}{chapter.3}% 17
+\BOOKMARK [2][-]{subsection.3.2.1}{Usage and Workflow}{section.3.2}% 18
+\BOOKMARK [2][-]{subsection.3.2.2}{Preliminary Prototypes}{section.3.2}% 19
+\BOOKMARK [0][-]{chapter.4}{Research Plan}{}% 20
+\BOOKMARK [0][-]{references.0}{References}{}% 21

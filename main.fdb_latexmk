@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber main"] 1404487528 "main.bcf" "main.bbl" "main" 1404488695
+["biber main"] 1404749945 "main.bcf" "main.bbl" "main" 1404753885
   "../bib/refs.bib" 1404473648 16080 be7639513a5d0bca2a052d75ee94aece ""
-  "main.bcf" 1404488694 91584 992443376332e65a93607e4f80f1b00a ""
+  "main.bcf" 1404753884 91787 c829bf3b810cc174fc8190ecc8639e06 ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1404488689 "main.tex" "main.pdf" "main" 1404488695
+["pdflatex"] 1404753876 "main.tex" "main.pdf" "main" 1404753885
   "../general.sty" 1401703084 4515 b07d1b4ae3d6378e44d67c4be6d35311 ""
   "/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii" 1337017135 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2013/texmf-dist/tex/generic/babel-english/english.ldf" 1367878877 6963 2e0cb3d93aa64508bdb0db58ae900d97 ""
@@ -216,17 +216,23 @@
   "imgs/heteroplats.png" 1391619718 75025 676fc34104568283a323a4725b704a9d ""
   "imgs/homoplats.png" 1391619718 28974 3f6491284a5f025ea5ce743c779bc9ba ""
   "imgs/kepler_arch.png" 1401805015 856681 a49d094d6113e26d2016c2b13fc56a7a ""
+  "imgs/lipminianalysis.png" 1404741274 103126 134d8c95d6c1cf853bef9784d6839d37 ""
   "imgs/logo.png" 1403277270 6110 b9f09776f91fafedc3ebd92d2c828b4f ""
   "imgs/mic.png" 1401817480 93030 3082840cfbf15502337a2997c9556044 ""
+  "imgs/new_docuts.png" 1402667215 38804 b110473c0861c47fca8b43c83d107a64 ""
+  "imgs/new_framework.png" 1402923545 127197 b1ce64a69efba6fecfd14d9c8b5e2a76 ""
+  "imgs/new_framework_flow.png" 1404741295 133137 8ff8e3778a6c230b25b3a41bc71ff2e6 ""
+  "imgs/new_loop.png" 1404741333 36865 8b5f4e4ae7166b7d9a708bf406564dc4 ""
   "imgs/ttH_feynman.png" 1401716542 42771 b2c5ee6e8b67c0425cba8c18d7e87e6e ""
   "imgs/ttbar_higgs.png" 1391619719 133478 2ade4514a4dee0881f73c8934a109caf ""
-  "main.aux" 1404488694 14357 20bcb559b42d7f8c1f60cc4dfa97b45c ""
-  "main.bbl" 1404487531 57668 c85fedf7fb524068f7b705cdffb418b1 "biber main"
-  "main.out" 1404488694 1167 64d50b9c46a3c22083e8cc9bb7669f70 ""
-  "main.tex" 1404488682 2045 d4da43ac855ff39b59f2c4d732d1cb62 ""
-  "main.toc" 1404488694 2022 d20a81782881dd9992dfa428518866d6 ""
+  "main.aux" 1404753883 18197 243c4eeff352aa4a28c537ea25444313 ""
+  "main.bbl" 1404749954 57668 c85fedf7fb524068f7b705cdffb418b1 "biber main"
+  "main.out" 1404753884 1467 d8d795e0be7403e485a05422092a4390 ""
+  "main.tex" 1404742043 1966 818645fb655c039a1437cd1820496172 ""
+  "main.toc" 1404753884 2520 d011ec77f7eeb66b44e705fa19f15c61 ""
   "tex/100_introduction.tex" 1404488672 22058 17f4d69529e5a4c2a87175d92cf9dc0c ""
   "tex/200_state_of_the_art.tex" 1404486381 41247 5dbb1799e18979853f0f179e847fefa9 ""
+  "tex/300_new_lipmini.tex" 1404753865 34221 c557f5d45128a66b8dd024d9efd07d6d ""
   "tex/400_thesis_planning.tex" 1404488660 1801 b08041f542884e02bcddbb0c0510fe3b ""
   (generated)
   "main.bcf"
