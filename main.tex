@@ -10,6 +10,13 @@
 \bibliography{../bib/refs}
 \graphicspath{{../imgs/}{../charts/}}
 
+\def\calification{
+  \newpage
+  \null\vfil
+  \clearpage
+  \pagestyle{calification} 
+}
+\def\endcalification{\par\vfil\newpage}
 % reduce chapter margins
 %\renewcommand{\chapterheadstartvskip}{\vspace*{-1.6\baselineskip}}
 
@@ -56,6 +63,8 @@
   \fancyfoot[RO,LE]{\thepage}
 }
 
+\afterpage{\blankpage}
+
 \pagenumbering{arabic}
 
 \tableofcontents
@@ -65,6 +74,7 @@
 % include all tex/ chapter files
 %
 
+\input{tex/000_abstract}
 \input{tex/100_introduction}
 \input{tex/200_state_of_the_art}
 \input{tex/300_new_lipmini}

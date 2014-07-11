@@ -3,49 +3,77 @@
 \chapter{State of the Art}
 \label{state_of_the_art}
 
-\section{Hardware}
-\label{hardware}
-
-Computing clusters are a common resource among scientific research groups. These massively parallel systems are usually constituted by racks of computing nodes interconnect by a specialised network, but each running an individual instance of the operating system. The cluster operates on a distributed memory configuration, where shared data must be explicitly transferred among nodes. These cluster nodes may be different but use a common interface to communicate with each other.
+Computing clusters are a common resource among scientific research groups. These massively parallel systems are usually constituted by racks of computing nodes interconnect by a low latency network, each running an individual instance of the operating system. The cluster operates on a distributed memory configuration, where shared data must be explicitly transferred among nodes. These cluster nodes may be dissimilar but use a common interface to communicate with each other.
 
 Clusters use dedicated nodes to centralise the data storage and implement an abstraction layer to the user. When running an application, the user file system is mounted on the nodes that will perform the computation, but it is still needed to manually copy all necessary data to avoid unnecessary communication. The computing nodes architecture may be homogeneous or heterogeneous.
 
-\subsection{Homogeneous Systems}
+Both computer scientists and self-taught programmers are only used to code and design sequential applications, showing a lack of know-how to develop algorithms for parallel environments. This lack of expertise is even more evident when programming for heterogeneous systems, where programming paradigms shift among different hardware accelerators. The mainstream industry is still adopting the use of multicore architectures with the purpose of increasing their processing performance, which reflects in a lack of academic training of computer scientists on code optimisation and parallel programming. Self taught programmers have an increased obstacle due to the lack of theoretical basis when using these new parallel programming paradigms.
+
+Programming for multicore environments requires some knowledge of the underlying architectural concepts of CPU devices and how they are interconnected. Shared memory, cache coherence and consistency, and data races are architecture-specific aspects that the programmer does not face in sequential execution environments. However, these concepts are fundamental not only to efficiently use the computational resources, but to ensure the correctness of applications.
+
+Heterogeneous systems combine the flexibility of multicore CPUs with the specific capabilities of manycore accelerator devices. However, most computational algorithms and applications are designed to the specific characteristics of CPUs. Even multithreaded applications cannot be easily ported to these devices expecting high performance. To optimise the code it is necessary a deep understanding of the architectural principles behind these devices design.
+
+The workload balance between the cores of a single CPU chip is a key aspect to extract performance and get the most efficient usage of the available resources. An inadequate workload distribution may cause some cores of the CPU to be starved, unnecessarily increasing the application execution time. A good load balancing strategy ensures that all cores are used as much as possible. Considering a multi-CPU computing node in a Non Unified Memory Access space (NUMA), a key aspect is to manage the data in such a way that it is available in the memory bank of the CPU that will need it. If a task running on a CPU needs data stored on the other CPU memory bank, it must be communicated across a low latency channel. This communication increases the time that a task is stalled waiting for resources. The same concepts apply when balancing the load between CPU and hardware accelerators, with the increased complexity of the distributed memory environment and high latency data transfers.
+
+Some computer science groups developed libraries that attempt to abstract the programmer from specific architectural and implementation details of these systems, providing an easy API as similar as possible to current sequential programming paradigms. The next subsections will present the architecture of a multi-CPU computing node, considered a homogeneous platform, and a multi-CPU node coupled with hardware accelerators, considered a heterogeneous platform, as well as software to aid the development of parallel applications in those environments.
+
+\section{Homogeneous Platforms Environment}
 \label{homo_systems}
 
-Homogeneous systems are the most common computing platforms, constituted by one or more CPU devices with their own memory bank (RAM memory), and are interconnected by a specific interface. Although these systems use a shared memory model, where all the data is addressable among multiple CPUs, each CPU has its own physical memory bank, which causes the system to have a Non Unified Memory Access (NUMA) pattern, as presented in figure \ref{fig:homoplat}. This means that the access time of a CPU to a piece of memory in its memory bank will be faster than accesses to the other CPU bank. The threads of an application must have the data that they will use on the memory bank of their CPU device to avoid the increased communication costs of NUMA.
+Homogeneous systems are the most common computing platforms, constituted by one or more CPU devices with their own memory bank (RAM memory), and are interconnected by a specific interface. Although these systems use a shared memory model, where all data is addressable among multiple CPUs, each CPU has its own physical memory bank, which causes the system to have a NUMA organisation, as presented in figure \ref{fig:homoplat}. This means that the access time of a CPU core to a memory block in its memory bank will be faster than accesses to the other CPU memory bank. The threads of an application must have the data that they will use on the memory bank of their CPU device to avoid the increased communication costs of NUMA.
 
 \begin{figure}[!htp]
 	\begin{center}
 		\includegraphics[scale=0.45]{imgs/homoplats.png}
-		\caption{Schematic representation of a homogeneous system.}
+		\caption{Schematic representation of a homogeneous NUMA platform.}
 		\label{fig:homoplat}
 	\end{center}
 \end{figure}
 
+\subsection{The Hardware}
+
 \subsubsection*{CPU devices}
 \label{cpu_devices}
 
-Gordon Moore predicted, in 1965, that for the following ten years the number of transistors on the CPU chips would double every 1.5 years \cite{MooreLaw}. This was later known as the Moore’s Law and it is expected to remain valid at least up to 2015. Initially, this allowed the increase in CPU chips clock frequency by the same factor as the transistors. Software developers did not spend much effort optimising their applications and only relied on the hardware improvements to make them faster.
+Gordon Moore predicted, in 1965, that for the following ten years the number of transistors on the CPU chips would double every 1.5 years \cite{MooreLaw}. This was later known as the Moore’s Law and it is expected to remain valid at least up to 2015. Initially, this allowed the increase in CPU chips clock frequency by the same factor as the number of transistors. Software developers did not spend much effort optimising their applications and they only relied on the hardware improvements to make the code faster.
 
-The clock frequencies of CPU chips started to stall in 2005 due to thermal dissipation issues. Manufacturers shifted from making CPUs faster to increasing their throughput by adding more cores to a single chip, reducing their energy consumption and operating temperature. This marked the beginning of the multicore and parallel computing era, where every new generation of CPUs get wider, while their clock frequencies remain steady.
+The clock frequencies of CPU chips started to stall in 2005 due to thermal dissipation issues. Manufacturers shifted from making CPUs faster to increasing their throughput by adding more processing elements (known as cores) to a single chip, reducing their energy consumption and operating temperature. This marked the beginning of the multicore and parallel computing era, where every new generation of CPUs get wider, while their clock frequencies remain steady.
 
-CPU devices are designed as general purpose computing units, and may contain multiple cores, each based on a simple structure of small processing units attached to a very fast hierarchical memory (cache, whose purpose is to hide the high latency access to global memory), and all the necessary data load/store and control units. They are capable of delivering a good performance in a wide range of operations, from executing simple integer arithmetic to complex branching and SIMD (single instruction multiple data, later explained) instructions. A single CPU core implements various mechanisms for improving the performance of applications, at the hardware level, with the most important explained next:
+CPU devices are designed as general purpose computing units, and may contain multiple cores, each based on a simple structure of small processing units attached to a very fast hierarchical memory (cache, whose purpose is to hide the high latency access to global memory), and all the necessary data load/store and control units. They are capable of delivering a good performance in a wide range of operations, from executing simple integer arithmetic on scalar values to complex branching and vector instructions. A single CPU core implements various mechanisms to improve the execution performance of the code, at the hardware level. The more relevant ones are explained:
 
 \begin{center}
 	\begin{description}
 		\item[ILP] instruction level parallelism (ILP) is the overlapping of instructions, performed at both the hardware and software level, which otherwise would run sequentially. At the software level, ILP is implemented as static parallelism, as compilers try to identify which instructions are data independent, meaning that the outcome of one does not affect the execution of the other, and schedules them to execute simultaneously, if the hardware has resources to do so. At the hardware level, ILP can be referred as dynamic parallelism, since the hardware dynamically identifies which instructions execution can be overlapped while the application is running.
 
-		\item[Vector instructions] are a special instruction set based on the SIMD model, where a single instruction is simultaneously applied to a large set of data. CPUs offer special registers to allow executing an operation on a chunk of data in a special arithmetic unit. One of the most common examples is addition of two vectors, where the hardware is capable of adding a given number of elements simultaneously . This optimisation is often performed at compile time.
+		\item[Vector instructions] are a special instruction set based on the SIMD model (Single Instruction-stream, Multiple Data-stream), where a single instruction is simultaneously applied to a large set of data. CPUs offer special registers to allow executing an operation on a chunk of data in a special arithmetic unit. One of the most common examples is the addition of two vectors, where the hardware can simultaneously add several elements . This optimisation is often performed at compile time.
 
 		\item[Multithreading] is the hardware support for the execution of multiple threads in a CPU core. This is possible by replicating part of the CPU resources, such as registers, and can lead to a more efficient utilisation of the CPU core hardware. If one thread is waiting for data, other thread can resume execution while the former is stalled. It also allows a better usage of resources that would otherwise be idle during the execution of a single thread. If multiple threads are working on the same data, multithreading can reduce the synchronisation costs between them, as they both operate on the same CPU core, and may lead to a better cache usage.
 	\end{description}
 \end{center}
 
-\subsection{Heterogeneous Systems}
+\subsection{The Software}
+\label{shared_mem}
+
+Homogeneous systems often operate in a shared memory environment. Using multiple CPU devices may cause the memory banks to be physically divided but hardware mechanisms, such as specialised CPU interconnections, allow for a common addressing space. Libraries and frameworks for parallelizing this environment are presented next.
+
+\subsubsection*{pThreads}
+
+Threads are the most simple parallel task that can be scheduled by the operating system. POSIX Threads (pThreads) are the standard implementation for UNIX based operating systems with POSIX conformity, such as most Linux distributions and Mac OS. The pThreads API provides the user with primitive for thread management and synchronisation. Since this API requires the user to deal with several low level implementation details, such as data races and deadlocks, the industry demanded the development of high abstraction level libraries, which are usually based on pThreads.
+
+\subsubsection*{OpenMP, TBB, and Cilk}
+
+OpenMP \cite{OpenMP}, Intel Threading Building Blocks (TBB) \cite{Intel:TBB}, and Cilk \cite{Intel:Cilk} are the most popular high level libraries for parallel programming in homogeneous systems.
+
+The OpenMP API is designed for multi-platform shared memory parallel programming in C, C++, and Fortran, for most CPU architectures available. It is portable and scalable, and aims to provide a simple and flexible interface for developing parallel applications, even for the most inexperienced programmers. It is based in a work sharing strategy, where a master thread spawns a set of slave threads and compute a task in a shared data structure.
+
+Intel TBB employs a work stealing heuristic, where, after the initial load distribution, if the task queue is empty, a thread attempts to steal a task from other busy threads. It provides a scalable parallel programming task based library for C++, independent from architectural details, and only requires a \intel C++ compiler. It automatically manages the load balancing and some cache optimisations, while offering parallel constructors and synchronisation primitives for the programmer. However, it requires knowledge of the object oriented programming paradigm.
+
+Cilk is a runtime system for multithreaded programming in C++. It maintains a stack with the remaining work, employing a work stealing heuristic similar to the Intel TBB.
+
+\section{Heterogeneous Platforms Environment}
 \label{hetero_systems}
 
-A new type of computing platform is becoming increasingly popular, with the emergence of specialised hardware designed to efficiently solve a specific set of computing problems. This marks the beginning of heterogeneous systems, where one or more CPU devices operate in a shared memory environment as in homogeneous systems, presented in subsection \ref{homo_systems}, and are coupled with one or more hardware accelerators. CPUs and accelerators operate in a distributed memory environment, meaning that data must be explicitly passed between the CPU and the accelerator by the programmer.
+A new type of computing platform is becoming increasingly popular, with the emergence of specialised hardware designed to efficiently solve a specific set of computing problems. This marks the beginning of heterogeneous systems, where one or more CPU devices operate in a shared memory environment as in homogeneous systems, presented in section \ref{homo_systems}, and are coupled with one or more hardware accelerators. CPUs and accelerators operate in a distributed memory environment, meaning that data must be explicitly passed between the CPU and the accelerator by the programmer.
 
 \begin{figure}[!htp]
 	\begin{center}
@@ -55,20 +83,23 @@ A new type of computing platform is becoming increasingly popular, with the emer
 	\end{center}
 \end{figure}
 
-Figure \ref{fig:heteroplat} presents a schematic representation of a heterogeneous system. Both CPUs use the same interface to communicate with the hardware accelerators, which may cause contention in the communications to between devices. This high latency PCI-Express interface is usually a potential bottleneck for applications that use hardware accelerators.
+Figure \ref{fig:heteroplat} presents a schematic representation of a heterogeneous system. Multiple CPUs on the system use the same high latency interface to communicate with the hardware accelerators. This high latency PCI-Express interface is usually a potential bottleneck for applications that use accelerators.
 
-Computing accelerators are usually constituted of a large number of small and simple processing units, aimed to achieve the most performance possible on specific massively parallel problems, as opposed to general purpose CPUs. This massive data parallel processing (SIMD execution model) offered by these accelerators, where a single operation is performed simultaneously on large quantities of independent data, have the purpose of offloading the CPU from such data intensive operations. Several manycore accelerator devices are currently available, with me most popular being the general purpose GPUs and Intel Many Integrated Core line, with its production device known as Intel Xeon Phi \cite{Intel:MIC}. An heterogeneous platform may have one or more accelerator devices of the same or different architectures.
+Computing accelerators are usually constituted of a large number of small and simple processing units, aimed to achieve the most performance possible on specific massively parallel problems, as opposed to general purpose CPUs. This massive data parallel processing (SIMD execution model) offered by these accelerators, where a single operation is performed simultaneously on large quantities of independent data, have the purpose of offloading the CPU from such data intensive operations. Several manycore accelerator devices are currently available, with me most popular being the general purpose GPUs and the Intel Many Integrated Core line, with its production device known as Intel Xeon Phi \cite{Intel:MIC}. An heterogeneous platform may have one or more accelerator devices of the same or different architectures.
 
-As of June 2014, 62 of the TOP500’s list \cite{TOP500} are computing clusters that use hardware accelerators, which indicates an exponential growth of these devices popularity compared to previous years. The Intel Xeon Phi is becoming increasingly popular, being the accelerator device of choice in 17 clusters of the TOP500, with 2 of those clusters on the top 10 (the fastest cluster, Tianhe-2, uses this device). NVidia GPUs remain as the most used accelerator, on a total of 44 clusters with 2 on the top 10, but the AMD devices are steadily losing their share. The most popular hardware accelerators will be presented in depth in the next subsections.
+As of June 2014, 62 of the TOP500’s list \cite{TOP500} are computing clusters that use hardware accelerators, which indicates an exponential growth of these devices popularity compared to previous years. The Intel Xeon Phi is becoming increasingly popular, being the accelerator device of choice in 17 clusters of the TOP500, with 2 of those clusters on the top 10 (the fastest cluster, Tianhe-2, uses this device). NVidia GPUs remain as the most used accelerator, on a total of 44 clusters with 2 on the top 10, while the AMD devices are steadily losing their share. A similar list focused on consumption efficiency (computing power per Watt) Green500 \cite{GREEN500}, includes at the top 15 only clusters with \nvidia GPU accelerators. The most popular hardware accelerators will be presented in depth in the next subsections.
+
+\subsection{Computing Accelerators}
+\label{hardware}
 
 \subsubsection*{Graphics Processing Unit}
 \label{gpu}
 
-The Graphics Processing Units (GPU) were one of the first hardware accelerators on the market. Their initial purpose was to accelerate computer graphics applications, which started of as simple pixel drawing and evolved to support complex 3D scene rendering, such as transforms, lighting, rasterisation, texturing, depth testing, and display. Due to the industry demand for customisable shaders, this hardware later allowed some flexibility for the programmers to modify the image synthesising process. This also allowed using this GPUs as a hardware accelerator for wider purposes beyond computer graphics, such as scientific computing, as some researchers saw the potential to use these devices to boost the performance of numerical computation.
+The Graphics Processing Units (GPU) were one of the first hardware accelerators on the market. Their initial purpose was to speedup computer graphics applications, which started of as simple pixel drawing and evolved to support complex 3D scene rendering, such as transforms, lighting, rasterisation, texturing, depth testing, and display. Due to the industry demand for customisable shaders, this hardware later allowed some flexibility for the programmers to modify the image synthesising process. This also allowed using this GPUs as a hardware accelerator for wider purposes beyond computer graphics, such as scientific computing, as some researchers saw the potential to use these devices to boost the performance of numerical computation.
 
-The GPU architecture is based on the SIMD execution model. Image synthesising is, from the computational point of view, the processing of a large set of numbers that represent pixels. The processing of each individual pixel usually does not depend on the processing of its neighbours, or any other pixel on the image, so, in the best case scenario, the computation has no data dependencies, which allows to process all pixels simultaneously. The massive data parallelism is the most important characteristic that was considered when designing the GPU architecture.
+The GPU architecture is based on the SIMD execution model. Image synthesising is, from the computational point of view, the processing of a large set of values that represent pixels. The processing of each individual pixel usually does not depend on the processing of its neighbours, or any other pixel on the image, so, in the best case scenario, the computation has no data dependencies, which allows to process all pixels simultaneously. The massive data parallelism is the most important characteristic that was considered when designing the GPU architecture.
 
-As GPU manufacturers allowed more flexibility to program their devices, the High Performance Computing (HPC) community started to use these devices to solve specific massively data parallel problems, such as numerical computation problems. However, the highly specialised architecture of GPUs affected the performance of many other different problem domains. Due to the increased demand for these devices by the HPC community, manufacturers began to generalise more of the GPUs features, such as adding support for double precision floating point arithmetic, and later began producing accelerators specifically oriented for scientific computing. \nvidia is the main GPU manufacturer for scientific computing GPUs, with a wide range of available hardware known as Tesla. These devices characteristics differ from the general purpose GPUs, as they have more GDDR RAM, a different structural design to fit in cluster nodes, and different cooling options. The chip itself is different, offering more processing units and larger memory caches. Kepler \cite{NVIDIA:Kepler} is the latest GPU architecture released by \nvidia, and its relevant design details are explained next.
+As GPU manufacturers allowed more flexibility to program their devices, the High Performance Computing (HPC) community started to use these devices to solve specific massively data parallel problems, such as numerical computation problems. However, the highly specialised architecture of GPUs affected the performance of many other different problem domains. Due to the increased demand for these devices by the HPC community, manufacturers began to generalise more of the GPUs features, such as adding support for double precision floating point arithmetic, and later began producing accelerators specifically oriented for scientific computing. \nvidia is the main GPU manufacturer for scientific computing GPUs, with a wide range of available hardware boards known as Tesla. These devices characteristics differ from the original GPUs, as they have more GDDR RAM, a different structural design to fit in cluster nodes, and different cooling options. The chip itself is different, offering more processing units and larger memory caches. Kepler \cite{NVIDIA:Kepler} is the latest GPU architecture released by \nvidia, and some of its key features are detailed below.
 
 \begin{figure}[!htp]
 	\begin{center}
@@ -78,7 +109,7 @@ As GPU manufacturers allowed more flexibility to program their devices, the High
 	\end{center}
 \end{figure}
 
-Figure \ref{fig:kepler} shows the Kepler architecture organisation in two main components: the Streaming Multiprocessor (SMX) and the memory module. The focus of this architecture was not only on improving the performance but also the energy efficiency, offering up to to 3x more performance per watt than Fermi (the previous architecture). To achieve this efficiency, Kepler has implemented several features to improve the computational resource usage:
+Figure \ref{fig:kepler} shows the Kepler architecture organisation in two main components: the set of Streaming Multiprocessors (SMX) and the internal memory hierarchy. The focus of this architecture was not only on improving the performance but also the energy efficiency, offering up to to 3x more performance per watt than Fermi (the previous architecture). To achieve this efficiency, Kepler has implemented several features to improve the computational resource usage:
 
 \begin{description}
 	\item[Dynamic Parallelism:] a kernel (algorithm coded in CUDA) running on the GPU is capable of calling itself recursively, which allows to dynamically generate new workload to process without the CPU interference. This improves irregular algorithms performance on the GPU and reduces the communications to the CPU as the GPU is capable of managing the workload.
@@ -89,7 +120,7 @@ Figure \ref{fig:kepler} shows the Kepler architecture organisation in two main c
 
 The SMX are complex processing units responsible for performing all computations on the GPU, and there may be up to 15 in a single chip. Each SMX has 192 single precision and 64 double precision CUDA cores, small processing units capable of performing basic arithmetic, 32 special function units, to perform complex computations such as trigonometric operations, and 32 load and store units. These computing units operate at the GPU main clock rate. The SMX features 4 warp schedulers (warps are presented in subsection \ref{distributed_mem}) and 8 instruction dispatchers.
 
-Each SMX has 65536 32-bit registers, with a maximum of 255 registers per CUDA thread, a 64 KByte very fast memory for L1 cache and shared memory, and a similar fast 48 KByte memory cache for read-only data. Finally, the Kepler architecture provides 1536 KB of L2 cache shared among all SMX units. The high end available Tesla K40 has a memory bandwidth of 280 GB/s to its main memory. Since the GPU is connected by PCI-Express interface, the bandwidth for communications between CPU and GPU is restricted to only 12 GB/s (6 GB/s in each direction of the channel). Memory transfers between the CPU and GPU must be minimal as they may greatly restrict the performance.
+Each SMX has 64K 32-bit registers, with a maximum of 255 registers per CUDA thread, a 64 KB very fast memory for L1 cache and shared memory, and a similar fast 48 KB memory cache for read-only data. Finally, the Kepler architecture provides 1.5 MB of L2 cache shared among all SMX units. The high end available Tesla K40 has a memory bandwidth of 280 GB/s to its main memory. Since the GPU is connected by PCI-Express interface, the bandwidth for communications between CPU and GPU is restricted to only 12 GB/s (6 GB/s in each direction of the channel). Memory transfers between the CPU and GPU must be minimal as they may greatly restrict the performance.
 
 A kernel is executed by a given amount of parallel workers named CUDA threads. They are grouped into blocks, to be scheduled among SMX and the threads inside a block can only run in a given SMX, and these are grouped into a grid, which contains all CUDA threads (up to $2^{31}-1$) for a given kernel. The CUDA threads are grouped in batches of 32, called warps, to be dispatched by a warp scheduler. The scheduler has a scoreboard with up to 48 entries to manage which warps are stalled waiting for resources or data and which are ready to be executed.
 
@@ -112,7 +143,7 @@ The \intel Many Integrated Core (MIC) architecture, with the current production 
 	\end{center}
 \end{figure}
 
-Each core is able to run 4 threads simultaneously, and most of the massive parallelism is obtained by using the vectorisation capabilities provided by the 32 512 bit wide vector registers available. However, only a small set of vector operations are implemented in the hardware, and the most complex are emulated by the compiler. Each core as 64 KB for data and 64 KB for instruction L1 cache, and 512 KB L2 cache. There is no shared cache among the 61 cores of the chip, and no cache consistency and coherence is automatically guaranteed among them. The cores are interconnected by a bidirectional ring network. MIC does not support out of order execution, which greatly compromises the use of ILP. Also, the clock frequency is limited to 1.1 GHz, which is less than half of the modern CPUs.
+Each core is able to run 4 threads simultaneously, and most of the massive parallelism is obtained by using the vectorisation capabilities provided by the available 32 vector registers 512-bit wide. However, only a small set of vector operations are implemented in the hardware, and the most complex are emulated by the compiler. Each core has 64 KB + 64 KB for data + instructions L1 cache, and 512 KB L2 cache. There is no shared cache among the 61 cores of the chip, and no cache consistency and coherence is automatically guaranteed among them. The cores are interconnected by a bidirectional ring network. MIC does not support out of order execution, which greatly compromises the use of ILP. Also, the clock frequency is limited to 1.1 GHz, which is less than half of the current CPUs.
 
 Since it uses the same instruction set as conventional x86 CPUs, \intel claims that current applications can be easily ported to run on the device. This may be true for common matrix arithmetic and similar applications, efficient ports of complex applications that require the use of many external libraries is very difficult, or even infeasible \cite{Msc:AMP}.
 
@@ -125,39 +156,7 @@ Many alternative hardware accelerators are currently on the market due to the in
 
 ARM processors are now leading the mobile industry and, alongside the new NVidia Tegra processors \cite{NVIDIA:Tegra} that are steadily increasing the market share, are likely to be adopted by the HPC community\footnote{e.g. the ARM based Montblanc project will replace the MareNostrum in the Barcelona Supercomputing Center (BSC)} due to their low power consumption while delivering a significant performance \cite{ARM}. Due to the increased complexity of mobile applications, the shift from 32 bit to 64 bit mobile processors has already happened, which will greatly benefit computing clusters using this type of hardware.
 
-\section{Software}
-\label{software}
-
-Both computer scientists and self-taught programmers are only used to code and design sequential applications, showing a lack of know-how to develop algorithms for parallel environments. This lack of expertise is even more evident when programming for heterogeneous systems, where programming paradigms shift among different hardware accelerators. The mainstream industry is still adopting the use of multicore architectures with the purpose of increasing their processing performance, which reflects in a lack of academic training of computer scientists on code optimisation and parallel programming. Self taught programmers have an increased obstacle due to the lack of theoretical basis when using these new parallel programming paradigms.
-
-Programming for multicore environments requires some knowledge of the underlying architectural concepts of CPU devices and how they are interconnected. Shared memory, cache coherence and consistency, and data races are architecture-specific aspects that the programmer does not face in sequential execution environments. However, these concepts are fundamental not only to efficiently use the computational resources, but to ensure the correctness of applications.
-
-Heterogeneous systems combine the flexibility of multicore CPUs with the specific capabilities of manycore accelerator devices. However, most computational algorithms and applications are designed to the specific characteristics of CPUs. Even multithreaded applications cannot be easily ported to these devices expecting high performance. To optimise the code it is necessary a deep understanding of the architectural principles behind these devices design.
-
-The workload balance between the cores of a single CPU chip is an important aspect to extract performance and get the most efficient usage of the available resources. A inadequate workload distribution may cause some cores of the CPU to be starved, unnecessarily increasing the application execution time. A good load balancing strategy ensures that all the cores are used as much as possible. Considering a multi-CPU system, it is important to manage the data in such a way that it is available in the memory bank of the CPU that will need it to avoid the increased NUMA latency. The same concepts apply when balancing the load between CPU and hardware accelerators, with the increased complexity of the distributed memory environment and high latency data transfers.
-
-Some computer science groups developed libraries that attempt to abstract the programmer from specific architectural and implementation details of these systems, providing an easy API as similar as possible to current sequential programming paradigms. The next subsections will present frameworks to aid the development of parallel applications for homogeneous and heterogeneous systems, frameworks used in particle physics, and tools to profile and identify bottlenecks in parallel code.
-
-\subsection{Shared Memory Environments}
-\label{shared_mem}
-
-Homogeneous systems often operate in a shared memory environment. Using multiple CPU devices may cause the memory banks to be physically divided but hardware mechanisms, such as specialised CPU interconnections, allow for a common addressing space. Libraries and frameworks for parallelizing for this environment are presented next.
-
-\subsubsection*{pThreads}
-
-Threads are the most simple parallel task that can be scheduled by the operating system. POSIX Threads (pThreads) are the standard implementation for UNIX based operating systems with POSIX conformity, such as most Linux distributions and Mac OS. The pThreads API provides the user with primitive for thread management and synchronisation. Since this API forces the user to deal with several low level implementation details, such as data races and deadlocks, the industry demanded the development of high abstraction level libraries, which are usually based on pThreads.
-
-\subsubsection*{OpenMP, TBB, and Cilk}
-
-OpenMP \cite{OpenMP}, Intel Threading Building Blocks (TBB) \cite{Intel:TBB}, and Cilk \cite{Intel:Cilk} are the most popular high level libraries for parallel programming in homogeneous systems.
-
-The OpenMP API is designed for multi-platform shared memory parallel programming in C, C++, and Fortran, for most CPU architectures available. It is portable and scalable, and aims to provide a simple and flexible interface for developing parallel applications, even for the most inexperienced programmers. It is based in a work sharing strategy, where a master thread spawns a set of slave threads and compute a task in a shared data structure.
-
-Intel TBB employs a work stealing heuristic, where, after the initial load distribution, if the task queue is empty, a thread attempts to steal a task from other busy threads. It provides a scalable parallel programming task based library for C++, independent from architectural details, and only requires a \intel C++ compiler. It automatically manages the load balancing and some cache optimisations, while offering parallel constructors and synchronisation primitives for the programmer. However, it requires knowledge of the object oriented programming paradigm.
-
-Cilk is a runtime system for multithreaded programming in C++. It maintains a stack with the remaining work, employing a work stealing heuristic similar to the Intel TBB.
-
-\subsection{Distributed Memory Environments}
+\subsection{The Software}
 \label{distributed_mem}
 
 Heterogeneous systems use distributed memory address space for handling the data between CPU and accelerator devices. Even though the CPU devices work on a shared memory space, data must be explicitly passed to the accelerators. General purpose frameworks for parallelizing on the devices and on the heterogeneous platforms as a whole are presented next.
@@ -208,6 +207,16 @@ The performance model differs among the schedulers implemented in StarPU, but mo
 
 The memory consistency is automatically ensured by the framework, as it transfers the data asynchronously without the programmer interaction. The data dependencies are determined by the scheduler, with some interaction of the programmer, when declaring if a data structure is read/write or both. The granularity of the tasks must be defined by the user, as opposed to the DICE dynamic adjustment.
 
+\subsubsection*{Legion}
+
+The Legion framework \cite{Legion} is a programming model for heterogeneous platforms. It relies on an extensive specification of the data structure of an application to provide a high performance parallelization and load balancing using both CPUs and hardware accelerators. It is targeted for users with extensive programming experience for heterogeneous platforms with MPI, OpenCL, and CUDA, and for users that aim to create high level languages and libraries optimised separately for each architecture.
+
+The programmer needs to use a set of specific Legion data structures to ensure a subset of the provided data properties, such as partitioning and coherence. These properties need to be explicitly managed so that the framework is able to achieve an efficient load balance. With the specified data properties, Legion uses automated mechanisms to perform the execution parallelization, load balance, and communications. The user can provide the same algorithm coded for various architectures and the Legion mapping directives ensure their allocation to the proper device. The framework uses logical regions to abstract the data handling to the users. By using these regions, the programmer can enforce dependencies among tasks, slice the region space to increase the granularity of the tasks, and improve the scheduling and scalability of the algorithms.
+
+Legion handles parallel execution of irregular loads by adapting the workload of each computing device and improving the task size during the application execution. It dynamically partitions the data according to the history of the execution time of the tasks for each device. The algorithm for slicing the data structure is coded by the programmer, similar to DICE. This benefits the scheduling on these distributed memory environments and in multiprocess parallelization among several computing nodes.
+
+Applications can be coded in the provided Legion language or in C++, which integrates with its runtime API. The mappers and slice algorithms are coded in special classes, to later be queried by the runtime system during the application execution. Default mappers are provided in the current Legion package. The framework also provides a low level C++ API to allow programming for each specific architecture. It can be used in a shared memory mode, or in a distributed memory configuration that supports execution on large heterogeneous clusters. Currently, Legion only supports \nvidia and AMD GPUs hardware accelerators.
+
 \subsubsection*{OpenACC}
 
 OpenACC \cite{OpenACC} is a framework for heterogeneous platforms with accelerator devices. It is designed to simplify the programming paradigm for CPU/GPU systems by abstracting the memory management, kernel creation, and GPU management. Like OpenMP, it is designed for C, C++ and Fortran, it provides both an API and compiler directives, and allows the parallel task to run on both CPU and GPU at the same time. However, it does not schedule the load between the CPU and GPU, as it is only designed to offload the workload to the accelerators. The current specification addresses both \nvidia and AMD GPUs, as well as the \intel Xeon Phi.
@@ -220,10 +229,30 @@ OpenHMPP \cite{OpenHMPP} is a standard similar to OpenACC, designed by CAPS \cit
 
 Although it provides asynchronous execution of the offloaded kernel, it is not possible to use this framework to manage simultaneous execution and load balance of the same kernel in both CPUs and GPUs. Moreover, it is only possible to use this specification with the CAPS compilers and PathScale ENZO Compiler Suite \cite{ENZO}.
 
-\subsection{Particle Physics Frameworks}
+\section{The Computational Particle Physics}
 \label{particle_frameworks}
 
-\subsubsection*{ROOT}
+\subsection*{The \tth Data Analysis Application Optimisation}
+
+A performance and optimisation study of a particle physics data analysis application of the \ttH system was performed in \cite{Msc:AMP,paperAMP}. The \tth application was developed by LIP researchers, using the LipMiniAnalysis skeleton library to study and prove the \ttH system properties in the Standard Model, which was presented in section \ref{motivation}. The flow of the application execution is presented in figure \ref{fig:flow}. The reconstruction algorithm implements the variation of the particles parameters, to overcome the $\pm1\%$ uncertainty of the ATLAS detector. It is able to reconstruct around 3000 events per second, considering the detectors data as accurate, and 5 events per second when performing 1000 variations.
+
+\begin{figure}[!htp]
+	\begin{center}
+		\includegraphics[scale=0.5]{imgs/graf_abstract_flow_with_kinfit.png}
+		\caption{Schematic representation for the \tth application flow.}
+		\label{fig:flow}
+	\end{center}
+\end{figure}
+
+Each event data on an input file is individually loaded into a single global state, shared between the data analysis code and LipMiniAnalysis, which is overwritten for each new event loaded. The event is then submitted to a series of cuts, which filter events that are not suited for reconstruction. When an event reaches the cut 20, the \ttbar system and Higgs boson are reconstructed, which is expected to be the most computing demanding section of the code. If the \ttbar system reconstruction fails, the current jet/lepton combination is discarded and the next is processed. If an event has a possible reconstruction it passes the final cut and its final information is stored.
+
+The variation of the particles parameters was very inefficient. For 256 variations, it amounted to 63\% of the \tth execution time, from which 23\% was spent on resetting the seed of the pseudo-random number generator. An analysis of the code revealed that the application uses the Mersenne Twister algorithm \cite{MersenneTwister}, resetting the seed for every 18 numbers generated. The seed reset is unnecessary as the Mersenne Twister period is approximately $4.3 * 10^{6001}$, while the maximum amount of pseudo random numbers generated by the application, for a given test input data file and 1024 variations, is $3 * 10^9$. The removal of this inefficiency granted a 71\% performance improvement.
+
+The best parallelization approach is to process concurrently several events from the same input file. However, the function that loads events from a file into memory in LipMiniAnalysis assigns the information to a single global space. This data structure contains information that is modified during the event reconstruction process, and it is overwritten for every event loaded. Changing the data structure to support multiple events in memory simultaneously, and loading all events in the input file at the beginning of the data analysis, would allow the parallel processing of events with low overhead. However, changes to the LipMiniAnalysis code were out of the scope of this work, so parallelization alternatives were designed and tested on a homogeneous platform. A hybrid process/thread parallelization provided the best efficiency on the system\footnote{Dual \intel Xeon e5-2670v2, with a total of 20 cores and 40 hardware threads.}, with an overall speedup of 112. The event throughput increased from 5 to 560 events per second for 1024 variations.
+
+A preliminary parallelization for CUDA capable GPUs was performed. Due to the dependencies of the code in functionalities of external libraries, only the kinematical reconstruction was offloaded to GPU. The marshalling and unmarshalling of the data and communication overhead greatly restricted the performance using the device. With only one event on memory at a time, it was not possible to hide the communication overhead by using multiple CPU cores and GPU simultaneously. For 256 variations the CPU was idle 31\% of the time, and the computations that were not offloaded to the accelerator had to be performed sequentially due to the LipMiniAnalysis data structure inefficiencies.
+
+\subsection*{ROOT}
 
 ROOT \cite{CERN:ROOT} is a complex framework designed by particle physicists to aid all data analysis application development of the physics experiments conducted at CERN. It has all functionality required to process large amounts of data, by providing specific data storage formats, C++ classes for elemental particles, various physics algorithms, and histogram creation functions. The framework also provides a built-in C++ interpreter, Cling, to allow testing simple instructions and macros, without the need to compile and link the code.
 
@@ -231,39 +260,39 @@ PROOF is a subset of the framework to support the development of data analysis a
 
 Currently, ROOT does not provide any features parallelized, but the developers already shown interest to improve the performance of some of the core routines of the framework by parallelizing them on a shared memory environment. However, it may not translate in massive performance gains of the data analysis applications, as their critical regions are usually the reconstruction of the events, which do not rely on those complex ROOT functionalities, but rather on a large set of simple routines and classes.
 
-\subsubsection*{TopROOTCore}
+\subsection*{TopROOTCore}
 
 TopROOTCore is an extension of ROOT for top quark physics, developed by CERN associate research groups, which adds features and physics algorithms to the existing framework. It is responsible for producing the last input data format at the last CERN computational tiers, before the final analysis and event reconstruction. In the data analysis applications, it is often used due to some physics algorithms it implements.
 
-\subsection{Profiling Tools and Libraries}
+\section{Profiling Tools and Libraries}
 \label{tools}
 
-\subsubsection*{Performance API}
+\subsection*{Performance API}
 
 The Performance API (PAPI) \cite{PAPI} specifies an API to access hardware performance counters in most modern processors. It allows programmers to measure the performance counters for specific regions of an application, evaluating metrics such as cache misses, operational intensity or even power consumption. This analysis helps classifying the algorithms and identify possible bottlenecks at a very low abstraction level.
 
 PAPI recently supports hardware counters for both \nvidia GPUs, using the \nvidia CUPTI driver interface, and \intel Xeon Phi. It also supports counters to measure the energy efficiency of the hardware.
 
-\subsubsection*{\nvidia CUPTI}
+\subsection*{\nvidia CUPTI}
 
 The \nvidia CUDA Profiling Tools Interface (CUPTI) \cite{NVIDIA:CUPTI} is a performance analysis interface available in the \nvidia drivers for CUDA capable GPUs. It provides a callback API to integrate with the code, at the entry and exit of a kernel call, which monitors the interaction of the code with the CUDA runtime and drivers. CUPTI has a second API to monitor the performance of a kernel on the GPU by analysing the hardware counters on the device, which allows for a in-depth assessment of the code behaviour in memory transactions, cache accesses and misses, and much more.
 
-\subsubsection*{TAU and HPCToolkit}
+\subsection*{TAU and HPCToolkit}
 
 TAU \cite{TAU} and HPCToolkit \cite{HPCToolkit} are performance analysis tools, with static and dynamic functionalities, to evaluate the performance of HPC applications. The static APIs are low level and, while providing higher control of the areas to profile and specific metrics, require the programmer a deeper knowledge of these tools and how to integrate them with the existing code. The dynamic functionalities provide general metrics but do not require any changes to the application code.
 
 Both tools provide statistical visualisation GUIs, to build graphs and comparisons of the different metrics profiled during the application execution time. Note that both tools support the analysis of parallel code in shared and distributed memory environments, but the HPCToolkit still does not support hardware accelerators. Unlike VTune, these tools only present the statistics but do not attempt to identify the bottlenecks, leaving that task to the programmer.
 
-\subsubsection*{VTune}
+\subsection*{VTune}
 
 Intel VTune profiler \cite{Intel:VTune} is a proprietary tool for performance analysis of parallel applications. It provides an easy to use interface to analyse applications, automatically identifying its bottlenecks, without requiring any change to the source code. It intercepts the system calls to assess the execution time and behaviour, such as efficient cache usage, of the routines of an application. VTune also provides visualisation functionalities to make the profiling of parallel applications a simple task for developers with small experience. It works with both \intel and GNU compilers.
 
-\subsubsection*{VampirTrace}
+\subsection*{VampirTrace}
 
 VmpirTrace \cite{VampirTrace} is a open source library to analyse an application execution on both shared and distributed memory environments, with support for CUDA capable GPUs through the CUPTI driver interface. It is capable of analysing the CPU hardware counters per thread/process by resorting to the Performance API. It has a low level API to integrate with the code to measure specific metrics and regions of the code, and a more abstract interface that allows tracing the application execution without the need to change the code.
 
 Additionally, VampirTrace allows to analyse the I/O interactions of an application, such as access times, types, and patterns to the hard drives.
 
-\subsubsection*{\nvidia Nsight}
+\subsection*{\nvidia Nsight}
 
 The \nvidia Nsight \cite{NVIDIA:Nsight} is a development platform for heterogeneous computing. It is available for both Visual Studio and Eclipse and aids the development of code for CUDA capable GPUs, with easy integration with current official production libraries. It has real time debugging functionalities to test code running on both CPU and GPU simultaneously. The built-in profiler allows to perform analysis to the kernels execution time on GPU, load and store efficiency (related to the coalesced accesses of CUDA threads to memory), SMX occupancy rate, and memory usage. The profiling metrics are the same as the ones provided by the Performance API, as they both use the \nvidia CUPTI interface.

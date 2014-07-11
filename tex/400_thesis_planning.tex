@@ -2,32 +2,45 @@
 \chapter{Research Plan}
 \label{thesis_planning}
 
-\itodo{Datas ainda por definir e a ordem ainda não está definida}
-\itodo{As tarefas a curto prazo estão definidas enquanto que as restantes ainda são bastante abstractas}
-\itodo{Faltam tarefas para além do protótipo (além das relacionadas com aceleradores, que serão deixadas para depois de Março de 2015)}
-
-The research plan for the PhD thesis work is as follows:
+The research plan for the PhD thesis work is organised as follows:
 
 \begin{itemize}
-	\item Requirements elicitation of all physics features to implement on the framework together with the LIP researchers.
-	\item Validate the proposed framework design and new data analysis programming model.
-	\item Redesign of the features already implemented in LipMiniAnalysis to fit the new framework requirements.
-	\item Assess and compare the performance of various C++ collections to store various events on memory.
-	\item Extend the current event data structure to fit the requirements of all data analysis:
+	\item For the first semester of 2014/2015:
 	\begin{itemize}
-		\item By adding the all variables in the ROOT input data files, or;
-		\item By the user defining which variables are needed for a given analysis, and the data structure being automatically created using that information;
+		\item Requirements elicitation of all physics features to implement on the framework together with the LIP researchers.
+		\item Validate the proposed framework design and new data analysis programming model.
+		\item Redesign of the features already implemented in LipMiniAnalysis to fit the new framework requirements.
+		\item Assess and compare the performance of various C++ collections to store various events on memory.
+		\item Extend the current event data structure to fit the requirements of all data analysis:
+		\begin{itemize}
+			\item By adding the all variables in the ROOT input data files, or;
+			\item By the user defining which variables are needed for a given analysis, and the data structure being automatically created using that information;
+		\end{itemize}
+		\item Extend the I/O features available in LipMiniAnalysis:
+		\begin{itemize}
+			\item By reading multiple input data files in parallel;
+			\item By build the event data structure in parallel;
+		\end{itemize}
+		\item Assess and compare the performance of DICE, StarPU, and Legion libraries and their available performance models for irregular workload balance in:
+		\begin{itemize}
+			\item Homogeneous systems;
+			\item Heterogeneous systems with hardware accelerators;
+			\item Heterogeneous cluster nodes;
+		\end{itemize}
+		\item Support for hybrid process/thread automatic parallelization with partial integration with the chosen parallelization library.
 	\end{itemize}
-	\item Extend the I/O features available in LipMiniAnalysis:
+	\item Present the first framework prototype without hardware accelerator support in March 2015.
+	\item For the second semester of 2014/2015:
 	\begin{itemize}
-		\item By reading multiple input data files in parallel;
-		\item By build the event data structure in parallel;
+		\item Assess the extendibility of the chosen parallelization framework to support the \intel Xeon Phi hardware accelerator.
+		\item Complete the proposed framework integration with the parallelization library to support GPU accelerators.
+		\item Adapt the parallelization library to support \intel Xeon Phi accelerator.
 	\end{itemize}
-	\item Assess and compare different performance models for irregular workload balance in:
+	\item For 2015/2016:
 	\begin{itemize}
-		\item Homogeneous systems;
-		\item Heterogeneous systems initially using the \intel Xeon Phi;
+		\item Update the state of the art research on software and hardware environments for heterogeneous platforms.
+		\item Improve the performance across multiple computing nodes in cluster environments.
+		\item Extend the functionalities of the proposed framework.
+		\item Thesis write up.
 	\end{itemize}
-	\item Support for hybrid process/thread automatic parallelization.
-	\item Present the first framework prototype in March 2015.
 \end{itemize}

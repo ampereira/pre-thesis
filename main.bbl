@@ -272,6 +272,24 @@
       \verb http://wlcg.web.cern.ch/
       \endverb
     \endentry
+    \entry{LIP}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=b8e06e0ae007371baeb51117213d7942}{{E}xperimentação\bibnamedelimb e\bibnamedelimb {F}ísica\bibnamedelimb {E}xperimental\bibnamedelimb de\bibnamedelima {P}artículas}{E\bibinitperiod\bibinitdelim e\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim P\bibinitperiod}{Laboratório}{L\bibinitperiod}{de}{d\bibinitperiod}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=b8e06e0ae007371baeb51117213d7942}{{E}xperimentação\bibnamedelimb e\bibnamedelimb {F}ísica\bibnamedelimb {E}xperimental\bibnamedelimb de\bibnamedelima {P}artículas}{E\bibinitperiod\bibinitdelim e\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim P\bibinitperiod}{Laboratório}{L\bibinitperiod}{de}{d\bibinitperiod}{}{}}%
+      }
+      \strng{namehash}{b8e06e0ae007371baeb51117213d7942}
+      \strng{fullhash}{b8e06e0ae007371baeb51117213d7942}
+      \field{sortinit}{0}
+      \field{labeltitle}{Laboratório de {E}xperimentação e {F}ísica {E}xperimental de {P}artículas}
+      \field{month}{11}
+      \field{title}{Laboratório de {E}xperimentação e {F}ísica {E}xperimental de {P}artículas}
+      \field{year}{2012}
+      \verb{url}
+      \verb http://www.lip.pt/
+      \endverb
+    \endentry
     \entry{Msc:AMP}{thesis}{}
       \name{labelname}{1}{}{%
         {{hash=0334bbc52cb2af79c91c4a53946ce07e}{Pereira}{P\bibinitperiod}{André}{A\bibinitperiod}{}{}{}{}}%
@@ -290,24 +308,6 @@
       \field{title}{{Efficient Processing of ATLAS Events Analysis in Homogeneous and Heterogeneous Platforms}}
       \field{type}{mathesis}
       \field{year}{2013}
-    \endentry
-    \entry{LIP}{online}{}
-      \name{labelname}{1}{}{%
-        {{hash=b8e06e0ae007371baeb51117213d7942}{{E}xperimentação\bibnamedelimb e\bibnamedelimb {F}ísica\bibnamedelimb {E}xperimental\bibnamedelimb de\bibnamedelima {P}artículas}{E\bibinitperiod\bibinitdelim e\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim P\bibinitperiod}{Laboratório}{L\bibinitperiod}{de}{d\bibinitperiod}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=b8e06e0ae007371baeb51117213d7942}{{E}xperimentação\bibnamedelimb e\bibnamedelimb {F}ísica\bibnamedelimb {E}xperimental\bibnamedelimb de\bibnamedelima {P}artículas}{E\bibinitperiod\bibinitdelim e\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim P\bibinitperiod}{Laboratório}{L\bibinitperiod}{de}{d\bibinitperiod}{}{}}%
-      }
-      \strng{namehash}{b8e06e0ae007371baeb51117213d7942}
-      \strng{fullhash}{b8e06e0ae007371baeb51117213d7942}
-      \field{sortinit}{0}
-      \field{labeltitle}{Laboratório de {E}xperimentação e {F}ísica {E}xperimental de {P}artículas}
-      \field{month}{11}
-      \field{title}{Laboratório de {E}xperimentação e {F}ísica {E}xperimental de {P}artículas}
-      \field{year}{2012}
-      \verb{url}
-      \verb http://www.lip.pt/
-      \endverb
     \endentry
     \entry{paperAMP}{article}{}
       \name{labelname}{2}{}{%
@@ -444,6 +444,70 @@
       \field{title}{Cramming more components onto integrated circuits.}
       \field{year}{1965}
     \endentry
+    \entry{OpenMP}{report}{}
+      \name{labelname}{1}{}{%
+        {{hash=283cd87f294d72a97296a8654f6de8eb}{Board}{B\bibinitperiod}{OpenMP\bibnamedelimb Architecture\bibnamedelima Review}{O\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=283cd87f294d72a97296a8654f6de8eb}{Board}{B\bibinitperiod}{OpenMP\bibnamedelimb Architecture\bibnamedelima Review}{O\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \list{organization}{1}{%
+        {OpenMP Architecture Review Board}%
+      }
+      \strng{namehash}{283cd87f294d72a97296a8654f6de8eb}
+      \strng{fullhash}{283cd87f294d72a97296a8654f6de8eb}
+      \field{sortinit}{0}
+      \field{labeltitle}{{OpenMP Application Program Interface}}
+      \field{month}{07}
+      \field{title}{{OpenMP Application Program Interface}}
+      \field{type}{techreport}
+      \field{year}{2013}
+    \endentry
+    \entry{Intel:TBB}{report}{}
+      \name{labelname}{1}{}{%
+        {{hash=d7e38f2fae1f0d57c7d21db14442f89e}{Reinders}{R\bibinitperiod}{James}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=d7e38f2fae1f0d57c7d21db14442f89e}{Reinders}{R\bibinitperiod}{James}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{organization}{1}{%
+        {Intel}%
+      }
+      \strng{namehash}{d7e38f2fae1f0d57c7d21db14442f89e}
+      \strng{fullhash}{d7e38f2fae1f0d57c7d21db14442f89e}
+      \field{sortinit}{0}
+      \field{labeltitle}{Intel Threading Building Blocks}
+      \field{title}{Intel Threading Building Blocks}
+      \field{type}{techreport}
+      \field{year}{2007}
+    \endentry
+    \entry{Intel:Cilk}{article}{}
+      \name{labelname}{5}{}{%
+        {{hash=e31f0550a5bee560419db61c1568ed97}{Blumofe}{B\bibinitperiod}{Robert}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=ae2073ec70e079fae57d4851d778d5c9}{Joerg}{J\bibinitperiod}{Christopher}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=4170d859c548a9be8431e59182a4d802}{Leiserson}{L\bibinitperiod}{Charles}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=fdb52cef8d9bdd6fbd9aff21100abbc0}{Randall}{R\bibinitperiod}{Keith}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=8aeb0972b134a1f1b85f063ddc83ab0d}{Zhou}{Z\bibinitperiod}{Yuli}{Y\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{5}{}{%
+        {{hash=e31f0550a5bee560419db61c1568ed97}{Blumofe}{B\bibinitperiod}{Robert}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=ae2073ec70e079fae57d4851d778d5c9}{Joerg}{J\bibinitperiod}{Christopher}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=4170d859c548a9be8431e59182a4d802}{Leiserson}{L\bibinitperiod}{Charles}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=fdb52cef8d9bdd6fbd9aff21100abbc0}{Randall}{R\bibinitperiod}{Keith}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=8aeb0972b134a1f1b85f063ddc83ab0d}{Zhou}{Z\bibinitperiod}{Yuli}{Y\bibinitperiod}{}{}{}{}}%
+      }
+      \list{organization}{1}{%
+        {Massachussets Institute of Technology}%
+      }
+      \strng{namehash}{c015bfda19d0d79f75ef964a2226967e}
+      \strng{fullhash}{ab0606d6f43e35dc904cbf117c314316}
+      \field{sortinit}{0}
+      \field{labeltitle}{Cilk: An Efficient Multithreaded Runtime System}
+      \field{journaltitle}{5th ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming, pp. 207-216}
+      \field{month}{07}
+      \field{title}{Cilk: An Efficient Multithreaded Runtime System}
+      \field{year}{1995}
+    \endentry
     \entry{Intel:MIC}{report}{}
       \name{labelname}{1}{}{%
         {{hash=ff97a9fdede09eaf6e1c8ec9f6a61dd5}{Intel}{I\bibinitperiod}{}{}{}{}{}{}}%
@@ -479,6 +543,24 @@
       \field{year}{2014}
       \verb{url}
       \verb http://www.top500.org/lists/2014/06/
+      \endverb
+    \endentry
+    \entry{GREEN500}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=30394fe481bd0561ca2dee574ca53b50}{500}{5\bibinitperiod}{GREEN}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=30394fe481bd0561ca2dee574ca53b50}{500}{5\bibinitperiod}{GREEN}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{30394fe481bd0561ca2dee574ca53b50}
+      \strng{fullhash}{30394fe481bd0561ca2dee574ca53b50}
+      \field{sortinit}{0}
+      \field{labeltitle}{June 2014}
+      \field{month}{06}
+      \field{title}{June 2014}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://www.green500.org/lists/green201406
       \endverb
     \endentry
     \entry{NVIDIA:Kepler}{report}{}
@@ -597,70 +679,6 @@
       \field{title}{Chipmakers ARM for Battle in Traditional Computing Market.}
       \field{year}{2011}
     \endentry
-    \entry{OpenMP}{report}{}
-      \name{labelname}{1}{}{%
-        {{hash=283cd87f294d72a97296a8654f6de8eb}{Board}{B\bibinitperiod}{OpenMP\bibnamedelimb Architecture\bibnamedelima Review}{O\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=283cd87f294d72a97296a8654f6de8eb}{Board}{B\bibinitperiod}{OpenMP\bibnamedelimb Architecture\bibnamedelima Review}{O\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
-      }
-      \list{organization}{1}{%
-        {OpenMP Architecture Review Board}%
-      }
-      \strng{namehash}{283cd87f294d72a97296a8654f6de8eb}
-      \strng{fullhash}{283cd87f294d72a97296a8654f6de8eb}
-      \field{sortinit}{0}
-      \field{labeltitle}{{OpenMP Application Program Interface}}
-      \field{month}{07}
-      \field{title}{{OpenMP Application Program Interface}}
-      \field{type}{techreport}
-      \field{year}{2013}
-    \endentry
-    \entry{Intel:TBB}{report}{}
-      \name{labelname}{1}{}{%
-        {{hash=d7e38f2fae1f0d57c7d21db14442f89e}{Reinders}{R\bibinitperiod}{James}{J\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=d7e38f2fae1f0d57c7d21db14442f89e}{Reinders}{R\bibinitperiod}{James}{J\bibinitperiod}{}{}{}{}}%
-      }
-      \list{organization}{1}{%
-        {Intel}%
-      }
-      \strng{namehash}{d7e38f2fae1f0d57c7d21db14442f89e}
-      \strng{fullhash}{d7e38f2fae1f0d57c7d21db14442f89e}
-      \field{sortinit}{0}
-      \field{labeltitle}{Intel Threading Building Blocks}
-      \field{title}{Intel Threading Building Blocks}
-      \field{type}{techreport}
-      \field{year}{2007}
-    \endentry
-    \entry{Intel:Cilk}{article}{}
-      \name{labelname}{5}{}{%
-        {{hash=e31f0550a5bee560419db61c1568ed97}{Blumofe}{B\bibinitperiod}{Robert}{R\bibinitperiod}{}{}{}{}}%
-        {{hash=ae2073ec70e079fae57d4851d778d5c9}{Joerg}{J\bibinitperiod}{Christopher}{C\bibinitperiod}{}{}{}{}}%
-        {{hash=4170d859c548a9be8431e59182a4d802}{Leiserson}{L\bibinitperiod}{Charles}{C\bibinitperiod}{}{}{}{}}%
-        {{hash=fdb52cef8d9bdd6fbd9aff21100abbc0}{Randall}{R\bibinitperiod}{Keith}{K\bibinitperiod}{}{}{}{}}%
-        {{hash=8aeb0972b134a1f1b85f063ddc83ab0d}{Zhou}{Z\bibinitperiod}{Yuli}{Y\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{5}{}{%
-        {{hash=e31f0550a5bee560419db61c1568ed97}{Blumofe}{B\bibinitperiod}{Robert}{R\bibinitperiod}{}{}{}{}}%
-        {{hash=ae2073ec70e079fae57d4851d778d5c9}{Joerg}{J\bibinitperiod}{Christopher}{C\bibinitperiod}{}{}{}{}}%
-        {{hash=4170d859c548a9be8431e59182a4d802}{Leiserson}{L\bibinitperiod}{Charles}{C\bibinitperiod}{}{}{}{}}%
-        {{hash=fdb52cef8d9bdd6fbd9aff21100abbc0}{Randall}{R\bibinitperiod}{Keith}{K\bibinitperiod}{}{}{}{}}%
-        {{hash=8aeb0972b134a1f1b85f063ddc83ab0d}{Zhou}{Z\bibinitperiod}{Yuli}{Y\bibinitperiod}{}{}{}{}}%
-      }
-      \list{organization}{1}{%
-        {Massachussets Institute of Technology}%
-      }
-      \strng{namehash}{c015bfda19d0d79f75ef964a2226967e}
-      \strng{fullhash}{ab0606d6f43e35dc904cbf117c314316}
-      \field{sortinit}{0}
-      \field{labeltitle}{Cilk: An Efficient Multithreaded Runtime System}
-      \field{journaltitle}{5th ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming, pp. 207-216}
-      \field{month}{07}
-      \field{title}{Cilk: An Efficient Multithreaded Runtime System}
-      \field{year}{1995}
-    \endentry
     \entry{HEFT}{article}{}
       \name{labelname}{3}{}{%
         {{hash=704bc2f618c1c7046cb5c64833fce084}{Topcuouglu}{T\bibinitperiod}{Haluk}{H\bibinitperiod}{}{}{}{}}%
@@ -729,6 +747,32 @@
       \field{volume}{23}
       \field{year}{2011}
       \field{pages}{187\bibrangedash 198}
+    \endentry
+    \entry{Legion}{inproceedings}{}
+      \name{labelname}{4}{}{%
+        {{hash=e3aaf99037fdbf7a9ce99497cd543989}{Bauer}{B\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=63f01523432d1dc0b061f6fee6d7e9cb}{Treichler}{T\bibinitperiod}{Sean}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=bf56b91f48eefc569354c6e8628206c9}{Slaughter}{S\bibinitperiod}{Elliott}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=7b4be770da7d4fe41717b6d75f1fa596}{Aiken}{A\bibinitperiod}{Alex}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{hash=e3aaf99037fdbf7a9ce99497cd543989}{Bauer}{B\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=63f01523432d1dc0b061f6fee6d7e9cb}{Treichler}{T\bibinitperiod}{Sean}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=bf56b91f48eefc569354c6e8628206c9}{Slaughter}{S\bibinitperiod}{Elliott}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=7b4be770da7d4fe41717b6d75f1fa596}{Aiken}{A\bibinitperiod}{Alex}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE Computer Society Press}%
+      }
+      \strng{namehash}{d8d2e28a8adb14dccb32f1de55f837f0}
+      \strng{fullhash}{03e269ce9335b04013969ab3a5f32a03}
+      \field{sortinit}{0}
+      \field{labeltitle}{Legion: Expressing Locality and Independence with Logical Regions}
+      \field{booktitle}{Proceedings of the International Conference on High Performance Computing, Networking, Storage and Analysis}
+      \field{series}{SC '12}
+      \field{title}{Legion: Expressing Locality and Independence with Logical Regions}
+      \field{year}{2012}
+      \field{pages}{66:1\bibrangedash 66:11}
     \endentry
     \entry{OpenACC}{online}{}
       \name{labelname}{1}{}{%
@@ -805,6 +849,23 @@
       \verb{url}
       \verb http://www.pathscale.com/ENZO
       \endverb
+    \endentry
+    \entry{MersenneTwister}{article}{}
+      \name{labelname}{2}{}{%
+        {{hash=37a788e3dbb975370d88203dfba379ec}{Matsumoto}{M\bibinitperiod}{Makoto}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=0c01b5b4d925ff90df6e479ee22f55f4}{Saito}{S\bibinitperiod}{Mutsuo}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=37a788e3dbb975370d88203dfba379ec}{Matsumoto}{M\bibinitperiod}{Makoto}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=0c01b5b4d925ff90df6e479ee22f55f4}{Saito}{S\bibinitperiod}{Mutsuo}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{077fb9abb40304c450970319d90d9bd5}
+      \strng{fullhash}{077fb9abb40304c450970319d90d9bd5}
+      \field{sortinit}{0}
+      \field{labeltitle}{{Mersenne Twister: A 623-dimensionally equidistributed uniform pseudorandom number generator}}
+      \field{journaltitle}{ACM Transactions on Modeling and Computer Simulations: Special Issue on Uniform Random Number Generation}
+      \field{title}{{Mersenne Twister: A 623-dimensionally equidistributed uniform pseudorandom number generator}}
+      \field{year}{1998}
     \endentry
     \entry{CERN:ROOT}{online}{}
       \name{labelname}{1}{}{%
