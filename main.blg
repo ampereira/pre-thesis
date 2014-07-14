@@ -1,18 +1,18 @@
-[0] Config.pm:387> INFO - This is Biber 1.6
+[1] Config.pm:387> INFO - This is Biber 1.6
 [1] Config.pm:390> INFO - Logfile is 'main.blg'
-[142] biber-darwin:218> INFO - === Fri Jul 11, 2014, 15:40:15
-[142] Biber.pm:325> INFO - Reading 'main.bcf'
-[278] Biber.pm:623> INFO - Found 50 citekeys in bib section 0
-[297] Biber.pm:2995> INFO - Processing section 0
-[322] Biber.pm:3129> INFO - Looking for bibtex format file '../bib/refs.bib' for section 0
-[325] bibtex.pm:898> INFO - Decoding LaTeX character macros into UTF-8
-[334] bibtex.pm:775> INFO - Found BibTeX data source '../bib/refs.bib'
-[337] Utils.pm:169> WARN - Duplicate entry key: 'OpenACC' in file '../bib/refs.bib', skipping ...
-[451] Utils.pm:169> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
-[451] Utils.pm:169> WARN - BibTeX subsystem: author, warning: comma(s) at end of name (removing)
-[859] Biber.pm:2881> INFO - Overriding locale 'en_US.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
-[859] Biber.pm:2887> INFO - Sorting 'entry' list 'none' keys
-[859] Biber.pm:2891> INFO - No sort tailoring available for locale 'en_US.UTF-8'
-[1525] bbl.pm:472> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[1536] bbl.pm:545> INFO - Output to main.bbl
-[1536] Biber.pm:105> INFO - WARNINGS: 3
+[153] biber-darwin:218> INFO - === Mon Jul 14, 2014, 11:53:22
+[154] Biber.pm:325> INFO - Reading 'main.bcf'
+[298] Biber.pm:623> INFO - Found 52 citekeys in bib section 0
+[318] Biber.pm:2995> INFO - Processing section 0
+[351] Biber.pm:3129> INFO - Looking for bibtex format file '../bib/refs.bib' for section 0
+[357] bibtex.pm:898> INFO - Decoding LaTeX character macros into UTF-8
+[370] bibtex.pm:775> INFO - Found BibTeX data source '../bib/refs.bib'
+[372] Utils.pm:169> WARN - Duplicate entry key: 'OpenACC' in file '../bib/refs.bib', skipping ...
+[505] Utils.pm:169> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
+[506] Utils.pm:169> WARN - BibTeX subsystem: author, warning: comma(s) at end of name (removing)
+[994] Biber.pm:2881> INFO - Overriding locale 'en_US.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
+[994] Biber.pm:2887> INFO - Sorting 'entry' list 'none' keys
+[994] Biber.pm:2891> INFO - No sort tailoring available for locale 'en_US.UTF-8'
+[1829] bbl.pm:472> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1843] bbl.pm:545> INFO - Output to main.bbl
+[1843] Biber.pm:105> INFO - WARNINGS: 3

@@ -2,45 +2,10 @@
 \chapter{Research Plan}
 \label{thesis_planning}
 
-The research plan for the PhD thesis work is organised as follows:
+Efficient load balancing in heterogeneous platforms is a complex task due to the different programming models among computing devices, specially for non expert programmers. This dissertation work proposes a automatic load balancing framework for the development of particle physics data analysis applications. To achieve this goal, the framework has to integrate, and possibly extend, a specialised load balancing framework as middleware, and redesign the current data analysis programming model of particle physicists. Both these tasks are individually complex and cannot be addressed separately.
 
-\begin{itemize}
-	\item For the first semester of 2014/2015:
-	\begin{itemize}
-		\item Requirements elicitation of all physics features to implement on the framework together with the LIP researchers.
-		\item Validate the proposed framework design and new data analysis programming model.
-		\item Redesign of the features already implemented in LipMiniAnalysis to fit the new framework requirements.
-		\item Assess and compare the performance of various C++ collections to store various events on memory.
-		\item Extend the current event data structure to fit the requirements of all data analysis:
-		\begin{itemize}
-			\item By adding the all variables in the ROOT input data files, or;
-			\item By the user defining which variables are needed for a given analysis, and the data structure being automatically created using that information;
-		\end{itemize}
-		\item Extend the I/O features available in LipMiniAnalysis:
-		\begin{itemize}
-			\item By reading multiple input data files in parallel;
-			\item By build the event data structure in parallel;
-		\end{itemize}
-		\item Assess and compare the performance of DICE, StarPU, and Legion libraries and their available performance models for irregular workload balance in:
-		\begin{itemize}
-			\item Homogeneous systems;
-			\item Heterogeneous systems with hardware accelerators;
-			\item Heterogeneous cluster nodes;
-		\end{itemize}
-		\item Support for hybrid process/thread automatic parallelization with partial integration with the chosen parallelization library.
-	\end{itemize}
-	\item Present the first framework prototype without hardware accelerator support in March 2015.
-	\item For the second semester of 2014/2015:
-	\begin{itemize}
-		\item Assess the extendibility of the chosen parallelization framework to support the \intel Xeon Phi hardware accelerator.
-		\item Complete the proposed framework integration with the parallelization library to support GPU accelerators.
-		\item Adapt the parallelization library to support \intel Xeon Phi accelerator.
-	\end{itemize}
-	\item For 2015/2016:
-	\begin{itemize}
-		\item Update the state of the art research on software and hardware environments for heterogeneous platforms.
-		\item Improve the performance across multiple computing nodes in cluster environments.
-		\item Extend the functionalities of the proposed framework.
-		\item Thesis write up.
-	\end{itemize}
-\end{itemize}
+Prototypes of some of the proposed framework core features were already developed and tested to validate the current design. However, it is crucial to perform the final requirements elicitation of the physics and computational features, together with the LIP researchers, to refine the framework design. The new data analysis programming model offered by the framework also needs to be refined and validated with the LIP researchers. This tasks will take approximately 1 month. With the clear design of the framework, the prototypes need to be updated and extended, to improve the data structure and parallel I/O features, and refine the automatic parallelization and load balancing in multi-CPU shared memory environments. An assessment of the performance of DICE, StarPU, and Legion will be performed in parallel to the framework improvement. These tasks are expected to take 4 months. A preliminary version of the framework is expected to be presented in March 2015.
+
+After an efficient load balancing framework is chosen it is necessary to integrate it with the particle physics framework as middleware. It will be refined during the integration, as the programming constraints imposed by GPU accelerators will have a considerable impact on the framework design. It is needed to assess if the middleware can be extended to support \intel Xeon Phi accelerators and then perform the required changes to the framework to support the device. This stage of the work is expected to take 6 to 8 months.
+
+The framework middleware will be improve by refining the \intel Xeon Phi support and implement support for efficient load balancing among several computing nodes in a cluster environment. The latter will explore innovative approaches for hybrid OpenMP/MPI/CUDA parallelization. The framework physics features will be extended to update the input data file support and other functionalities. This stage is expected to take 10 months. In the last 12 months, the performance of the framework must be assessed in terms of efficient use of the computational resources in heterogeneous platforms, and by quantifying the productivity improvements of developing data analysis applications. At this stage, the framework must be validated by integrating it with current data analysis applications used by the LIP research group. The relevant results will be compiled into one or more scientific papers.

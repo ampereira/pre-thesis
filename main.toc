@@ -16,19 +16,19 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}Homogeneous Platforms Environment}{14}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.1}The Hardware}{14}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.1}The Hardware}{15}{subsection.2.1.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.2}The Software}{16}{subsection.2.1.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Heterogeneous Platforms Environment}{17}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Computing Accelerators}{18}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.1}Computing Accelerators}{19}{subsection.2.2.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.2}The Software}{23}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}The Computational Particle Physics}{28}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Profiling Tools and Libraries}{30}{section.2.4}
+\contentsline {section}{\numberline {2.4}Profiling Tools and Libraries}{31}{section.2.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}An Unified Efficient Particle Physics Framework}{33}{chapter.3}
 \defcounter {refsection}{0}\relax 
@@ -40,6 +40,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.2}Preliminary Prototypes}{43}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}The Underlying Middleware for Heterogeneous Environments}{46}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.3}The Underlying Middleware for Heterogeneous Environments}{47}{subsection.3.2.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Research Plan}{49}{chapter.4}

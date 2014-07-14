@@ -679,100 +679,46 @@
       \field{title}{Chipmakers ARM for Battle in Traditional Computing Market.}
       \field{year}{2011}
     \endentry
-    \entry{HEFT}{article}{}
+    \entry{MPIOpenMP}{inproceedings}{}
       \name{labelname}{3}{}{%
-        {{hash=704bc2f618c1c7046cb5c64833fce084}{Topcuouglu}{T\bibinitperiod}{Haluk}{H\bibinitperiod}{}{}{}{}}%
-        {{hash=abeb6cd48bc2b468f54b1c8eb2aedb47}{Hariri}{H\bibinitperiod}{Salim}{S\bibinitperiod}{}{}{}{}}%
-        {{hash=52bf6696c2be9982554449f1401fadb1}{Wu}{W\bibinitperiod}{Min-you}{M\bibinithyphendelim y\bibinitperiod}{}{}{}{}}%
+        {{hash=dc30aa59921a39d50aa3165dc6681ac2}{Rabenseifner}{R\bibinitperiod}{R.}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=320b83ded64287fdc955e16426fb53f4}{Hager}{H\bibinitperiod}{G.}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=0fa8b01cb2ede0c57eb7341851268811}{Jost}{J\bibinitperiod}{G.}{G\bibinitperiod}{}{}{}{}}%
       }
       \name{author}{3}{}{%
-        {{hash=704bc2f618c1c7046cb5c64833fce084}{Topcuouglu}{T\bibinitperiod}{Haluk}{H\bibinitperiod}{}{}{}{}}%
-        {{hash=abeb6cd48bc2b468f54b1c8eb2aedb47}{Hariri}{H\bibinitperiod}{Salim}{S\bibinitperiod}{}{}{}{}}%
-        {{hash=52bf6696c2be9982554449f1401fadb1}{Wu}{W\bibinitperiod}{Min-you}{M\bibinithyphendelim y\bibinitperiod}{}{}{}{}}%
+        {{hash=dc30aa59921a39d50aa3165dc6681ac2}{Rabenseifner}{R\bibinitperiod}{R.}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=320b83ded64287fdc955e16426fb53f4}{Hager}{H\bibinitperiod}{G.}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=0fa8b01cb2ede0c57eb7341851268811}{Jost}{J\bibinitperiod}{G.}{G\bibinitperiod}{}{}{}{}}%
       }
-      \strng{namehash}{b2fc58bbbdc921c364cc673843ddec32}
-      \strng{fullhash}{b2fc58bbbdc921c364cc673843ddec32}
+      \strng{namehash}{55cedda241b0081af91f54b842cf6992}
+      \strng{fullhash}{55cedda241b0081af91f54b842cf6992}
       \field{sortinit}{0}
-      \field{labeltitle}{Performance-Effective and Low-Complexity Task Scheduling for Heterogeneous Computing}
-      \field{issn}{1045-9219}
-      \field{journaltitle}{IEEE Trans. Parallel Distrib. Syst.}
-      \field{month}{03}
-      \field{number}{3}
-      \field{title}{Performance-Effective and Low-Complexity Task Scheduling for Heterogeneous Computing}
-      \field{volume}{13}
-      \field{year}{2002}
-      \field{pages}{260\bibrangedash 274}
-    \endentry
-    \entry{Msc:Mariano}{thesis}{}
-      \name{labelname}{1}{}{%
-        {{hash=73604edd2f778bf2092074c59d6cae3c}{Mariano}{M\bibinitperiod}{Artur}{A\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=73604edd2f778bf2092074c59d6cae3c}{Mariano}{M\bibinitperiod}{Artur}{A\bibinitperiod}{}{}{}{}}%
-      }
-      \list{institution}{1}{%
-        {University of Minho}%
-      }
-      \strng{namehash}{73604edd2f778bf2092074c59d6cae3c}
-      \strng{fullhash}{73604edd2f778bf2092074c59d6cae3c}
-      \field{sortinit}{0}
-      \field{labeltitle}{{Scheduling (ir)regular applications on heterogeneous platforms}}
-      \field{month}{09}
-      \field{title}{{Scheduling (ir)regular applications on heterogeneous platforms}}
-      \field{type}{mathesis}
-      \field{year}{2012}
-    \endentry
-    \entry{STARPU}{article}{}
-      \name{labelname}{4}{}{%
-        {{hash=736f79b70cf6488db7dfa8e71456f718}{Augonnet}{A\bibinitperiod}{Cédric}{C\bibinitperiod}{}{}{}{}}%
-        {{hash=2a6cddc12d90996f2d082705aab80d36}{Thibault}{T\bibinitperiod}{Samuel}{S\bibinitperiod}{}{}{}{}}%
-        {{hash=4acb86ced09c0de0a698930a3ac8ed1a}{Namyst}{N\bibinitperiod}{Raymond}{R\bibinitperiod}{}{}{}{}}%
-        {{hash=7ca7f0007d1a43652e8ccf26f7048c24}{Wacrenier}{W\bibinitperiod}{Pierre-André;}{P\bibinithyphendelim A\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{4}{}{%
-        {{hash=736f79b70cf6488db7dfa8e71456f718}{Augonnet}{A\bibinitperiod}{Cédric}{C\bibinitperiod}{}{}{}{}}%
-        {{hash=2a6cddc12d90996f2d082705aab80d36}{Thibault}{T\bibinitperiod}{Samuel}{S\bibinitperiod}{}{}{}{}}%
-        {{hash=4acb86ced09c0de0a698930a3ac8ed1a}{Namyst}{N\bibinitperiod}{Raymond}{R\bibinitperiod}{}{}{}{}}%
-        {{hash=7ca7f0007d1a43652e8ccf26f7048c24}{Wacrenier}{W\bibinitperiod}{Pierre-André;}{P\bibinithyphendelim A\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{b8f74ceca10299b898b8f8bc125acf89}
-      \strng{fullhash}{0a974d7fb88ca72577f0bcf626a330c4}
-      \field{sortinit}{0}
-      \field{labeltitle}{StarPU: A Unified Platform for Task Scheduling on Heterogeneous Multicore Architectures}
-      \field{issn}{1532-0626}
-      \field{journaltitle}{Concurr. Comput. : Pract. Exper.}
+      \field{labeltitle}{Hybrid MPI/OpenMP Parallel Programming on Clusters of Multi-Core SMP Nodes}
+      \field{booktitle}{Parallel, Distributed and Network-based Processing, 2009 17th Euromicro International Conference on}
       \field{month}{02}
-      \field{number}{2}
-      \field{title}{StarPU: A Unified Platform for Task Scheduling on Heterogeneous Multicore Architectures}
-      \field{volume}{23}
-      \field{year}{2011}
-      \field{pages}{187\bibrangedash 198}
+      \field{title}{Hybrid MPI/OpenMP Parallel Programming on Clusters of Multi-Core SMP Nodes}
+      \field{year}{2009}
+      \field{pages}{427\bibrangedash 436}
     \endentry
-    \entry{Legion}{inproceedings}{}
-      \name{labelname}{4}{}{%
-        {{hash=e3aaf99037fdbf7a9ce99497cd543989}{Bauer}{B\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
-        {{hash=63f01523432d1dc0b061f6fee6d7e9cb}{Treichler}{T\bibinitperiod}{Sean}{S\bibinitperiod}{}{}{}{}}%
-        {{hash=bf56b91f48eefc569354c6e8628206c9}{Slaughter}{S\bibinitperiod}{Elliott}{E\bibinitperiod}{}{}{}{}}%
-        {{hash=7b4be770da7d4fe41717b6d75f1fa596}{Aiken}{A\bibinitperiod}{Alex}{A\bibinitperiod}{}{}{}{}}%
+    \entry{MPIOpenMP2}{article}{}
+      \name{labelname}{2}{}{%
+        {{hash=c16efbf921db3102177a700609722892}{Chorley}{C\bibinitperiod}{Martin\bibnamedelima J.}{M\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=a1882b43bdb79bb82d347580dcfdc73c}{Walker}{W\bibinitperiod}{David\bibnamedelima W.}{D\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
       }
-      \name{author}{4}{}{%
-        {{hash=e3aaf99037fdbf7a9ce99497cd543989}{Bauer}{B\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
-        {{hash=63f01523432d1dc0b061f6fee6d7e9cb}{Treichler}{T\bibinitperiod}{Sean}{S\bibinitperiod}{}{}{}{}}%
-        {{hash=bf56b91f48eefc569354c6e8628206c9}{Slaughter}{S\bibinitperiod}{Elliott}{E\bibinitperiod}{}{}{}{}}%
-        {{hash=7b4be770da7d4fe41717b6d75f1fa596}{Aiken}{A\bibinitperiod}{Alex}{A\bibinitperiod}{}{}{}{}}%
+      \name{author}{2}{}{%
+        {{hash=c16efbf921db3102177a700609722892}{Chorley}{C\bibinitperiod}{Martin\bibnamedelima J.}{M\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=a1882b43bdb79bb82d347580dcfdc73c}{Walker}{W\bibinitperiod}{David\bibnamedelima W.}{D\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
       }
-      \list{publisher}{1}{%
-        {IEEE Computer Society Press}%
-      }
-      \strng{namehash}{d8d2e28a8adb14dccb32f1de55f837f0}
-      \strng{fullhash}{03e269ce9335b04013969ab3a5f32a03}
+      \strng{namehash}{50f484b360b37809853e2273b8c0d299}
+      \strng{fullhash}{50f484b360b37809853e2273b8c0d299}
       \field{sortinit}{0}
-      \field{labeltitle}{Legion: Expressing Locality and Independence with Logical Regions}
-      \field{booktitle}{Proceedings of the International Conference on High Performance Computing, Networking, Storage and Analysis}
-      \field{series}{SC '12}
-      \field{title}{Legion: Expressing Locality and Independence with Logical Regions}
-      \field{year}{2012}
-      \field{pages}{66:1\bibrangedash 66:11}
+      \field{labeltitle}{Performance analysis of a hybrid MPI/OpenMP application on multi-core clusters}
+      \field{journaltitle}{Journal of Computational Science}
+      \field{number}{3}
+      \field{title}{Performance analysis of a hybrid MPI/OpenMP application on multi-core clusters}
+      \field{volume}{1}
+      \field{year}{2010}
+      \field{pages}{168\bibrangedash 174}
     \endentry
     \entry{OpenACC}{online}{}
       \name{labelname}{1}{}{%
@@ -849,6 +795,101 @@
       \verb{url}
       \verb http://www.pathscale.com/ENZO
       \endverb
+    \endentry
+    \entry{STARPU}{article}{}
+      \name{labelname}{4}{}{%
+        {{hash=736f79b70cf6488db7dfa8e71456f718}{Augonnet}{A\bibinitperiod}{Cédric}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=2a6cddc12d90996f2d082705aab80d36}{Thibault}{T\bibinitperiod}{Samuel}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=4acb86ced09c0de0a698930a3ac8ed1a}{Namyst}{N\bibinitperiod}{Raymond}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=7ca7f0007d1a43652e8ccf26f7048c24}{Wacrenier}{W\bibinitperiod}{Pierre-André;}{P\bibinithyphendelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{hash=736f79b70cf6488db7dfa8e71456f718}{Augonnet}{A\bibinitperiod}{Cédric}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=2a6cddc12d90996f2d082705aab80d36}{Thibault}{T\bibinitperiod}{Samuel}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=4acb86ced09c0de0a698930a3ac8ed1a}{Namyst}{N\bibinitperiod}{Raymond}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=7ca7f0007d1a43652e8ccf26f7048c24}{Wacrenier}{W\bibinitperiod}{Pierre-André;}{P\bibinithyphendelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b8f74ceca10299b898b8f8bc125acf89}
+      \strng{fullhash}{0a974d7fb88ca72577f0bcf626a330c4}
+      \field{sortinit}{0}
+      \field{labeltitle}{StarPU: A Unified Platform for Task Scheduling on Heterogeneous Multicore Architectures}
+      \field{issn}{1532-0626}
+      \field{journaltitle}{Concurr. Comput. : Pract. Exper.}
+      \field{month}{02}
+      \field{number}{2}
+      \field{title}{StarPU: A Unified Platform for Task Scheduling on Heterogeneous Multicore Architectures}
+      \field{volume}{23}
+      \field{year}{2011}
+      \field{pages}{187\bibrangedash 198}
+    \endentry
+    \entry{HEFT}{article}{}
+      \name{labelname}{3}{}{%
+        {{hash=704bc2f618c1c7046cb5c64833fce084}{Topcuouglu}{T\bibinitperiod}{Haluk}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=abeb6cd48bc2b468f54b1c8eb2aedb47}{Hariri}{H\bibinitperiod}{Salim}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=52bf6696c2be9982554449f1401fadb1}{Wu}{W\bibinitperiod}{Min-you}{M\bibinithyphendelim y\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=704bc2f618c1c7046cb5c64833fce084}{Topcuouglu}{T\bibinitperiod}{Haluk}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=abeb6cd48bc2b468f54b1c8eb2aedb47}{Hariri}{H\bibinitperiod}{Salim}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=52bf6696c2be9982554449f1401fadb1}{Wu}{W\bibinitperiod}{Min-you}{M\bibinithyphendelim y\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b2fc58bbbdc921c364cc673843ddec32}
+      \strng{fullhash}{b2fc58bbbdc921c364cc673843ddec32}
+      \field{sortinit}{0}
+      \field{labeltitle}{Performance-Effective and Low-Complexity Task Scheduling for Heterogeneous Computing}
+      \field{issn}{1045-9219}
+      \field{journaltitle}{IEEE Trans. Parallel Distrib. Syst.}
+      \field{month}{03}
+      \field{number}{3}
+      \field{title}{Performance-Effective and Low-Complexity Task Scheduling for Heterogeneous Computing}
+      \field{volume}{13}
+      \field{year}{2002}
+      \field{pages}{260\bibrangedash 274}
+    \endentry
+    \entry{Msc:Mariano}{thesis}{}
+      \name{labelname}{1}{}{%
+        {{hash=73604edd2f778bf2092074c59d6cae3c}{Mariano}{M\bibinitperiod}{Artur}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=73604edd2f778bf2092074c59d6cae3c}{Mariano}{M\bibinitperiod}{Artur}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {University of Minho}%
+      }
+      \strng{namehash}{73604edd2f778bf2092074c59d6cae3c}
+      \strng{fullhash}{73604edd2f778bf2092074c59d6cae3c}
+      \field{sortinit}{0}
+      \field{labeltitle}{{Scheduling (ir)regular applications on heterogeneous platforms}}
+      \field{month}{09}
+      \field{title}{{Scheduling (ir)regular applications on heterogeneous platforms}}
+      \field{type}{mathesis}
+      \field{year}{2012}
+    \endentry
+    \entry{Legion}{inproceedings}{}
+      \name{labelname}{4}{}{%
+        {{hash=e3aaf99037fdbf7a9ce99497cd543989}{Bauer}{B\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=63f01523432d1dc0b061f6fee6d7e9cb}{Treichler}{T\bibinitperiod}{Sean}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=bf56b91f48eefc569354c6e8628206c9}{Slaughter}{S\bibinitperiod}{Elliott}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=7b4be770da7d4fe41717b6d75f1fa596}{Aiken}{A\bibinitperiod}{Alex}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{hash=e3aaf99037fdbf7a9ce99497cd543989}{Bauer}{B\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=63f01523432d1dc0b061f6fee6d7e9cb}{Treichler}{T\bibinitperiod}{Sean}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=bf56b91f48eefc569354c6e8628206c9}{Slaughter}{S\bibinitperiod}{Elliott}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=7b4be770da7d4fe41717b6d75f1fa596}{Aiken}{A\bibinitperiod}{Alex}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE Computer Society Press}%
+      }
+      \strng{namehash}{d8d2e28a8adb14dccb32f1de55f837f0}
+      \strng{fullhash}{03e269ce9335b04013969ab3a5f32a03}
+      \field{sortinit}{0}
+      \field{labeltitle}{Legion: Expressing Locality and Independence with Logical Regions}
+      \field{booktitle}{Proceedings of the International Conference on High Performance Computing, Networking, Storage and Analysis}
+      \field{series}{SC '12}
+      \field{title}{Legion: Expressing Locality and Independence with Logical Regions}
+      \field{year}{2012}
+      \field{pages}{66:1\bibrangedash 66:11}
     \endentry
     \entry{MersenneTwister}{article}{}
       \name{labelname}{2}{}{%
